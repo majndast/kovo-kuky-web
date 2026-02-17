@@ -85,7 +85,18 @@ export function Footer() {
           </div>
 
           <div className="mt-10 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} KOVO-KUKY. {t("rights")}
+            <p>&copy; {new Date().getFullYear()} KOVO-KUKY. {t("rights")}</p>
+            <p className="mt-2">
+              {t("madeBy")}{" "}
+              <a
+                href="https://jpvision.cz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-primary transition-colors hover:text-primary/80"
+              >
+                JP Vision
+              </a>
+            </p>
           </div>
         </div>
       </div>

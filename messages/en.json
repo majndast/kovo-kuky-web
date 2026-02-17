@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "KOVO-KUKY | CNC Machining & Custom Manufacturing",
-    "description": "Professional CNC machining, turning, milling, and metal cutting. Custom manufacturing from steel, stainless steel, aluminum, and brass."
+    "description": "Professional CNC machining, turning, milling, and metal cutting. Custom manufacturing from steel, stainless steel, aluminum, and brass. Quote within 48 hours."
   },
   "nav": {
     "home": "Home",
@@ -13,42 +13,132 @@
     "inquiry": "Get a Quote"
   },
   "hero": {
+    "badge": "Accepting new orders",
     "title": "Precision CNC machining",
     "titleAccent": "made to order",
-    "subtitle": "Turning, milling, and metal cutting with precision and reliability. We deliver your orders quickly and with top quality.",
+    "subtitle": "We manufacture parts exactly to your drawings. On CNC lathes and mills, we process steel, stainless steel, aluminum, and brass — fast, reliably, and with hundredths-of-a-millimeter precision.",
     "cta": "Request a Quote",
-    "secondary": "Our Services"
+    "secondary": "View Services",
+    "trust1": "Quality guaranteed",
+    "trust2": "Quote within 48h",
+    "trust3": "15+ years experience",
+    "statMachines": "CNC machines",
+    "statPrecision": "Precision",
+    "statQuality": "Satisfaction",
+    "statQuote": "Quote within",
+    "cardCta": "Send a drawing — get a quote within 48 hours",
+    "socialProof": "We work with companies from CZ, SK, DE, and AT"
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "Complete solutions for metal machining",
+    "label": "What we do",
+    "title": "Complete CNC Machining",
+    "subtitle": "From single pieces to series — we handle everything under one roof",
     "turning": {
       "title": "CNC Turning",
-      "description": "Precision turning on Doosan and Goodway CNC lathes with Fanuc control. We process steel, stainless steel, aluminum, and brass."
+      "description": "Precision turning on Doosan Lynx 220 and Goodway GLS CNC lathes with Fanuc control. Rotational parts from steel, stainless steel, aluminum, and brass with ±0.01 mm tolerance."
     },
     "milling": {
       "title": "CNC Milling",
-      "description": "Milling on modern CNC centers with high precision. Manufacturing parts from drawings or 3D models."
+      "description": "3-axis milling on XHS and Robodrill centers with Fanuc control. Manufacturing precision parts from drawings or 3D models, from prototypes to series."
     },
     "cutting": {
       "title": "Material Cutting",
-      "description": "Precision cutting on Bianco saws. Dividing bar stock and profiles according to customer requirements."
+      "description": "Precision cutting of bar stock and profiles on Bianco saws. Cuts to your dimensions with minimal waste."
     },
     "external": {
       "title": "External Services",
-      "description": "We also provide galvanizing, welding, and other surface treatments through verified partners."
+      "description": "Complete service including galvanizing, welding, and other surface treatments through verified partners. No extra hassle."
     },
     "learnMore": "Learn more"
   },
+  "process": {
+    "label": "How it works",
+    "title": "From inquiry to finished part",
+    "subtitle": "Simple and transparent process — you know exactly what's happening with your order",
+    "step1": {
+      "title": "Send an inquiry",
+      "description": "Fill out the form and attach a drawing. PDF, DXF, or STEP is all you need."
+    },
+    "step2": {
+      "title": "Get a quote",
+      "description": "Within 48 hours, we'll send you a price quote with delivery timeline."
+    },
+    "step3": {
+      "title": "We manufacture",
+      "description": "After approval, we start production on our CNC machines."
+    },
+    "step4": {
+      "title": "We deliver",
+      "description": "Finished parts are inspected and delivered on the agreed date."
+    },
+    "cta": "Start with an inquiry"
+  },
+  "whyUs": {
+    "label": "Why us",
+    "title": "Why choose KOVO-KUKY?",
+    "subtitle": "Dozens of companies trust us. Here's why.",
+    "precision": {
+      "title": "Hundredths mm precision",
+      "description": "CNC machines with Fanuc control guarantee repeatable precision of ±0.01 mm on every part."
+    },
+    "quality": {
+      "title": "100% quality control",
+      "description": "Every part is measured and inspected before shipping. No compromises."
+    },
+    "delivery": {
+      "title": "Reliable delivery",
+      "description": "We meet agreed deadlines. When we say a date, it holds."
+    },
+    "support": {
+      "title": "Personal approach",
+      "description": "You communicate directly with production, not a call center. We solve things quickly, without bureaucracy."
+    },
+    "speed": {
+      "title": "Fast quotes",
+      "description": "You'll receive a price quote within 48 hours of sending your inquiry with a drawing."
+    },
+    "certified": {
+      "title": "Verified partner",
+      "description": "We work with companies from the Czech Republic, Slovakia, Germany, and Austria."
+    }
+  },
+  "stats": {
+    "years": "Years of experience",
+    "machines": "CNC machines",
+    "projects": "Completed orders",
+    "satisfaction": "Customer satisfaction"
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "What our customers say",
+    "t1": {
+      "text": "Working with KOVO-KUKY is seamless. Parts are always precise, deadlines met, and communication is excellent. Highly recommended.",
+      "name": "Martin Novák",
+      "company": "Engineering company, CZ"
+    },
+    "t2": {
+      "text": "We needed prototype parts made quickly. KOVO-KUKY responded immediately and delivered top quality. We'll be coming back.",
+      "name": "Thomas Berger",
+      "company": "Automotive supplier, DE"
+    },
+    "t3": {
+      "text": "Excellent price-to-quality ratio. Parts exactly per drawing, zero complaints. We've been working together for three years.",
+      "name": "Peter Kováč",
+      "company": "Manufacturing company, SK"
+    }
+  },
   "cta": {
     "title": "Need custom manufacturing?",
-    "subtitle": "Send us an inquiry with your drawing and we'll prepare a quote for you.",
-    "button": "Send Inquiry"
+    "subtitle": "Send us a drawing and get a price quote within 48 hours. No obligations, no waiting.",
+    "button": "Send a free inquiry",
+    "point1": "No obligations",
+    "point2": "Reply within 48h",
+    "note": "Non-binding inquiry — we'll reply within 48 hours"
   },
   "about": {
     "title": "About Us",
     "subtitle": "A reliable partner for CNC machining",
-    "description": "KOVO-KUKY is a Czech company specializing in CNC metal machining. We have a modern machine park and an experienced team that ensures precise manufacturing according to your requirements.",
+    "description": "KOVO-KUKY is a Czech company specializing in CNC metal machining. We have a modern machine park with 8+ CNC machines and an experienced team that ensures precise manufacturing according to your requirements. We work with companies across Central Europe.",
     "values": {
       "title": "Our Values",
       "precision": {
@@ -123,7 +213,7 @@
   },
   "contact": {
     "title": "Contact & Inquiry",
-    "subtitle": "Get in touch with your project",
+    "subtitle": "Get in touch with your project — we'll reply within 48 hours",
     "info": {
       "title": "Contact Information",
       "company": "KOVO-KUKY",
@@ -158,7 +248,7 @@
       "attachmentHint": "PDF, DXF, STEP, JPG, PNG (max 10 MB)",
       "submit": "Send Inquiry",
       "sending": "Sending...",
-      "success": "Your inquiry has been sent successfully! We'll get back to you as soon as possible.",
+      "success": "Your inquiry has been sent successfully! We'll get back to you within 48 hours.",
       "error": "An error occurred while sending. Please try again."
     },
     "validation": {
@@ -171,10 +261,14 @@
       "messageRequired": "Message is required"
     }
   },
+  "floatingCta": {
+    "text": "Get a Quote"
+  },
   "footer": {
-    "description": "Professional CNC metal machining. Turning, milling, and cutting on modern machines.",
+    "description": "Professional CNC metal machining. Turning, milling, and cutting on modern machines with hundredths-of-a-millimeter precision.",
     "navigation": "Navigation",
     "contactTitle": "Contact",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "ctaText": "Have a project? Send us an inquiry and we'll prepare a quote."
   }
 }

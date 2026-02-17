@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { FloatingCta } from "@/components/floating-cta";
 import "../globals.css";
 
 const inter = Inter({
@@ -72,6 +73,7 @@ export default async function LocaleLayout({
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />
+          <FloatingCta />
         </NextIntlClientProvider>
       </body>
     </html>

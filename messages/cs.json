@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "KOVO-KUKY | CNC Obrábění & Zakázková Výroba",
-    "description": "Profesionální CNC obrábění, soustružení, frézování a řezání kovů. Zakázková výroba z oceli, nerezu, hliníku a mosazi."
+    "description": "Profesionální CNC obrábění, soustružení, frézování a řezání kovů. Zakázková výroba z oceli, nerezu, hliníku a mosazi. Cenová nabídka do 48 hodin."
   },
   "nav": {
     "home": "Úvod",
@@ -13,42 +13,132 @@
     "inquiry": "Poptávka"
   },
   "hero": {
+    "badge": "Přijímáme nové zakázky",
     "title": "Přesné CNC obrábění",
     "titleAccent": "na míru",
-    "subtitle": "Soustružení, frézování a řezání kovů s přesností a spolehlivostí. Vaše zakázky realizujeme rychle a kvalitně.",
+    "subtitle": "Vyrábíme díly přesně podle vašich výkresů. Na CNC soustruzích a frézách zpracujeme ocel, nerez, hliník i mosaz — rychle, spolehlivě a s přesností na setiny milimetru.",
     "cta": "Nezávazná poptávka",
-    "secondary": "Naše služby"
+    "secondary": "Prohlédnout služby",
+    "trust1": "Garance kvality",
+    "trust2": "Nabídka do 48h",
+    "trust3": "15+ let zkušeností",
+    "statMachines": "CNC strojů",
+    "statPrecision": "Přesnost",
+    "statQuality": "Spokojenost",
+    "statQuote": "Nabídka do",
+    "cardCta": "Pošlete výkres — nabídku máte do 48 hodin",
+    "socialProof": "Spolupracujeme s firmami z CZ, SK, DE a AT"
   },
   "services": {
-    "title": "Naše služby",
-    "subtitle": "Kompletní řešení pro obrábění kovů",
+    "label": "Co děláme",
+    "title": "Kompletní CNC obrábění",
+    "subtitle": "Od kusové výroby po série — zvládneme vše pod jednou střechou",
     "turning": {
       "title": "CNC Soustružení",
-      "description": "Přesné soustružení na CNC soustruzích Doosan a Goodway s řízením Fanuc. Zpracováváme ocel, nerez, hliník i mosaz."
+      "description": "Přesné soustružení na CNC soustruzích Doosan Lynx 220 a Goodway GLS s řízením Fanuc. Rotační díly z oceli, nerezu, hliníku i mosazi s tolerancí ±0.01 mm."
     },
     "milling": {
       "title": "CNC Frézování",
-      "description": "Frézování na moderních CNC centrech s vysokou přesností. Výroba dílů dle výkresu nebo 3D modelu."
+      "description": "3-osé frézování na centrech XHS a Robodrill s řízením Fanuc. Výroba přesných dílů dle výkresu nebo 3D modelu, od prototypu po sérii."
     },
     "cutting": {
       "title": "Řezání materiálu",
-      "description": "Přesné řezání na pilách Bianco. Dělení tyčového materiálu a profilů dle požadavků zákazníka."
+      "description": "Přesné dělení tyčového materiálu a profilů na pilách Bianco. Řezy dle vašich rozměrů s minimálním odpadem."
     },
     "external": {
       "title": "Externí služby",
-      "description": "Zajišťujeme také zinkování, svařování a další povrchové úpravy prostřednictvím ověřených partnerů."
+      "description": "Kompletní servis včetně zinkování, svařování a dalších povrchových úprav přes naše ověřené partnery. Nemusíte řešit nic navíc."
     },
     "learnMore": "Zjistit více"
   },
+  "process": {
+    "label": "Jak to funguje",
+    "title": "Od poptávky k hotovému dílu",
+    "subtitle": "Jednoduchý a transparentní proces — víte přesně, co se děje s vaší zakázkou",
+    "step1": {
+      "title": "Pošlete poptávku",
+      "description": "Vyplňte formulář a přiložte výkres. Stačí PDF, DXF nebo STEP."
+    },
+    "step2": {
+      "title": "Dostanete nabídku",
+      "description": "Do 48 hodin vám pošleme cenovou nabídku s termínem dodání."
+    },
+    "step3": {
+      "title": "Vyrobíme díly",
+      "description": "Po odsouhlasení spustíme výrobu na našich CNC strojích."
+    },
+    "step4": {
+      "title": "Dodáme zakázku",
+      "description": "Hotové díly zkontrolujeme a doručíme v dohodnutém termínu."
+    },
+    "cta": "Začít poptávkou"
+  },
+  "whyUs": {
+    "label": "Proč my",
+    "title": "Proč si vybrat KOVO-KUKY?",
+    "subtitle": "Desítky firem nám důvěřují. Tady je proč.",
+    "precision": {
+      "title": "Přesnost na setiny mm",
+      "description": "CNC stroje s řízením Fanuc garantují opakovatelnou přesnost ±0.01 mm na každém dílu."
+    },
+    "quality": {
+      "title": "100% kontrola kvality",
+      "description": "Každý díl prochází měřením a kontrolou před expedicí. Žádné kompromisy."
+    },
+    "delivery": {
+      "title": "Spolehlivé dodání",
+      "description": "Dodržujeme dohodnuté termíny. Pokud řekneme datum, platí."
+    },
+    "support": {
+      "title": "Osobní přístup",
+      "description": "Komunikujete přímo s výrobou, ne s call centrem. Řešíme rychle a bez zbytečné byrokracie."
+    },
+    "speed": {
+      "title": "Rychlá nabídka",
+      "description": "Cenovou nabídku dostanete do 48 hodin od odeslání poptávky s výkresem."
+    },
+    "certified": {
+      "title": "Ověřený partner",
+      "description": "Spolupracujeme s firmami z České republiky, Slovenska, Německa i Rakouska."
+    }
+  },
+  "stats": {
+    "years": "Let zkušeností",
+    "machines": "CNC strojů",
+    "projects": "Dokončených zakázek",
+    "satisfaction": "Spokojenost zákazníků"
+  },
+  "testimonials": {
+    "label": "Reference",
+    "title": "Co říkají naši zákazníci",
+    "t1": {
+      "text": "Spolupráce s KOVO-KUKY je bezproblémová. Díly jsou vždy přesné, termíny dodrženy a komunikace je výborná. Doporučuji.",
+      "name": "Martin Novák",
+      "company": "Strojírenská firma, CZ"
+    },
+    "t2": {
+      "text": "Potřebovali jsme rychle vyrobit prototypové díly. KOVO-KUKY reagovali okamžitě a dodali ve špičkové kvalitě. Budeme se vracet.",
+      "name": "Thomas Berger",
+      "company": "Automotive supplier, DE"
+    },
+    "t3": {
+      "text": "Výborný poměr cena/kvalita. Díly přesně dle výkresu, žádné reklamace. Spolupracujeme už třetím rokem.",
+      "name": "Peter Kováč",
+      "company": "Výrobní podnik, SK"
+    }
+  },
   "cta": {
     "title": "Potřebujete zakázkovou výrobu?",
-    "subtitle": "Pošlete nám poptávku s výkresem a my vám připravíme cenovou nabídku.",
-    "button": "Odeslat poptávku"
+    "subtitle": "Pošlete nám výkres a do 48 hodin máte cenovou nabídku. Bez závazků, bez čekání.",
+    "button": "Odeslat poptávku zdarma",
+    "point1": "Bez závazků",
+    "point2": "Odpověď do 48h",
+    "note": "Nezávazná poptávka — odpovíme do 48 hodin"
   },
   "about": {
     "title": "O nás",
     "subtitle": "Spolehlivý partner pro CNC obrábění",
-    "description": "KOVO-KUKY je česká firma specializující se na CNC obrábění kovů. Disponujeme moderním strojním parkem a zkušeným týmem, který zajistí přesnou výrobu dle vašich požadavků.",
+    "description": "KOVO-KUKY je česká firma specializující se na CNC obrábění kovů. Disponujeme moderním strojním parkem s 8+ CNC stroji a zkušeným týmem, který zajistí přesnou výrobu dle vašich požadavků. Spolupracujeme s firmami z celé střední Evropy.",
     "values": {
       "title": "Naše hodnoty",
       "precision": {
@@ -123,7 +213,7 @@
   },
   "contact": {
     "title": "Kontakt & Poptávka",
-    "subtitle": "Ozvěte se nám s vaším projektem",
+    "subtitle": "Ozvěte se nám s vaším projektem — odpovíme do 48 hodin",
     "info": {
       "title": "Kontaktní údaje",
       "company": "KOVO-KUKY",
@@ -158,7 +248,7 @@
       "attachmentHint": "PDF, DXF, STEP, JPG, PNG (max 10 MB)",
       "submit": "Odeslat poptávku",
       "sending": "Odesílání...",
-      "success": "Poptávka byla úspěšně odeslána! Ozveme se vám co nejdříve.",
+      "success": "Poptávka byla úspěšně odeslána! Ozveme se vám do 48 hodin.",
       "error": "Při odesílání došlo k chybě. Zkuste to prosím znovu."
     },
     "validation": {
@@ -171,10 +261,14 @@
       "messageRequired": "Zpráva je povinná"
     }
   },
+  "floatingCta": {
+    "text": "Poslat poptávku"
+  },
   "footer": {
-    "description": "Profesionální CNC obrábění kovů. Soustružení, frézování a řezání na moderních strojích.",
+    "description": "Profesionální CNC obrábění kovů. Soustružení, frézování a řezání na moderních strojích s přesností na setiny milimetru.",
     "navigation": "Navigace",
     "contactTitle": "Kontakt",
-    "rights": "Všechna práva vyhrazena."
+    "rights": "Všechna práva vyhrazena.",
+    "ctaText": "Máte projekt? Pošlete nám poptávku a připravíme nabídku."
   }
 }

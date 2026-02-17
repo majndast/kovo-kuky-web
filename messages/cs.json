@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "title": "KOVO-KUKY | CNC Obrábění & Zakázková Výroba",
+    "description": "Profesionální CNC obrábění, soustružení, frézování a řezání kovů. Zakázková výroba z oceli, nerezu, hliníku a mosazi."
+  },
+  "nav": {
+    "home": "Úvod",
+    "services": "Služby",
+    "about": "O nás",
+    "machinery": "Strojní park",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "inquiry": "Poptávka"
+  },
+  "hero": {
+    "title": "Přesné CNC obrábění",
+    "titleAccent": "na míru",
+    "subtitle": "Soustružení, frézování a řezání kovů s přesností a spolehlivostí. Vaše zakázky realizujeme rychle a kvalitně.",
+    "cta": "Nezávazná poptávka",
+    "secondary": "Naše služby"
+  },
+  "services": {
+    "title": "Naše služby",
+    "subtitle": "Kompletní řešení pro obrábění kovů",
+    "turning": {
+      "title": "CNC Soustružení",
+      "description": "Přesné soustružení na CNC soustruzích Doosan a Goodway s řízením Fanuc. Zpracováváme ocel, nerez, hliník i mosaz."
+    },
+    "milling": {
+      "title": "CNC Frézování",
+      "description": "Frézování na moderních CNC centrech s vysokou přesností. Výroba dílů dle výkresu nebo 3D modelu."
+    },
+    "cutting": {
+      "title": "Řezání materiálu",
+      "description": "Přesné řezání na pilách Bianco. Dělení tyčového materiálu a profilů dle požadavků zákazníka."
+    },
+    "external": {
+      "title": "Externí služby",
+      "description": "Zajišťujeme také zinkování, svařování a další povrchové úpravy prostřednictvím ověřených partnerů."
+    },
+    "learnMore": "Zjistit více"
+  },
+  "cta": {
+    "title": "Potřebujete zakázkovou výrobu?",
+    "subtitle": "Pošlete nám poptávku s výkresem a my vám připravíme cenovou nabídku.",
+    "button": "Odeslat poptávku"
+  },
+  "about": {
+    "title": "O nás",
+    "subtitle": "Spolehlivý partner pro CNC obrábění",
+    "description": "KOVO-KUKY je česká firma specializující se na CNC obrábění kovů. Disponujeme moderním strojním parkem a zkušeným týmem, který zajistí přesnou výrobu dle vašich požadavků.",
+    "values": {
+      "title": "Naše hodnoty",
+      "precision": {
+        "title": "Přesnost",
+        "description": "Dodržujeme přísné tolerance a garantujeme kvalitu každého vyrobeného dílu."
+      },
+      "reliability": {
+        "title": "Spolehlivost",
+        "description": "Dodržujeme dohodnuté termíny a komunikujeme transparentně."
+      },
+      "flexibility": {
+        "title": "Flexibilita",
+        "description": "Zvládneme kusovou i sériovou výrobu, od prototypů po velké série."
+      },
+      "quality": {
+        "title": "Kvalita",
+        "description": "Moderní stroje a zkušený tým zaručují špičkovou kvalitu zpracování."
+      }
+    }
+  },
+  "machinery": {
+    "title": "Strojní park",
+    "subtitle": "Moderní CNC stroje pro přesnou výrobu",
+    "machines": {
+      "bianco1": {
+        "name": "Pila Bianco",
+        "type": "Pásová pila",
+        "description": "Přesné dělení tyčového materiálu a profilů.",
+        "quantity": "2x"
+      },
+      "doosan": {
+        "name": "Doosan Lynx 220",
+        "type": "CNC soustruh",
+        "control": "Fanuc",
+        "description": "Výkonný CNC soustruh pro přesné soustružení rotačních dílů.",
+        "quantity": "2x"
+      },
+      "goodway200": {
+        "name": "Goodway GLS-200",
+        "type": "CNC soustruh",
+        "control": "Fanuc",
+        "description": "Univerzální CNC soustruh pro střední a větší průměry.",
+        "quantity": "1x"
+      },
+      "goodway150": {
+        "name": "Goodway GLS-150",
+        "type": "CNC soustruh",
+        "control": "Fanuc",
+        "description": "Kompaktní CNC soustruh pro menší díly s vysokou přesností.",
+        "quantity": "1x"
+      },
+      "millingXHS": {
+        "name": "CNC Frézka XHS",
+        "type": "CNC frézovací centrum",
+        "control": "Fanuc",
+        "description": "Tříosé frézovací centrum pro výrobu přesných dílů.",
+        "quantity": "1x"
+      },
+      "robodrill": {
+        "name": "CNC Frézka Robodrill",
+        "type": "CNC frézovací centrum",
+        "control": "Fanuc",
+        "description": "Vysokorychlostní frézovací centrum pro sériovou výrobu.",
+        "quantity": "1x"
+      }
+    }
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Ukázky naší práce",
+    "placeholder": "Fotky výrobků budou brzy doplněny."
+  },
+  "contact": {
+    "title": "Kontakt & Poptávka",
+    "subtitle": "Ozvěte se nám s vaším projektem",
+    "info": {
+      "title": "Kontaktní údaje",
+      "company": "KOVO-KUKY",
+      "email": "info@kovo-kuky.cz",
+      "phone": "+420 XXX XXX XXX",
+      "address": "Adresa bude doplněna"
+    },
+    "form": {
+      "title": "Poptávkový formulář",
+      "name": "Jméno a příjmení",
+      "email": "Email",
+      "phone": "Telefon",
+      "serviceType": "Typ služby",
+      "serviceOptions": {
+        "turning": "Soustružení",
+        "milling": "Frézování",
+        "cutting": "Řezání",
+        "other": "Jiné"
+      },
+      "material": "Materiál",
+      "materialOptions": {
+        "steel": "Ocel",
+        "stainless": "Nerez",
+        "aluminum": "Hliník",
+        "brass": "Mosaz",
+        "other": "Jiné"
+      },
+      "quantity": "Počet kusů",
+      "deadline": "Požadovaný termín",
+      "message": "Zpráva / popis",
+      "attachment": "Příloha (výkres)",
+      "attachmentHint": "PDF, DXF, STEP, JPG, PNG (max 10 MB)",
+      "submit": "Odeslat poptávku",
+      "sending": "Odesílání...",
+      "success": "Poptávka byla úspěšně odeslána! Ozveme se vám co nejdříve.",
+      "error": "Při odesílání došlo k chybě. Zkuste to prosím znovu."
+    },
+    "validation": {
+      "nameRequired": "Jméno je povinné",
+      "emailRequired": "Email je povinný",
+      "emailInvalid": "Neplatný formát emailu",
+      "phoneRequired": "Telefon je povinný",
+      "serviceRequired": "Vyberte typ služby",
+      "materialRequired": "Vyberte materiál",
+      "messageRequired": "Zpráva je povinná"
+    }
+  },
+  "footer": {
+    "description": "Profesionální CNC obrábění kovů. Soustružení, frézování a řezání na moderních strojích.",
+    "navigation": "Navigace",
+    "contactTitle": "Kontakt",
+    "rights": "Všechna práva vyhrazena."
+  }
+}

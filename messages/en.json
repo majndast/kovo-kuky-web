@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "title": "KOVO-KUKY | CNC Machining & Custom Manufacturing",
+    "description": "Professional CNC machining, turning, milling, and metal cutting. Custom manufacturing from steel, stainless steel, aluminum, and brass."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "machinery": "Machinery",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "inquiry": "Get a Quote"
+  },
+  "hero": {
+    "title": "Precision CNC machining",
+    "titleAccent": "made to order",
+    "subtitle": "Turning, milling, and metal cutting with precision and reliability. We deliver your orders quickly and with top quality.",
+    "cta": "Request a Quote",
+    "secondary": "Our Services"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Complete solutions for metal machining",
+    "turning": {
+      "title": "CNC Turning",
+      "description": "Precision turning on Doosan and Goodway CNC lathes with Fanuc control. We process steel, stainless steel, aluminum, and brass."
+    },
+    "milling": {
+      "title": "CNC Milling",
+      "description": "Milling on modern CNC centers with high precision. Manufacturing parts from drawings or 3D models."
+    },
+    "cutting": {
+      "title": "Material Cutting",
+      "description": "Precision cutting on Bianco saws. Dividing bar stock and profiles according to customer requirements."
+    },
+    "external": {
+      "title": "External Services",
+      "description": "We also provide galvanizing, welding, and other surface treatments through verified partners."
+    },
+    "learnMore": "Learn more"
+  },
+  "cta": {
+    "title": "Need custom manufacturing?",
+    "subtitle": "Send us an inquiry with your drawing and we'll prepare a quote for you.",
+    "button": "Send Inquiry"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "A reliable partner for CNC machining",
+    "description": "KOVO-KUKY is a Czech company specializing in CNC metal machining. We have a modern machine park and an experienced team that ensures precise manufacturing according to your requirements.",
+    "values": {
+      "title": "Our Values",
+      "precision": {
+        "title": "Precision",
+        "description": "We maintain strict tolerances and guarantee the quality of every manufactured part."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "We meet agreed deadlines and communicate transparently."
+      },
+      "flexibility": {
+        "title": "Flexibility",
+        "description": "We handle both single-piece and serial production, from prototypes to large series."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Modern machines and an experienced team guarantee top-quality workmanship."
+      }
+    }
+  },
+  "machinery": {
+    "title": "Machine Park",
+    "subtitle": "Modern CNC machines for precision manufacturing",
+    "machines": {
+      "bianco1": {
+        "name": "Bianco Saw",
+        "type": "Band saw",
+        "description": "Precision cutting of bar stock and profiles.",
+        "quantity": "2x"
+      },
+      "doosan": {
+        "name": "Doosan Lynx 220",
+        "type": "CNC lathe",
+        "control": "Fanuc",
+        "description": "Powerful CNC lathe for precision turning of rotational parts.",
+        "quantity": "2x"
+      },
+      "goodway200": {
+        "name": "Goodway GLS-200",
+        "type": "CNC lathe",
+        "control": "Fanuc",
+        "description": "Universal CNC lathe for medium and larger diameters.",
+        "quantity": "1x"
+      },
+      "goodway150": {
+        "name": "Goodway GLS-150",
+        "type": "CNC lathe",
+        "control": "Fanuc",
+        "description": "Compact CNC lathe for smaller parts with high precision.",
+        "quantity": "1x"
+      },
+      "millingXHS": {
+        "name": "XHS CNC Mill",
+        "type": "CNC milling center",
+        "control": "Fanuc",
+        "description": "3-axis milling center for manufacturing precision parts.",
+        "quantity": "1x"
+      },
+      "robodrill": {
+        "name": "Robodrill CNC Mill",
+        "type": "CNC milling center",
+        "control": "Fanuc",
+        "description": "High-speed milling center for serial production.",
+        "quantity": "1x"
+      }
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Examples of our work",
+    "placeholder": "Product photos will be added soon."
+  },
+  "contact": {
+    "title": "Contact & Inquiry",
+    "subtitle": "Get in touch with your project",
+    "info": {
+      "title": "Contact Information",
+      "company": "KOVO-KUKY",
+      "email": "info@kovo-kuky.cz",
+      "phone": "+420 XXX XXX XXX",
+      "address": "Address to be added"
+    },
+    "form": {
+      "title": "Inquiry Form",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "serviceType": "Service Type",
+      "serviceOptions": {
+        "turning": "Turning",
+        "milling": "Milling",
+        "cutting": "Cutting",
+        "other": "Other"
+      },
+      "material": "Material",
+      "materialOptions": {
+        "steel": "Steel",
+        "stainless": "Stainless Steel",
+        "aluminum": "Aluminum",
+        "brass": "Brass",
+        "other": "Other"
+      },
+      "quantity": "Quantity (pieces)",
+      "deadline": "Required Deadline",
+      "message": "Message / Description",
+      "attachment": "Attachment (drawing)",
+      "attachmentHint": "PDF, DXF, STEP, JPG, PNG (max 10 MB)",
+      "submit": "Send Inquiry",
+      "sending": "Sending...",
+      "success": "Your inquiry has been sent successfully! We'll get back to you as soon as possible.",
+      "error": "An error occurred while sending. Please try again."
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email format",
+      "phoneRequired": "Phone is required",
+      "serviceRequired": "Please select a service type",
+      "materialRequired": "Please select a material",
+      "messageRequired": "Message is required"
+    }
+  },
+  "footer": {
+    "description": "Professional CNC metal machining. Turning, milling, and cutting on modern machines.",
+    "navigation": "Navigation",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved."
+  }
+}

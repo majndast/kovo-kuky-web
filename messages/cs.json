@@ -21,7 +21,7 @@
     "secondary": "Prohlédnout služby",
     "trust1": "Garance kvality",
     "trust2": "Nabídka do 48h",
-    "trust3": "15+ let zkušeností",
+    "trust3": "30+ let tradice",
     "statMachines": "CNC strojů",
     "statPrecision": "Přesnost",
     "statQuality": "Spokojenost",
@@ -136,26 +136,41 @@
     "note": "Nezávazná poptávka — odpovíme do 48 hodin"
   },
   "about": {
-    "title": "O nás",
-    "subtitle": "Spolehlivý partner pro CNC obrábění",
-    "description": "KOVO-KUKY je česká firma specializující se na CNC obrábění kovů. Disponujeme moderním strojním parkem s 8+ CNC stroji a zkušeným týmem, který zajistí přesnou výrobu dle vašich požadavků. Spolupracujeme s firmami z celé střední Evropy.",
+    "title": "Náš příběh",
+    "subtitle": "Od garáže po 13 CNC strojů",
+    "intro": "KOVO-KUKY je rodinná firma s více než 30letou tradicí. Co začalo v malé garáži, je dnes moderní výroba s 13 stroji a týmem 6 lidí.",
+    "story": {
+      "title": "Jak to všechno začalo",
+      "part1": "Václav Kukačka starší jednoho dne odešel z práce. Ne proto, že by našel lepší nabídku — prostě ho tam naštvali. Místo hledání nového zaměstnání si řekl, že to zkusí sám. V malé garáži, kam se sotva vešlo jedno auto, začal vyrábět přívěsné vozíky.",
+      "part2": "Postupně se práce rozrůstala. Z vozíků se stala zámečnina — vrata, ploty, všechno, co šlo vyrobit ručně. Když zakázky přibývaly, pořídil si první ruční soustruh a frézku. Bral všechno, co přišlo.",
+      "part3": "Další krok byl lisování plechů. První lis, pak další. Lisoval pro firmu ETA a díky tomu mohl investovat do soustružnických automatů. Zakázek bylo čím dál víc.",
+      "part4": "Pak přišlo CNC. První stroj, žádný kurz, žádná škola. Učil se sám, pokus omyl. Ale naučil se."
+    },
+    "transition": {
+      "title": "Předání další generaci",
+      "text": "Kolem roku 2000 začal Václav firmu předávat synovi — taky Václavovi. Ten se CNC naučil od táty, přidal nové zakázky a postupně firmu rozšířil do podoby, jakou má dnes."
+    },
+    "today": {
+      "title": "KOVO-KUKY dnes",
+      "text": "13 strojů, 6 zaměstnanců, zákazníci z Česka i zahraničí. Pořád rodinná firma, pořád osobní přístup. Děláme to, co umíme nejlíp — přesné CNC obrábění."
+    },
     "values": {
-      "title": "Naše hodnoty",
+      "title": "Co nás definuje",
       "precision": {
-        "title": "Přesnost",
-        "description": "Dodržujeme přísné tolerance a garantujeme kvalitu každého vyrobeného dílu."
+        "title": "Řemeslo",
+        "description": "Začínali jsme ručně, dneska máme CNC. Ale přístup k práci zůstává stejný — poctivě a precizně."
       },
       "reliability": {
-        "title": "Spolehlivost",
-        "description": "Dodržujeme dohodnuté termíny a komunikujeme transparentně."
+        "title": "Slovo platí",
+        "description": "Když řekneme termín, tak platí. Bez výmluv."
       },
       "flexibility": {
-        "title": "Flexibilita",
-        "description": "Zvládneme kusovou i sériovou výrobu, od prototypů po velké série."
+        "title": "Všechno vyřešíme",
+        "description": "Kusovka, série, prototyp — zvládneme. A když něco nevíme, přiznáme to."
       },
       "quality": {
-        "title": "Kvalita",
-        "description": "Moderní stroje a zkušený tým zaručují špičkovou kvalitu zpracování."
+        "title": "Rodinná firma",
+        "description": "Nejsme korporát. Jednáte přímo s lidmi, kteří vaši zakázku vyrábí."
       }
     }
   },

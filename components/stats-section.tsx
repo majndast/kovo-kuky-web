@@ -47,8 +47,8 @@ export function StatsSection() {
   const t = useTranslations("stats");
 
   const stats = [
-    { value: 15, suffix: "+", key: "years" },
-    { value: 8, suffix: "+", key: "machines" },
+    { value: 30, suffix: "+", key: "years" },
+    { value: 13, suffix: "", key: "machines" },
     { value: 500, suffix: "+", key: "projects" },
     { value: 98, suffix: "%", key: "satisfaction" },
   ];

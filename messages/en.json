@@ -21,7 +21,7 @@
     "secondary": "View Services",
     "trust1": "Quality guaranteed",
     "trust2": "Quote within 48h",
-    "trust3": "15+ years experience",
+    "trust3": "30+ years tradition",
     "statMachines": "CNC machines",
     "statPrecision": "Precision",
     "statQuality": "Satisfaction",
@@ -136,26 +136,41 @@
     "note": "Non-binding inquiry — we'll reply within 48 hours"
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "A reliable partner for CNC machining",
-    "description": "KOVO-KUKY is a Czech company specializing in CNC metal machining. We have a modern machine park with 8+ CNC machines and an experienced team that ensures precise manufacturing according to your requirements. We work with companies across Central Europe.",
+    "title": "Our Story",
+    "subtitle": "From a garage to 13 CNC machines",
+    "intro": "KOVO-KUKY is a family business with over 30 years of tradition. What started in a small garage is now a modern production facility with 13 machines and a team of 6.",
+    "story": {
+      "title": "How it all began",
+      "part1": "Václav Kukačka Sr. walked out of his job one day. Not because he found a better offer — he was just fed up. Instead of looking for new employment, he decided to go it alone. In a tiny garage that barely fit one car, he started making trailers.",
+      "part2": "Work kept growing. Trailers turned into metalwork — gates, fences, anything that could be made by hand. When orders increased, he got his first manual lathe and milling machine. He took on everything that came his way.",
+      "part3": "Next came sheet metal pressing. First one press, then more. He did pressing for ETA, and that allowed him to invest in automatic lathes. Orders kept coming.",
+      "part4": "Then came CNC. First machine, no courses, no training. He learned by himself, trial and error. But he learned."
+    },
+    "transition": {
+      "title": "Passing the torch",
+      "text": "Around 2000, Václav started handing the company over to his son — also named Václav. He learned CNC from his father, brought in new contracts, and gradually grew the business into what it is today."
+    },
+    "today": {
+      "title": "KOVO-KUKY today",
+      "text": "13 machines, 6 employees, customers from Czech Republic and abroad. Still a family business, still a personal approach. We do what we do best — precision CNC machining."
+    },
     "values": {
-      "title": "Our Values",
+      "title": "What defines us",
       "precision": {
-        "title": "Precision",
-        "description": "We maintain strict tolerances and guarantee the quality of every manufactured part."
+        "title": "Craftsmanship",
+        "description": "We started by hand, now we have CNC. But the approach stays the same — honest and precise work."
       },
       "reliability": {
-        "title": "Reliability",
-        "description": "We meet agreed deadlines and communicate transparently."
+        "title": "Our word counts",
+        "description": "When we say a deadline, we mean it. No excuses."
       },
       "flexibility": {
-        "title": "Flexibility",
-        "description": "We handle both single-piece and serial production, from prototypes to large series."
+        "title": "We figure it out",
+        "description": "Single piece, series, prototype — we handle it. And if we don't know something, we'll tell you."
       },
       "quality": {
-        "title": "Quality",
-        "description": "Modern machines and an experienced team guarantee top-quality workmanship."
+        "title": "Family business",
+        "description": "We're not a corporation. You deal directly with the people who make your parts."
       }
     }
   },

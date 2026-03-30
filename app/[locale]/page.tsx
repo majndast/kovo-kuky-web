@@ -1,11 +1,32 @@
 import { setRequestLocale } from "next-intl/server";
+import dynamic from "next/dynamic";
 import { Hero } from "@/components/hero";
-import { ServicesSection } from "@/components/services-section";
-import { ProcessSection } from "@/components/process-section";
-import { WhyUsSection } from "@/components/why-us-section";
-import { StatsSection } from "@/components/stats-section";
-import { TestimonialsSection } from "@/components/testimonials-section";
-import { CtaSection } from "@/components/cta-section";
+
+// Lazy load sections below the fold - they use Framer Motion
+const ServicesSection = dynamic(
+  () => import("@/components/services-section").then((mod) => mod.ServicesSection),
+  { ssr: true }
+);
+const StatsSection = dynamic(
+  () => import("@/components/stats-section").then((mod) => mod.StatsSection),
+  { ssr: true }
+);
+const ProcessSection = dynamic(
+  () => import("@/components/process-section").then((mod) => mod.ProcessSection),
+  { ssr: true }
+);
+const WhyUsSection = dynamic(
+  () => import("@/components/why-us-section").then((mod) => mod.WhyUsSection),
+  { ssr: true }
+);
+const TestimonialsSection = dynamic(
+  () => import("@/components/testimonials-section").then((mod) => mod.TestimonialsSection),
+  { ssr: true }
+);
+const CtaSection = dynamic(
+  () => import("@/components/cta-section").then((mod) => mod.CtaSection),
+  { ssr: true }
+);
 
 export default async function HomePage({
   params,

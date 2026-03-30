@@ -4,10 +4,12 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 const nextConfig: NextConfig = {
-  // Optimize for modern browsers only (no IE11, no old Safari)
+  // Optimize for modern browsers only
   experimental: {
-    optimizePackageImports: ["lucide-react", "framer-motion"],
+    optimizePackageImports: ["lucide-react", "framer-motion", "radix-ui"],
   },
+  // Target modern browsers - skip legacy polyfills
+  transpilePackages: ["next-intl"],
   // Compress responses
   compress: true,
   // Optimize images

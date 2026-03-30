@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -20,10 +21,13 @@ const MATERIAL_OPTIONS = ["steel", "stainless", "aluminum", "brass", "plastic", 
 export function ContactForm() {
   const t = useTranslations("contact");
   const v = useTranslations("contact.validation");
+  const { executeRecaptcha } = useGoogleReCaptcha();
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [fileName, setFileName] = useState<string | null>(null);
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [selectedMaterials, setSelectedMaterials] = useState<string[]>([]);
+  const [gdprConsent, setGdprConsent] = useState(false);
+  const [gdprError, setGdprError] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const dateInputRef = useRef<HTMLInputElement>(null);
 
@@ -78,14 +82,28 @@ export function ContactForm() {
       setMaterialError(v("materialRequired"));
       return;
     }
+    if (!gdprConsent) {
+      setGdprError(v("gdprRequired"));
+      return;
+    }
 
     setStatus("sending");
 
     try {
+      // Get reCAPTCHA token
+      if (!executeRecaptcha) {
+        setStatus("error");
+        return;
+      }
+      const recaptchaToken = await executeRecaptcha("contact_form");
+
       const formData = new FormData();
       Object.entries(data).forEach(([key, value]) => {
         if (value) formData.append(key, value);
       });
+
+      // Add reCAPTCHA token
+      formData.append("recaptchaToken", recaptchaToken);
 
       // Add deadline manually
       const deadline = dateInputRef.current?.value;
@@ -111,6 +129,7 @@ export function ContactForm() {
         setFileName(null);
         setSelectedServices([]);
         setSelectedMaterials([]);
+        setGdprConsent(false);
         if (dateInputRef.current) dateInputRef.current.value = "";
       } else {
         setStatus("error");
@@ -288,6 +307,33 @@ export function ContactForm() {
           onChange={handleFileChange}
           className="hidden"
         />
+      </div>
+
+      {/* GDPR Consent */}
+      <div className="space-y-2">
+        <label className="flex cursor-pointer items-start gap-3">
+          <Checkbox
+            checked={gdprConsent}
+            onCheckedChange={(checked) => {
+              setGdprConsent(checked === true);
+              setGdprError(null);
+            }}
+            className="mt-0.5"
+          />
+          <span className="text-sm text-muted-foreground">
+            {t("form.gdprConsent")}{" "}
+            <a
+              href="/privacy"
+              target="_blank"
+              className="text-primary underline hover:no-underline"
+            >
+              {t("form.gdprLink")}
+            </a>
+          </span>
+        </label>
+        {gdprError && (
+          <p className="text-xs text-destructive">{gdprError}</p>
+        )}
       </div>
 
       <Button type="submit" size="lg" className="w-full text-base font-semibold" disabled={status === "sending"}>

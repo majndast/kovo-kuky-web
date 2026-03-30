@@ -292,7 +292,9 @@
       "sending": "Sending...",
       "success": "Your inquiry has been sent successfully! We'll get back to you within 48 hours.",
       "error": "An error occurred while sending. Please try again.",
-      "bottomNote": "We typically process quotes within 48 hours."
+      "bottomNote": "We typically process quotes within 48 hours.",
+      "gdprConsent": "I agree to the processing of my personal data according to the",
+      "gdprLink": "Privacy Policy"
     },
     "validation": {
       "nameRequired": "Name is required",
@@ -301,7 +303,8 @@
       "phoneRequired": "Phone is required",
       "serviceRequired": "Please select at least one service",
       "materialRequired": "Please select at least one material",
-      "messageRequired": "Message is required"
+      "messageRequired": "Message is required",
+      "gdprRequired": "You must agree to the processing of personal data to submit"
     }
   },
   "floatingCta": {
@@ -321,5 +324,42 @@
     "machineAlt": "CNC lathe {model} - KOVO-KUKY precision machining",
     "partAlt": "Precision CNC machining - metalworking sample by KOVO-KUKY",
     "workshopAlt": "Metalworking shop KOVO-KUKY, Veselská 59, Dolní Bukovsko, Czech Republic"
+  },
+  "cookies": {
+    "title": "This website uses cookies",
+    "description": "We use cookies for traffic analysis (Google Analytics). You can accept all or only those necessary for the website to function.",
+    "acceptAll": "Accept all",
+    "necessary": "Necessary only"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "Protecting your personal data is important to us. This policy describes how we collect, use, and protect your personal information.",
+    "dataCollection": {
+      "title": "What data we collect",
+      "description": "Through the inquiry form, we collect the following information:",
+      "items": ["Full name", "Email address", "Phone number", "Inquiry details (service type, material, description)"]
+    },
+    "purpose": {
+      "title": "Purpose of processing",
+      "description": "We use your data exclusively for:",
+      "items": ["Processing your inquiry and preparing a quote", "Communication regarding your order", "Fulfilling contractual obligations"]
+    },
+    "retention": {
+      "title": "Data retention",
+      "description": "We retain your data for the time necessary to process the inquiry and any subsequent cooperation, but no longer than 3 years from the last contact."
+    },
+    "rights": {
+      "title": "Your rights",
+      "description": "You have the right to:",
+      "items": ["Access your personal data", "Rectify inaccurate data", "Erase data (right to be forgotten)", "Restrict processing", "Data portability", "Object to processing"]
+    },
+    "cookies": {
+      "title": "Cookies",
+      "description": "This website uses cookies for traffic analysis through Google Analytics. Analytical cookies are only activated with your consent."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "To exercise your rights or for questions about data processing, contact us at:"
+    }
   }
 }

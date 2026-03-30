@@ -7,6 +7,9 @@ import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { FloatingCta } from "@/components/floating-cta";
+import { CookieConsent } from "@/components/cookie-consent";
+import { GoogleAnalytics } from "@/components/google-analytics";
+import { RecaptchaProvider } from "@/components/recaptcha-provider";
 import "../globals.css";
 
 const inter = Inter({
@@ -112,11 +115,15 @@ export default async function LocaleLayout({
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
-          <FloatingCta />
+          <RecaptchaProvider>
+            <Navbar />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+            <FloatingCta />
+            <CookieConsent />
+          </RecaptchaProvider>
         </NextIntlClientProvider>
+        <GoogleAnalytics />
       </body>
     </html>
   );

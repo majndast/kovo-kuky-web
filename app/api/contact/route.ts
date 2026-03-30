@@ -21,10 +21,36 @@ export async function POST(request: NextRequest) {
     const deadline = formData.get("deadline") as string;
     const message = formData.get("message") as string;
     const attachment = formData.get("attachment") as File | null;
+    const recaptchaToken = formData.get("recaptchaToken") as string;
 
     if (!name || !email || !phone || !serviceTypes || !materials || !message) {
       return NextResponse.json(
         { error: "Missing required fields" },
+        { status: 400 }
+      );
+    }
+
+    // Verify reCAPTCHA
+    if (!recaptchaToken) {
+      return NextResponse.json(
+        { error: "Missing reCAPTCHA token" },
+        { status: 400 }
+      );
+    }
+
+    const recaptchaResponse = await fetch(
+      `https://www.google.com/recaptcha/api/siteverify`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${recaptchaToken}`,
+      }
+    );
+    const recaptchaData = await recaptchaResponse.json();
+
+    if (!recaptchaData.success || recaptchaData.score < 0.5) {
+      return NextResponse.json(
+        { error: "reCAPTCHA verification failed" },
         { status: 400 }
       );
     }

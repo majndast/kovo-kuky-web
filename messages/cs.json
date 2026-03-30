@@ -284,7 +284,9 @@
       "sending": "Odesílání...",
       "success": "Poptávka byla úspěšně odeslána! Ozveme se vám do 48 hodin.",
       "error": "Při odesílání došlo k chybě. Zkuste to prosím znovu.",
-      "bottomNote": "Cenovou nabídku zpracujeme standardně do 48 hodin."
+      "bottomNote": "Cenovou nabídku zpracujeme standardně do 48 hodin.",
+      "gdprConsent": "Souhlasím se zpracováním osobních údajů dle",
+      "gdprLink": "Zásad ochrany osobních údajů"
     },
     "validation": {
       "nameRequired": "Jméno je povinné",
@@ -293,7 +295,8 @@
       "phoneRequired": "Telefon je povinný",
       "serviceRequired": "Vyberte alespoň jednu službu",
       "materialRequired": "Vyberte alespoň jeden materiál",
-      "messageRequired": "Zpráva je povinná"
+      "messageRequired": "Zpráva je povinná",
+      "gdprRequired": "Pro odeslání musíte souhlasit se zpracováním osobních údajů"
     }
   },
   "floatingCta": {
@@ -313,5 +316,42 @@
     "machineAlt": "CNC soustruh {model} - KOVO-KUKY Dolní Bukovsko",
     "partAlt": "Přesné CNC obrábění kovů - ukázka výroby KOVO-KUKY",
     "workshopAlt": "Strojírenská výroba KOVO-KUKY, Veselská 59, Dolní Bukovsko"
+  },
+  "cookies": {
+    "title": "Tento web používá cookies",
+    "description": "Používáme cookies pro analýzu návštěvnosti (Google Analytics). Můžete je přijmout všechny, nebo pouze ty nezbytné pro fungování webu.",
+    "acceptAll": "Přijmout vše",
+    "necessary": "Pouze nezbytné"
+  },
+  "privacy": {
+    "title": "Zásady ochrany osobních údajů",
+    "intro": "Ochrana vašich osobních údajů je pro nás důležitá. Tyto zásady popisují, jak shromažďujeme, používáme a chráníme vaše osobní údaje.",
+    "dataCollection": {
+      "title": "Jaké údaje sbíráme",
+      "description": "Prostřednictvím poptávkového formuláře sbíráme následující údaje:",
+      "items": ["Jméno a příjmení", "E-mailová adresa", "Telefonní číslo", "Informace o poptávce (typ služby, materiál, popis)"]
+    },
+    "purpose": {
+      "title": "Účel zpracování",
+      "description": "Vaše údaje používáme výhradně za účelem:",
+      "items": ["Zpracování vaší poptávky a přípravy cenové nabídky", "Komunikace ohledně vaší zakázky", "Plnění smluvních závazků"]
+    },
+    "retention": {
+      "title": "Doba uchování",
+      "description": "Vaše údaje uchováváme po dobu nezbytnou pro vyřízení poptávky a případnou následnou spolupráci, maximálně však 3 roky od posledního kontaktu."
+    },
+    "rights": {
+      "title": "Vaše práva",
+      "description": "Máte právo na:",
+      "items": ["Přístup k vašim osobním údajům", "Opravu nepřesných údajů", "Výmaz údajů (právo být zapomenut)", "Omezení zpracování", "Přenositelnost údajů", "Vznesení námitky proti zpracování"]
+    },
+    "cookies": {
+      "title": "Cookies",
+      "description": "Tento web používá cookies pro analýzu návštěvnosti prostřednictvím služby Google Analytics. Analytické cookies jsou aktivovány pouze s vaším souhlasem."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Pro uplatnění vašich práv nebo dotazy ohledně zpracování osobních údajů nás kontaktujte na:"
+    }
   }
 }

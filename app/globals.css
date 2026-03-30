@@ -60,7 +60,7 @@
   --secondary: #111111;
   --secondary-foreground: #f2f2f2;
   --muted: #111111;
-  --muted-foreground: #777777;
+  --muted-foreground: #a1a1a1;
   --accent: #111111;
   --accent-foreground: #f2f2f2;
   --destructive: #ef4444;
@@ -163,13 +163,14 @@ html {
   z-index: 1;
 }
 
-/* Pulse animation for CTA */
+/* Pulse animation for CTA - GPU accelerated */
 @keyframes pulse-green {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
-  50% { box-shadow: 0 0 0 12px rgba(34, 197, 94, 0); }
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.02); opacity: 0.9; }
 }
 .pulse-green {
   animation: pulse-green 2s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 
 /* Marquee for trust logos */
@@ -217,4 +218,56 @@ html {
 .bg-dots {
   background-image: radial-gradient(rgba(34, 197, 94, 0.08) 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+/* Orb animations - GPU accelerated */
+@keyframes orb-1 {
+  0%, 100% { transform: scale(1); opacity: 0.05; }
+  50% { transform: scale(1.2); opacity: 0.1; }
+}
+@keyframes orb-2 {
+  0%, 100% { transform: scale(1.2); opacity: 0.03; }
+  50% { transform: scale(1); opacity: 0.07; }
+}
+.animate-orb-1 {
+  animation: orb-1 8s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+.animate-orb-2 {
+  animation: orb-2 10s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* Fade-in animations - GPU accelerated */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+.animate-fade-in-delay-1 {
+  opacity: 0;
+  animation: fade-in 0.5s ease-out 0.1s forwards;
+}
+.animate-fade-in-delay-2 {
+  opacity: 0;
+  animation: fade-in 0.5s ease-out 0.2s forwards;
+}
+.animate-fade-in-delay-3 {
+  opacity: 0;
+  animation: fade-in 0.5s ease-out 0.3s forwards;
+}
+.animate-fade-in-delay-4 {
+  opacity: 0;
+  animation: fade-in 0.5s ease-out 0.4s forwards;
+}
+.animate-slide-in-right {
+  opacity: 0;
+  animation: slide-in-right 0.6s ease-out 0.3s forwards;
 }

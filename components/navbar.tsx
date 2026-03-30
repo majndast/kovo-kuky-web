@@ -19,7 +19,6 @@ const navItems = [
 ] as const;
 
 export function Navbar() {
-  const t = useTranslations("images");
   const nav = useTranslations("nav");
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -41,7 +40,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2.5">
-          <Image src="/logo.svg" alt={t("logoAlt")} width={36} height={36} />
+          <Image src="/logo.svg" alt="" width={36} height={36} aria-hidden="true" />
           <span className="text-lg font-bold tracking-tight">
             KOVO-<span className="text-primary">KUKY</span>
           </span>
@@ -80,7 +79,7 @@ export function Navbar() {
           <LanguageSwitcher />
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-9 w-9">
+              <Button variant="ghost" size="icon" className="h-9 w-9" aria-label="Menu">
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>

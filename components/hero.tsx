@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
 import { ArrowRight, Play, Shield, Clock, Star } from "lucide-react";
 
 export function Hero() {
@@ -16,23 +15,9 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] via-transparent to-background" />
       <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background" />
 
-      {/* Animated orbs */}
-      <motion.div
-        animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.05, 0.1, 0.05],
-        }}
-        transition={{ duration: 8, repeat: Infinity }}
-        className="absolute left-1/4 top-1/4 h-[600px] w-[600px] rounded-full bg-primary/10 blur-[150px]"
-      />
-      <motion.div
-        animate={{
-          scale: [1.2, 1, 1.2],
-          opacity: [0.03, 0.07, 0.03],
-        }}
-        transition={{ duration: 10, repeat: Infinity }}
-        className="absolute right-1/4 bottom-1/4 h-[400px] w-[400px] rounded-full bg-primary/10 blur-[120px]"
-      />
+      {/* Animated orbs - CSS only for performance */}
+      <div className="absolute left-1/4 top-1/4 h-[600px] w-[600px] rounded-full bg-primary/10 blur-[150px] animate-orb-1" />
+      <div className="absolute right-1/4 bottom-1/4 h-[400px] w-[400px] rounded-full bg-primary/10 blur-[120px] animate-orb-2" />
 
       {/* Content */}
       <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 sm:px-6 lg:px-8">
@@ -40,12 +25,7 @@ export function Hero() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Left - Text */}
             <div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5"
-              >
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 animate-fade-in">
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
@@ -53,36 +33,21 @@ export function Hero() {
                 <span className="text-sm font-medium text-primary">
                   {t("badge")}
                 </span>
-              </motion.div>
+              </div>
 
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
-              >
+              <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
                 {t("title")}{" "}
                 <span className="gradient-text text-glow">
                   {t("titleAccent")}
                 </span>
-              </motion.h1>
+              </h1>
 
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground sm:text-xl"
-              >
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground sm:text-xl animate-fade-in-delay-1">
                 {t("subtitle")}
-              </motion.p>
+              </p>
 
               {/* Trust badges inline */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="mt-6 flex flex-wrap items-center gap-4 text-sm text-muted-foreground"
-              >
+              <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-muted-foreground animate-fade-in-delay-2">
                 <span className="flex items-center gap-1.5">
                   <Shield className="h-4 w-4 text-primary" />
                   {t("trust1")}
@@ -95,15 +60,10 @@ export function Hero() {
                   <Star className="h-4 w-4 text-primary" />
                   {t("trust3")}
                 </span>
-              </motion.div>
+              </div>
 
               {/* CTA buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="mt-10 flex flex-col gap-4 sm:flex-row"
-              >
+              <div className="mt-10 flex flex-col gap-4 sm:flex-row animate-fade-in-delay-3">
                 <Button
                   asChild
                   size="lg"
@@ -125,15 +85,10 @@ export function Hero() {
                     {t("secondary")}
                   </Link>
                 </Button>
-              </motion.div>
+              </div>
 
               {/* Quick social proof */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                className="mt-10 flex items-center gap-4"
-              >
+              <div className="mt-10 flex items-center gap-4 animate-fade-in-delay-4">
                 <div className="flex -space-x-2">
                   {[...Array(4)].map((_, i) => (
                     <div
@@ -147,16 +102,11 @@ export function Hero() {
                 <p className="text-sm text-muted-foreground">
                   {t("socialProof")}
                 </p>
-              </motion.div>
+              </div>
             </div>
 
             {/* Right - Stats card */}
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="hidden lg:block"
-            >
+            <div className="hidden lg:block animate-slide-in-right">
               <div className="gradient-border glass rounded-2xl p-8">
                 <div className="grid grid-cols-2 gap-6">
                   {[
@@ -164,12 +114,9 @@ export function Hero() {
                     { value: "0.01", label: "statPrecision", unit: "mm" },
                     { value: "100%", label: "statQuality" },
                     { value: "48h", label: "statQuote" },
-                  ].map((stat, i) => (
-                    <motion.div
+                  ].map((stat) => (
+                    <div
                       key={stat.label}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.5 + i * 0.1 }}
                       className="rounded-xl bg-white/[0.02] p-5 text-center"
                     >
                       <div className="text-3xl font-extrabold text-primary">
@@ -183,7 +130,7 @@ export function Hero() {
                       <div className="mt-1 text-sm text-muted-foreground">
                         {t(stat.label)}
                       </div>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
 
@@ -194,16 +141,11 @@ export function Hero() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
 
           {/* Mobile stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-            className="mt-16 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:hidden"
-          >
+          <div className="mt-16 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:hidden animate-fade-in-delay-4">
             {[
               { value: "8+", label: "statMachines" },
               { value: "0.01mm", label: "statPrecision" },
@@ -222,7 +164,7 @@ export function Hero() {
                 </div>
               </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
 

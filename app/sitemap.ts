@@ -1,14 +1,14 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://kovo-kuky.cz";
+  const baseUrl = "https://kovokuky.cz";
 
-  const csRoutes = ["", "/sluzby", "/o-nas", "/strojni-park", "/galerie", "/kontakt"];
-  const enRoutes = ["", "/services", "/about", "/machinery", "/gallery", "/contact"];
+  const routes = ["", "/sluzby", "/o-nas", "/strojni-park", "/galerie", "/kontakt"];
 
   const entries: MetadataRoute.Sitemap = [];
 
-  csRoutes.forEach((route) => {
+  // CS routes (primary)
+  routes.forEach((route) => {
     entries.push({
       url: `${baseUrl}/cs${route}`,
       lastModified: new Date(),
@@ -17,7 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  enRoutes.forEach((route) => {
+  // EN routes
+  routes.forEach((route) => {
     entries.push({
       url: `${baseUrl}/en${route}`,
       lastModified: new Date(),

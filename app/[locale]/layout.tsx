@@ -105,6 +105,7 @@ export default async function LocaleLayout({
         <link rel="alternate" hrefLang="cs" href="https://www.kovokuky.cz/cs" />
         <link rel="alternate" hrefLang="en" href="https://www.kovokuky.cz/en" />
         <link rel="alternate" hrefLang="x-default" href="https://www.kovokuky.cz/cs" />
+        <link rel="help" type="text/plain" href="https://www.kovokuky.cz/llms.txt" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.kovokuky.cz/sitemap.xml
+
+# AI Agents
+# LLMs.txt: https://www.kovokuky.cz/llms.txt

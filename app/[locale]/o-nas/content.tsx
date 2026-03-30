@@ -1,8 +1,8 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
-import { Wrench, Handshake, Settings, Users } from "lucide-react";
+import { Wrench, Handshake, Settings, Users, CheckCircle } from "lucide-react";
 
 const values = [
   { key: "precision", icon: Wrench },
@@ -13,6 +13,8 @@ const values = [
 
 export function AboutPageContent() {
   const t = useTranslations("about");
+  const locale = useLocale();
+  const isEN = locale === "en";
 
   return (
     <section className="py-24">
@@ -31,6 +33,31 @@ export function AboutPageContent() {
             {t("intro")}
           </p>
         </motion.div>
+
+        {/* Partnerships & Core Services - EN only */}
+        {isEN && (
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-12"
+          >
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              {t("partnerships")}
+            </p>
+            <div className="mt-8 rounded-xl border border-primary/20 bg-primary/5 p-6">
+              <h3 className="text-lg font-semibold mb-4">{t("coreServices.title")}</h3>
+              <ul className="space-y-3">
+                {["s1", "s2", "s3", "s4"].map((key) => (
+                  <li key={key} className="flex items-center gap-3 text-muted-foreground">
+                    <CheckCircle className="h-5 w-5 text-primary shrink-0" />
+                    {t(`coreServices.${key}`)}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </motion.div>
+        )}
 
         {/* Story */}
         <motion.div

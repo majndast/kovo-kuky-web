@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "CNC Machining, Turning & Milling | KOVO-KUKY Czech Republic",
-    "description": "Custom CNC metal machining in Czech Republic. Precision CNC turning, milling, and material cutting. References: Richmont, ETA Austria. Quote within 48h."
+    "title": "Precision CNC Machining & Turning | KOVO-KUKY Czech Republic",
+    "description": "Custom CNC machining, milling, and turning for the European engineering industry. Trusted supplier for Richmont and ETA Austria. High-precision metal parts made in Czech Republic."
   },
   "nav": {
     "home": "Home",
@@ -34,7 +34,7 @@
     "title": "Complete CNC Machining",
     "subtitle": "From single pieces to series — we handle everything under one roof",
     "seo": {
-      "title": "Custom CNC Turning & Milling",
+      "title": "CNC Contract Manufacturing & Metalworking Services",
       "description": "Complete metal machining from material cutting to surface treatments (galvanizing). We work with steel, stainless steel, and aluminum with 0.01 mm precision."
     },
     "turning": {
@@ -140,9 +140,17 @@
     "note": "Non-binding inquiry — we'll reply within 48 hours"
   },
   "about": {
-    "title": "Our Story",
-    "subtitle": "From a garage to 13 CNC machines",
-    "intro": "KOVO-KUKY is a family business with over 30 years of tradition. What started in a small garage is now a modern production facility with 13 machines and a team of 6.",
+    "title": "Precision CNC Machining & Industrial Supplying",
+    "subtitle": "Trusted Czech engineering partner for European industry",
+    "intro": "We are a specialized Czech engineering company based in Dolní Bukovsko, providing high-quality CNC turning and milling services. As a reliable supplier for the metalworking industry, we offer comprehensive solutions — from raw material cutting to final surface treatments (e.g., galvanizing) through our certified partners.",
+    "partnerships": "We take pride in our long-term partnerships with international industry leaders such as Richmont (CZ) and ETA (Austria). Our production is optimized for both serial and custom orders, ensuring high precision (up to 0.01 mm) and strict adherence to delivery deadlines.",
+    "coreServices": {
+      "title": "Our core services",
+      "s1": "Precision CNC Milling & Turning",
+      "s2": "Material Cutting & Preparation",
+      "s3": "Supply Chain Management for Surface Finishing",
+      "s4": "Contract Manufacturing for Automotive & Machinery Industries"
+    },
     "story": {
       "title": "How it all began",
       "part1": "Václav Kukačka Sr. walked out of his job one day. Not because he found a better offer — he was just fed up. Instead of looking for new employment, he decided to go it alone. In a tiny garage that barely fit one car, he started making trailers.",

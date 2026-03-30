@@ -97,9 +97,14 @@ export default async function LocaleLayout({
     }
   };
 
+  const alternateLocale = locale === "cs" ? "en" : "cs";
+
   return (
     <html lang={locale}>
       <head>
+        <link rel="alternate" hrefLang="cs" href="https://kovokuky.cz/cs" />
+        <link rel="alternate" hrefLang="en" href="https://kovokuky.cz/en" />
+        <link rel="alternate" hrefLang="x-default" href="https://kovokuky.cz/cs" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

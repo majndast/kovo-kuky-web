@@ -18,12 +18,34 @@ export function CookieConsent() {
 
   const handleAcceptAll = () => {
     localStorage.setItem("cookie-consent", "all");
+
+    // Update Google consent state
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("consent", "update", {
+        ad_storage: "granted",
+        ad_user_data: "granted",
+        ad_personalization: "granted",
+        analytics_storage: "granted",
+      });
+    }
+
     window.dispatchEvent(new Event("cookie-consent-update"));
     setIsVisible(false);
   };
 
   const handleAcceptNecessary = () => {
     localStorage.setItem("cookie-consent", "necessary");
+
+    // Keep consent denied (already default)
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("consent", "update", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+      });
+    }
+
     window.dispatchEvent(new Event("cookie-consent-update"));
     setIsVisible(false);
   };
@@ -62,4 +84,11 @@ export function CookieConsent() {
       </div>
     </div>
   );
+}
+
+// Extend Window interface for gtag
+declare global {
+  interface Window {
+    gtag: (...args: unknown[]) => void;
+  }
 }

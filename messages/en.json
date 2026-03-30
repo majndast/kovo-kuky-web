@@ -294,7 +294,11 @@
       "error": "An error occurred while sending. Please try again.",
       "bottomNote": "We typically process quotes within 48 hours.",
       "gdprConsent": "I agree to the processing of my personal data according to the",
-      "gdprLink": "Privacy Policy"
+      "gdprLink": "Privacy Policy",
+      "recaptchaNotice": "This site is protected by reCAPTCHA and the Google",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "and": "and"
     },
     "validation": {
       "nameRequired": "Name is required",

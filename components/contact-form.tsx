@@ -350,6 +350,28 @@ export function ContactForm() {
       <p className="text-center text-sm text-muted-foreground">
         {t("form.bottomNote")}
       </p>
+
+      <p className="text-center text-xs text-muted-foreground/60">
+        {t("form.recaptchaNotice")}{" "}
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:no-underline"
+        >
+          {t("form.privacyPolicy")}
+        </a>{" "}
+        {t("form.and")}{" "}
+        <a
+          href="https://policies.google.com/terms"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:no-underline"
+        >
+          {t("form.termsOfService")}
+        </a>
+        .
+      </p>
     </form>
   );
 }

@@ -286,7 +286,11 @@
       "error": "Při odesílání došlo k chybě. Zkuste to prosím znovu.",
       "bottomNote": "Cenovou nabídku zpracujeme standardně do 48 hodin.",
       "gdprConsent": "Souhlasím se zpracováním osobních údajů dle",
-      "gdprLink": "Zásad ochrany osobních údajů"
+      "gdprLink": "Zásad ochrany osobních údajů",
+      "recaptchaNotice": "Tento web je chráněn službou reCAPTCHA a platí",
+      "privacyPolicy": "Zásady ochrany soukromí",
+      "termsOfService": "Smluvní podmínky",
+      "and": "a"
     },
     "validation": {
       "nameRequired": "Jméno je povinné",

@@ -271,3 +271,8 @@ html {
   opacity: 0;
   animation: slide-in-right 0.6s ease-out 0.3s forwards;
 }
+
+/* Hide reCAPTCHA badge - text notice is shown in form instead */
+.grecaptcha-badge {
+  visibility: hidden !important;
+}

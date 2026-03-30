@@ -33,7 +33,7 @@ export async function generateMetadata({
       template: `%s | KOVO-KUKY`,
     },
     description: meta.description,
-    metadataBase: new URL("https://kovo-kuky.cz"),
+    metadataBase: new URL("https://www.kovokuky.cz"),
     alternates: {
       canonical: "/",
       languages: {
@@ -83,7 +83,7 @@ export default async function LocaleLayout({
       "latitude": 49.172,
       "longitude": 14.583
     },
-    "url": "https://kovokuky.cz",
+    "url": "https://www.kovokuky.cz",
     "telephone": "+420725770820",
     "description": locale === "cs"
       ? "Specialista na CNC obrábění, soustružení a frézování v Jihočeském kraji."
@@ -102,9 +102,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
-        <link rel="alternate" hrefLang="cs" href="https://kovokuky.cz/cs" />
-        <link rel="alternate" hrefLang="en" href="https://kovokuky.cz/en" />
-        <link rel="alternate" hrefLang="x-default" href="https://kovokuky.cz/cs" />
+        <link rel="alternate" hrefLang="cs" href="https://www.kovokuky.cz/cs" />
+        <link rel="alternate" hrefLang="en" href="https://www.kovokuky.cz/en" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.kovokuky.cz/cs" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

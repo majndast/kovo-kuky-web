@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://kovo-kuky.cz/sitemap.xml",
+    sitemap: "https://www.kovokuky.cz/sitemap.xml",
   };
 }

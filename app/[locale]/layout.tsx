@@ -35,7 +35,6 @@ export async function generateMetadata({
     description: meta.description,
     metadataBase: new URL("https://www.kovokuky.cz"),
     alternates: {
-      canonical: "/",
       languages: {
         cs: "/cs",
         en: "/en",

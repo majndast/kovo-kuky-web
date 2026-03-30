@@ -9,9 +9,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "contact" });
+  const path = locale === "cs" ? "/cs/kontakt" : "/en/contact";
   return {
     title: t("seo.title"),
     description: t("seo.description"),
+    alternates: {
+      canonical: `https://www.kovokuky.cz${path}`,
+    },
   };
 }
 

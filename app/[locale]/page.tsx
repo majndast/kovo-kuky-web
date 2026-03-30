@@ -1,5 +1,19 @@
 import { setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
 import dynamic from "next/dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    alternates: {
+      canonical: `https://www.kovokuky.cz/${locale}`,
+    },
+  };
+}
 import { Hero } from "@/components/hero";
 
 // Lazy load sections below the fold - they use Framer Motion

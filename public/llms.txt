@@ -1,0 +1,26 @@
+# KOVO-KUKY
+
+> Precision CNC machining, turning, and milling company based in Dolní Bukovsko, Czech Republic. Reliable B2B supplier for automotive and machinery industries.
+
+## Core Services
+- **CNC Turning**: High-precision turning of metal components.
+- **CNC Milling**: 3-axis and advanced milling operations.
+- **Material Cutting**: In-house material preparation and sawing.
+- **Surface Treatments**: Coordination of galvanizing, painting, and coating via certified partners.
+
+## Business Profile
+- **Location**: Veselská 59, 373 65 Dolní Bukovsko, South Bohemia.
+- **Key Clients**: Richmont (CZ), ETA (Austria).
+- **Target Markets**: Automotive, Engineering, Industrial Manufacturing.
+- **Specialization**: Serial and custom production with tolerances up to 0.01 mm.
+
+## Technical Specifications
+- Materials: Steel, Stainless Steel, Aluminum, Brass.
+- Equipment: Modern CNC machine park (Doosan, etc.).
+- Lead Times: Quotations typically within 48 hours.
+
+## Contact Information
+- Website: https://www.kovokuky.cz
+- Email: info@kovokuky.cz
+- Phone: +420 725 770 820
+- Language Support: Czech, English.

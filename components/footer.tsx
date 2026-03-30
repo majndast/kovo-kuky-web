@@ -9,6 +9,7 @@ import Image from "next/image";
 export function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("nav");
+  const img = useTranslations("images");
 
   return (
     <footer className="relative border-t border-border">
@@ -32,7 +33,7 @@ export function Footer() {
               <Link href="/" className="flex items-center gap-2">
                 <Image
                   src="/logo.svg"
-                  alt="KOVO-KUKY"
+                  alt={img("logoAlt")}
                   width={32}
                   height={32}
                 />
@@ -79,7 +80,12 @@ export function Footer() {
                 >
                   info@kovo-kuky.cz
                 </a>
-                <p>+420 XXX XXX XXX</p>
+                <a
+                  href="tel:+420725770820"
+                  className="transition-colors hover:text-primary"
+                >
+                  +420 725 770 820
+                </a>
               </div>
             </div>
           </div>

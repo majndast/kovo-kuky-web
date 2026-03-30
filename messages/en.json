@@ -314,5 +314,11 @@
     "rights": "All rights reserved.",
     "ctaText": "Have a project? Send us an inquiry and we'll prepare a quote.",
     "madeBy": "Created with love by"
+  },
+  "images": {
+    "logoAlt": "KOVO-KUKY Logo - CNC machining and metalworking Czech Republic",
+    "machineAlt": "CNC lathe {model} - KOVO-KUKY precision machining",
+    "partAlt": "Precision CNC machining - metalworking sample by KOVO-KUKY",
+    "workshopAlt": "Metalworking shop KOVO-KUKY, Veselská 59, Dolní Bukovsko, Czech Republic"
   }
 }

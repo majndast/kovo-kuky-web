@@ -306,5 +306,11 @@
     "rights": "Všechna práva vyhrazena.",
     "ctaText": "Máte projekt? Pošlete nám poptávku a připravíme nabídku.",
     "madeBy": "Vytvořeno s láskou v"
+  },
+  "images": {
+    "logoAlt": "Logo KOVO-KUKY - kovoobrábění a CNC výroba",
+    "machineAlt": "CNC soustruh {model} - KOVO-KUKY Dolní Bukovsko",
+    "partAlt": "Přesné CNC obrábění kovů - ukázka výroby KOVO-KUKY",
+    "workshopAlt": "Strojírenská výroba KOVO-KUKY, Veselská 59, Dolní Bukovsko"
   }
 }

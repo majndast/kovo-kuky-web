@@ -2,14 +2,16 @@
 
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-import { Cog, Wrench, Scissors } from "lucide-react";
+import { Cog, Wrench, Scissors, Check } from "lucide-react";
 
 type MachineCardProps = {
   name: string;
   type: string;
   control?: string;
+  controlLabel?: string;
   description: string;
   quantity: string;
+  specs?: string[];
   index: number;
 };
 
@@ -25,8 +27,10 @@ export function MachineCard({
   name,
   type,
   control,
+  controlLabel = "Řízení",
   description,
   quantity,
+  specs,
   index,
 }: MachineCardProps) {
   const Icon = getMachineIcon(type);
@@ -37,7 +41,7 @@ export function MachineCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="group rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/50"
+      className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/50"
     >
       <div className="flex items-start justify-between">
         <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
@@ -51,10 +55,21 @@ export function MachineCard({
       <p className="mt-1 text-sm text-primary">{type}</p>
       {control && (
         <p className="mt-1 text-xs text-muted-foreground">
-          Řízení: {control}
+          {controlLabel}: {control}
         </p>
       )}
       <p className="mt-3 text-sm text-muted-foreground">{description}</p>
+
+      {specs && specs.length > 0 && (
+        <ul className="mt-4 space-y-1.5 border-t border-border pt-4">
+          {specs.map((spec, i) => (
+            <li key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
+              <Check className="h-3 w-3 text-primary shrink-0" />
+              {spec}
+            </li>
+          ))}
+        </ul>
+      )}
     </motion.div>
   );
 }

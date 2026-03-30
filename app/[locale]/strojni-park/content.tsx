@@ -31,19 +31,26 @@ export function MachineryPageContent() {
         </motion.div>
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {machineKeys.map((key, i) => (
-            <MachineCard
-              key={key}
-              name={t(`machines.${key}.name`)}
-              type={t(`machines.${key}.type`)}
-              control={
-                key !== "bianco1" ? t(`machines.${key}.control`) : undefined
-              }
-              description={t(`machines.${key}.description`)}
-              quantity={t(`machines.${key}.quantity`)}
-              index={i}
-            />
-          ))}
+          {machineKeys.map((key, i) => {
+            // Get specs array from translations
+            const specsRaw = t.raw(`machines.${key}.specs`) as string[] | undefined;
+
+            return (
+              <MachineCard
+                key={key}
+                name={t(`machines.${key}.name`)}
+                type={t(`machines.${key}.type`)}
+                control={
+                  key !== "bianco1" ? t(`machines.${key}.control`) : undefined
+                }
+                controlLabel={t("controlLabel")}
+                description={t(`machines.${key}.description`)}
+                quantity={t(`machines.${key}.quantity`)}
+                specs={specsRaw}
+                index={i}
+              />
+            );
+          })}
         </div>
       </div>
     </section>

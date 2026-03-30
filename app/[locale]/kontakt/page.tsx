@@ -10,8 +10,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "contact" });
   return {
-    title: t("title"),
-    description: t("subtitle"),
+    title: t("seo.title"),
+    description: t("seo.description"),
   };
 }
 

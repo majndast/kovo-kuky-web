@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "KOVO-KUKY | CNC Obrábění & Zakázková Výroba",
-    "description": "Profesionální CNC obrábění, soustružení, frézování a řezání kovů. Zakázková výroba z oceli, nerezu, hliníku a mosazi. Cenová nabídka do 48 hodin."
+    "title": "CNC obrábění, soustružení a frézování | KOVO-KUKY Dolní Bukovsko",
+    "description": "Zakázkové CNC obrábění kovů v Dolním Bukovsku. Nabízíme přesné CNC soustružení, frézování a dělení materiálu. Reference: Richmont, ETA Rakousko. Nabídka do 48h."
   },
   "nav": {
     "home": "Úvod",
@@ -33,6 +33,10 @@
     "label": "Co děláme",
     "title": "Kompletní CNC obrábění",
     "subtitle": "Od kusové výroby po série — zvládneme vše pod jednou střechou",
+    "seo": {
+      "title": "CNC soustružení a frézování na zakázku",
+      "description": "Kompletní kovoobrábění od dělení materiálu po povrchové úpravy (zinkování). Pracujeme s ocelí, nerezem i hliníkem s přesností 0.01 mm."
+    },
     "turning": {
       "title": "CNC Soustružení",
       "description": "Přesné soustružení na CNC soustruzích Doosan Lynx 220 a Goodway GLS s řízením Fanuc. Rotační díly z oceli, nerezu, hliníku i mosazi s tolerancí ±0.01 mm."
@@ -177,47 +181,55 @@
   "machinery": {
     "title": "Strojní park",
     "subtitle": "Moderní CNC stroje pro přesnou výrobu",
+    "controlLabel": "Řízení",
+    "specs": "Parametry",
     "machines": {
       "bianco1": {
         "name": "Pila Bianco",
         "type": "Pásová pila",
         "description": "Přesné dělení tyčového materiálu a profilů.",
-        "quantity": "2x"
+        "quantity": "2x",
+        "specs": ["Automatický posuv", "Řez do Ø 260 mm", "Úhlové řezy"]
       },
       "doosan": {
         "name": "Doosan Lynx 220",
         "type": "CNC soustruh",
         "control": "Fanuc",
         "description": "Výkonný CNC soustruh pro přesné soustružení rotačních dílů.",
-        "quantity": "2x"
+        "quantity": "2x",
+        "specs": ["Max. Ø 300 mm", "Délka 510 mm", "Přesnost ±0.01 mm"]
       },
       "goodway200": {
         "name": "Goodway GLS-200",
         "type": "CNC soustruh",
         "control": "Fanuc",
         "description": "Univerzální CNC soustruh pro střední a větší průměry.",
-        "quantity": "1x"
+        "quantity": "1x",
+        "specs": ["Max. Ø 400 mm", "Délka 600 mm", "Přesnost ±0.01 mm"]
       },
       "goodway150": {
         "name": "Goodway GLS-150",
         "type": "CNC soustruh",
         "control": "Fanuc",
         "description": "Kompaktní CNC soustruh pro menší díly s vysokou přesností.",
-        "quantity": "1x"
+        "quantity": "1x",
+        "specs": ["Max. Ø 200 mm", "Délka 350 mm", "Přesnost ±0.005 mm"]
       },
       "millingXHS": {
         "name": "CNC Frézka XHS",
         "type": "CNC frézovací centrum",
         "control": "Fanuc",
         "description": "Tříosé frézovací centrum pro výrobu přesných dílů.",
-        "quantity": "1x"
+        "quantity": "1x",
+        "specs": ["Pojezdy 800×500×500 mm", "3 osy", "Přesnost ±0.01 mm"]
       },
       "robodrill": {
         "name": "CNC Frézka Robodrill",
         "type": "CNC frézovací centrum",
         "control": "Fanuc",
         "description": "Vysokorychlostní frézovací centrum pro sériovou výrobu.",
-        "quantity": "1x"
+        "quantity": "1x",
+        "specs": ["Pojezdy 700×400×330 mm", "24 000 ot/min", "Přesnost ±0.005 mm"]
       }
     }
   },
@@ -229,12 +241,16 @@
   "contact": {
     "title": "Kontakt & Poptávka",
     "subtitle": "Ozvěte se nám s vaším projektem — odpovíme do 48 hodin",
+    "seo": {
+      "title": "Kontakt | KOVO-KUKY Dolní Bukovsko (Veselská 59)",
+      "description": "Poptáváte CNC výrobu? Kontaktujte nás na adrese Veselská 59, Dolní Bukovsko. Rychlé nacenění a profesionální přístup."
+    },
     "info": {
       "title": "Kontaktní údaje",
       "company": "KOVO-KUKY",
       "email": "info@kovo-kuky.cz",
-      "phone": "+420 XXX XXX XXX",
-      "address": "Adresa bude doplněna"
+      "phone": "+420 725 770 820",
+      "address": "Veselská 59, Dolní Bukovsko 373 65"
     },
     "form": {
       "title": "Poptávkový formulář",
@@ -254,25 +270,29 @@
         "stainless": "Nerez",
         "aluminum": "Hliník",
         "brass": "Mosaz",
+        "plastic": "Plast",
         "other": "Jiné"
       },
+      "materialType": "Specifikace materiálu",
+      "materialTypePlaceholder": "např. 11 373, 17 240, EN AW 6060...",
       "quantity": "Počet kusů",
       "deadline": "Požadovaný termín",
       "message": "Zpráva / popis",
       "attachment": "Příloha (výkres)",
       "attachmentHint": "PDF, DXF, STEP, JPG, PNG (max 10 MB)",
-      "submit": "Odeslat poptávku",
+      "submit": "Nezávazně poptat výrobu",
       "sending": "Odesílání...",
       "success": "Poptávka byla úspěšně odeslána! Ozveme se vám do 48 hodin.",
-      "error": "Při odesílání došlo k chybě. Zkuste to prosím znovu."
+      "error": "Při odesílání došlo k chybě. Zkuste to prosím znovu.",
+      "bottomNote": "Cenovou nabídku zpracujeme standardně do 48 hodin."
     },
     "validation": {
       "nameRequired": "Jméno je povinné",
       "emailRequired": "Email je povinný",
       "emailInvalid": "Neplatný formát emailu",
       "phoneRequired": "Telefon je povinný",
-      "serviceRequired": "Vyberte typ služby",
-      "materialRequired": "Vyberte materiál",
+      "serviceRequired": "Vyberte alespoň jednu službu",
+      "materialRequired": "Vyberte alespoň jeden materiál",
       "messageRequired": "Zpráva je povinná"
     }
   },

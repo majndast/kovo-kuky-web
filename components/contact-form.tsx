@@ -9,42 +9,30 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Loader2, Upload, CheckCircle, AlertCircle } from "lucide-react";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Loader2, Upload, CheckCircle, AlertCircle, Calendar } from "lucide-react";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
-const ACCEPTED_FILE_TYPES = [
-  "application/pdf",
-  "image/jpeg",
-  "image/png",
-  "application/dxf",
-  "application/sla",
-  "model/step",
-  "application/step",
-  "application/octet-stream",
-];
+
+const SERVICE_OPTIONS = ["turning", "milling", "cutting", "other"] as const;
+const MATERIAL_OPTIONS = ["steel", "stainless", "aluminum", "brass", "plastic", "other"] as const;
 
 export function ContactForm() {
   const t = useTranslations("contact");
   const v = useTranslations("contact.validation");
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [fileName, setFileName] = useState<string | null>(null);
+  const [selectedServices, setSelectedServices] = useState<string[]>([]);
+  const [selectedMaterials, setSelectedMaterials] = useState<string[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const dateInputRef = useRef<HTMLInputElement>(null);
 
   const schema = z.object({
     name: z.string().min(1, v("nameRequired")),
     email: z.string().min(1, v("emailRequired")).email(v("emailInvalid")),
     phone: z.string().min(1, v("phoneRequired")),
-    serviceType: z.string().min(1, v("serviceRequired")),
-    material: z.string().min(1, v("materialRequired")),
+    materialType: z.string().optional(),
     quantity: z.string().optional(),
-    deadline: z.string().optional(),
     message: z.string().min(1, v("messageRequired")),
   });
 
@@ -53,14 +41,44 @@ export function ContactForm() {
   const {
     register,
     handleSubmit,
-    setValue,
     reset,
     formState: { errors },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
 
+  const [serviceError, setServiceError] = useState<string | null>(null);
+  const [materialError, setMaterialError] = useState<string | null>(null);
+
+  const toggleService = (service: string) => {
+    setSelectedServices((prev) =>
+      prev.includes(service)
+        ? prev.filter((s) => s !== service)
+        : [...prev, service]
+    );
+    setServiceError(null);
+  };
+
+  const toggleMaterial = (material: string) => {
+    setSelectedMaterials((prev) =>
+      prev.includes(material)
+        ? prev.filter((m) => m !== material)
+        : [...prev, material]
+    );
+    setMaterialError(null);
+  };
+
   const onSubmit = async (data: FormData) => {
+    // Validate checkboxes
+    if (selectedServices.length === 0) {
+      setServiceError(v("serviceRequired"));
+      return;
+    }
+    if (selectedMaterials.length === 0) {
+      setMaterialError(v("materialRequired"));
+      return;
+    }
+
     setStatus("sending");
 
     try {
@@ -68,6 +86,14 @@ export function ContactForm() {
       Object.entries(data).forEach(([key, value]) => {
         if (value) formData.append(key, value);
       });
+
+      // Add deadline manually
+      const deadline = dateInputRef.current?.value;
+      if (deadline) formData.append("deadline", deadline);
+
+      // Add selected services and materials
+      formData.append("serviceTypes", selectedServices.join(", "));
+      formData.append("materials", selectedMaterials.join(", "));
 
       const fileInput = fileInputRef.current;
       if (fileInput?.files?.[0]) {
@@ -83,6 +109,9 @@ export function ContactForm() {
         setStatus("success");
         reset();
         setFileName(null);
+        setSelectedServices([]);
+        setSelectedMaterials([]);
+        if (dateInputRef.current) dateInputRef.current.value = "";
       } else {
         setStatus("error");
       }
@@ -141,81 +170,90 @@ export function ContactForm() {
         </div>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div className="space-y-2">
-          <Label htmlFor="phone">{t("form.phone")} *</Label>
-          <Input id="phone" type="tel" {...register("phone")} />
-          {errors.phone && (
-            <p className="text-xs text-destructive">{errors.phone.message}</p>
-          )}
-        </div>
-        <div className="space-y-2">
-          <Label>{t("form.serviceType")} *</Label>
-          <Select onValueChange={(val) => setValue("serviceType", val)}>
-            <SelectTrigger>
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="turning">
-                {t("form.serviceOptions.turning")}
-              </SelectItem>
-              <SelectItem value="milling">
-                {t("form.serviceOptions.milling")}
-              </SelectItem>
-              <SelectItem value="cutting">
-                {t("form.serviceOptions.cutting")}
-              </SelectItem>
-              <SelectItem value="other">
-                {t("form.serviceOptions.other")}
-              </SelectItem>
-            </SelectContent>
-          </Select>
-          {errors.serviceType && (
-            <p className="text-xs text-destructive">
-              {errors.serviceType.message}
-            </p>
-          )}
-        </div>
+      <div className="space-y-2">
+        <Label htmlFor="phone">{t("form.phone")} *</Label>
+        <Input id="phone" type="tel" {...register("phone")} />
+        {errors.phone && (
+          <p className="text-xs text-destructive">{errors.phone.message}</p>
+        )}
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-3">
-        <div className="space-y-2">
-          <Label>{t("form.material")} *</Label>
-          <Select onValueChange={(val) => setValue("material", val)}>
-            <SelectTrigger>
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="steel">
-                {t("form.materialOptions.steel")}
-              </SelectItem>
-              <SelectItem value="stainless">
-                {t("form.materialOptions.stainless")}
-              </SelectItem>
-              <SelectItem value="aluminum">
-                {t("form.materialOptions.aluminum")}
-              </SelectItem>
-              <SelectItem value="brass">
-                {t("form.materialOptions.brass")}
-              </SelectItem>
-              <SelectItem value="other">
-                {t("form.materialOptions.other")}
-              </SelectItem>
-            </SelectContent>
-          </Select>
-          {errors.material && (
-            <p className="text-xs text-destructive">
-              {errors.material.message}
-            </p>
-          )}
+      {/* Services - Checkboxes */}
+      <div className="space-y-3">
+        <Label>{t("form.serviceType")} *</Label>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          {SERVICE_OPTIONS.map((service) => (
+            <label
+              key={service}
+              className="flex cursor-pointer items-center gap-2 rounded-lg border border-border p-3 transition-colors hover:border-primary/50 has-[:checked]:border-primary has-[:checked]:bg-primary/5"
+            >
+              <Checkbox
+                checked={selectedServices.includes(service)}
+                onCheckedChange={() => toggleService(service)}
+              />
+              <span className="text-sm">{t(`form.serviceOptions.${service}`)}</span>
+            </label>
+          ))}
         </div>
+        {serviceError && (
+          <p className="text-xs text-destructive">{serviceError}</p>
+        )}
+      </div>
+
+      {/* Materials - Checkboxes */}
+      <div className="space-y-3">
+        <Label>{t("form.material")} *</Label>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+          {MATERIAL_OPTIONS.map((material) => (
+            <label
+              key={material}
+              className="flex cursor-pointer items-center gap-2 rounded-lg border border-border p-3 transition-colors hover:border-primary/50 has-[:checked]:border-primary has-[:checked]:bg-primary/5"
+            >
+              <Checkbox
+                checked={selectedMaterials.includes(material)}
+                onCheckedChange={() => toggleMaterial(material)}
+              />
+              <span className="text-sm">{t(`form.materialOptions.${material}`)}</span>
+            </label>
+          ))}
+        </div>
+        {materialError && (
+          <p className="text-xs text-destructive">{materialError}</p>
+        )}
+      </div>
+
+      {/* Material specification */}
+      <div className="space-y-2">
+        <Label htmlFor="materialType">{t("form.materialType")}</Label>
+        <Input
+          id="materialType"
+          placeholder={t("form.materialTypePlaceholder")}
+          {...register("materialType")}
+        />
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2">
         <div className="space-y-2">
           <Label htmlFor="quantity">{t("form.quantity")}</Label>
           <Input id="quantity" type="number" min="1" {...register("quantity")} />
         </div>
         <div className="space-y-2">
           <Label htmlFor="deadline">{t("form.deadline")}</Label>
-          <Input id="deadline" type="date" {...register("deadline")} />
+          <div className="relative">
+            <input
+              ref={dateInputRef}
+              id="deadline"
+              type="date"
+              className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 pr-10 [&::-webkit-calendar-picker-indicator]:opacity-0"
+            />
+            <button
+              type="button"
+              onClick={() => dateInputRef.current?.showPicker()}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-primary hover:text-primary/80 transition-colors"
+            >
+              <Calendar className="h-5 w-5" />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -252,7 +290,7 @@ export function ContactForm() {
         />
       </div>
 
-      <Button type="submit" size="lg" className="w-full" disabled={status === "sending"}>
+      <Button type="submit" size="lg" className="w-full text-base font-semibold" disabled={status === "sending"}>
         {status === "sending" ? (
           <>
             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -262,6 +300,10 @@ export function ContactForm() {
           t("form.submit")
         )}
       </Button>
+
+      <p className="text-center text-sm text-muted-foreground">
+        {t("form.bottomNote")}
+      </p>
     </form>
   );
 }

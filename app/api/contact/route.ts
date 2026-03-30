@@ -14,14 +14,15 @@ export async function POST(request: NextRequest) {
     const name = formData.get("name") as string;
     const email = formData.get("email") as string;
     const phone = formData.get("phone") as string;
-    const serviceType = formData.get("serviceType") as string;
-    const material = formData.get("material") as string;
+    const serviceTypes = formData.get("serviceTypes") as string;
+    const materials = formData.get("materials") as string;
+    const materialType = formData.get("materialType") as string;
     const quantity = formData.get("quantity") as string;
     const deadline = formData.get("deadline") as string;
     const message = formData.get("message") as string;
     const attachment = formData.get("attachment") as File | null;
 
-    if (!name || !email || !phone || !serviceType || !material || !message) {
+    if (!name || !email || !phone || !serviceTypes || !materials || !message) {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
@@ -40,8 +41,27 @@ export async function POST(request: NextRequest) {
       stainless: "Nerez",
       aluminum: "Hliník",
       brass: "Mosaz",
+      plastic: "Plast",
       other: "Jiné",
     };
+
+    // Převod klíčů na české popisky
+    const formatServices = (services: string) => {
+      return services
+        .split(", ")
+        .map((s) => serviceLabels[s.trim()] || s.trim())
+        .join(", ");
+    };
+
+    const formatMaterials = (mats: string) => {
+      return mats
+        .split(", ")
+        .map((m) => materialLabels[m.trim()] || m.trim())
+        .join(", ");
+    };
+
+    const servicesFormatted = formatServices(serviceTypes);
+    const materialsFormatted = formatMaterials(materials);
 
     // Email pro KOVO-KUKY (poptávka)
     const inquiryHtml = `
@@ -62,14 +82,15 @@ export async function POST(request: NextRequest) {
           </tr>
           <tr>
             <td style="padding: 12px; border: 1px solid #e5e7eb; font-weight: bold;">Typ služby</td>
-            <td style="padding: 12px; border: 1px solid #e5e7eb;">${serviceLabels[serviceType] || serviceType}</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">${servicesFormatted}</td>
           </tr>
           <tr style="background: #f9fafb;">
             <td style="padding: 12px; border: 1px solid #e5e7eb; font-weight: bold;">Materiál</td>
-            <td style="padding: 12px; border: 1px solid #e5e7eb;">${materialLabels[material] || material}</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">${materialsFormatted}</td>
           </tr>
-          ${quantity ? `<tr><td style="padding: 12px; border: 1px solid #e5e7eb; font-weight: bold;">Počet kusů</td><td style="padding: 12px; border: 1px solid #e5e7eb;">${quantity}</td></tr>` : ""}
-          ${deadline ? `<tr style="background: #f9fafb;"><td style="padding: 12px; border: 1px solid #e5e7eb; font-weight: bold;">Požadovaný termín</td><td style="padding: 12px; border: 1px solid #e5e7eb;">${deadline}</td></tr>` : ""}
+          ${materialType ? `<tr><td style="padding: 12px; border: 1px solid #e5e7eb; font-weight: bold;">Specifikace materiálu</td><td style="padding: 12px; border: 1px solid #e5e7eb;">${materialType}</td></tr>` : ""}
+          ${quantity ? `<tr style="background: #f9fafb;"><td style="padding: 12px; border: 1px solid #e5e7eb; font-weight: bold;">Počet kusů</td><td style="padding: 12px; border: 1px solid #e5e7eb;">${quantity}</td></tr>` : ""}
+          ${deadline ? `<tr><td style="padding: 12px; border: 1px solid #e5e7eb; font-weight: bold;">Požadovaný termín</td><td style="padding: 12px; border: 1px solid #e5e7eb;">${deadline}</td></tr>` : ""}
         </table>
         <div style="margin-top: 20px; padding: 15px; background: #f9fafb; border-radius: 8px;">
           <strong>Zpráva:</strong>
@@ -83,7 +104,7 @@ export async function POST(request: NextRequest) {
       from: `KOVO-KUKY <${FROM_EMAIL}>`,
       to: [CONTACT_EMAIL],
       replyTo: email,
-      subject: `Nová poptávka: ${serviceLabels[serviceType] || serviceType} - ${name}`,
+      subject: `Nová poptávka: ${servicesFormatted} - ${name}`,
       html: inquiryHtml,
     };
 
@@ -111,8 +132,9 @@ export async function POST(request: NextRequest) {
         <div style="margin: 25px 0; padding: 20px; background: #f9fafb; border-radius: 8px; border-left: 4px solid #f97316;">
           <strong>Shrnutí vaší poptávky:</strong>
           <ul style="margin-top: 10px; padding-left: 20px; color: #4b5563;">
-            <li>Typ služby: ${serviceLabels[serviceType] || serviceType}</li>
-            <li>Materiál: ${materialLabels[material] || material}</li>
+            <li>Typ služby: ${servicesFormatted}</li>
+            <li>Materiál: ${materialsFormatted}</li>
+            ${materialType ? `<li>Specifikace materiálu: ${materialType}</li>` : ""}
             ${quantity ? `<li>Počet kusů: ${quantity}</li>` : ""}
             ${deadline ? `<li>Požadovaný termín: ${deadline}</li>` : ""}
           </ul>
@@ -127,6 +149,8 @@ export async function POST(request: NextRequest) {
         <hr style="margin-top: 30px; border: none; border-top: 1px solid #e5e7eb;">
         <p style="font-size: 12px; color: #9ca3af; margin-top: 15px;">
           KOVO-KUKY | CNC obrábění a zakázková výroba<br>
+          Veselská 59, Dolní Bukovsko 373 65<br>
+          Tel: +420 725 770 820<br>
           <a href="https://kovokuky.cz" style="color: #f97316;">www.kovokuky.cz</a>
         </p>
       </div>

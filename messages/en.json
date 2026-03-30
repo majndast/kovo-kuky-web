@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "KOVO-KUKY | CNC Machining & Custom Manufacturing",
-    "description": "Professional CNC machining, turning, milling, and metal cutting. Custom manufacturing from steel, stainless steel, aluminum, and brass. Quote within 48 hours."
+    "title": "CNC Machining, Turning & Milling | KOVO-KUKY Czech Republic",
+    "description": "Custom CNC metal machining in Czech Republic. Precision CNC turning, milling, and material cutting. References: Richmont, ETA Austria. Quote within 48h."
   },
   "nav": {
     "home": "Home",
@@ -33,6 +33,10 @@
     "label": "What we do",
     "title": "Complete CNC Machining",
     "subtitle": "From single pieces to series — we handle everything under one roof",
+    "seo": {
+      "title": "Custom CNC Turning & Milling",
+      "description": "Complete metal machining from material cutting to surface treatments (galvanizing). We work with steel, stainless steel, and aluminum with 0.01 mm precision."
+    },
     "turning": {
       "title": "CNC Turning",
       "description": "Precision turning on Doosan Lynx 220 and Goodway GLS CNC lathes with Fanuc control. Rotational parts from steel, stainless steel, aluminum, and brass with ±0.01 mm tolerance."
@@ -177,47 +181,55 @@
   "machinery": {
     "title": "Machine Park",
     "subtitle": "Modern CNC machines for precision manufacturing",
+    "controlLabel": "Control",
+    "specs": "Specifications",
     "machines": {
       "bianco1": {
         "name": "Bianco Saw",
         "type": "Band saw",
         "description": "Precision cutting of bar stock and profiles.",
-        "quantity": "2x"
+        "quantity": "2x",
+        "specs": ["Automatic feed", "Cut up to Ø 260 mm", "Angled cuts"]
       },
       "doosan": {
         "name": "Doosan Lynx 220",
         "type": "CNC lathe",
         "control": "Fanuc",
         "description": "Powerful CNC lathe for precision turning of rotational parts.",
-        "quantity": "2x"
+        "quantity": "2x",
+        "specs": ["Max. Ø 300 mm", "Length 510 mm", "Precision ±0.01 mm"]
       },
       "goodway200": {
         "name": "Goodway GLS-200",
         "type": "CNC lathe",
         "control": "Fanuc",
         "description": "Universal CNC lathe for medium and larger diameters.",
-        "quantity": "1x"
+        "quantity": "1x",
+        "specs": ["Max. Ø 400 mm", "Length 600 mm", "Precision ±0.01 mm"]
       },
       "goodway150": {
         "name": "Goodway GLS-150",
         "type": "CNC lathe",
         "control": "Fanuc",
         "description": "Compact CNC lathe for smaller parts with high precision.",
-        "quantity": "1x"
+        "quantity": "1x",
+        "specs": ["Max. Ø 200 mm", "Length 350 mm", "Precision ±0.005 mm"]
       },
       "millingXHS": {
         "name": "XHS CNC Mill",
         "type": "CNC milling center",
         "control": "Fanuc",
         "description": "3-axis milling center for manufacturing precision parts.",
-        "quantity": "1x"
+        "quantity": "1x",
+        "specs": ["Travel 800×500×500 mm", "3-axis", "Precision ±0.01 mm"]
       },
       "robodrill": {
         "name": "Robodrill CNC Mill",
         "type": "CNC milling center",
         "control": "Fanuc",
         "description": "High-speed milling center for serial production.",
-        "quantity": "1x"
+        "quantity": "1x",
+        "specs": ["Travel 700×400×330 mm", "24,000 RPM", "Precision ±0.005 mm"]
       }
     }
   },
@@ -229,12 +241,16 @@
   "contact": {
     "title": "Contact & Inquiry",
     "subtitle": "Get in touch with your project — we'll reply within 48 hours",
+    "seo": {
+      "title": "Contact | KOVO-KUKY Czech Republic (Veselská 59)",
+      "description": "Looking for CNC manufacturing? Contact us at Veselská 59, Dolní Bukovsko, Czech Republic. Fast quotes and professional service."
+    },
     "info": {
       "title": "Contact Information",
       "company": "KOVO-KUKY",
       "email": "info@kovo-kuky.cz",
-      "phone": "+420 XXX XXX XXX",
-      "address": "Address to be added"
+      "phone": "+420 725 770 820",
+      "address": "Veselská 59, Dolní Bukovsko 373 65, Czech Republic"
     },
     "form": {
       "title": "Inquiry Form",
@@ -254,25 +270,29 @@
         "stainless": "Stainless Steel",
         "aluminum": "Aluminum",
         "brass": "Brass",
+        "plastic": "Plastic",
         "other": "Other"
       },
+      "materialType": "Material Specification",
+      "materialTypePlaceholder": "e.g. 11 373, 17 240, EN AW 6060...",
       "quantity": "Quantity (pieces)",
       "deadline": "Required Deadline",
       "message": "Message / Description",
       "attachment": "Attachment (drawing)",
       "attachmentHint": "PDF, DXF, STEP, JPG, PNG (max 10 MB)",
-      "submit": "Send Inquiry",
+      "submit": "Request a Quote (No Obligations)",
       "sending": "Sending...",
       "success": "Your inquiry has been sent successfully! We'll get back to you within 48 hours.",
-      "error": "An error occurred while sending. Please try again."
+      "error": "An error occurred while sending. Please try again.",
+      "bottomNote": "We typically process quotes within 48 hours."
     },
     "validation": {
       "nameRequired": "Name is required",
       "emailRequired": "Email is required",
       "emailInvalid": "Invalid email format",
       "phoneRequired": "Phone is required",
-      "serviceRequired": "Please select a service type",
-      "materialRequired": "Please select a material",
+      "serviceRequired": "Please select at least one service",
+      "materialRequired": "Please select at least one material",
       "messageRequired": "Message is required"
     }
   },

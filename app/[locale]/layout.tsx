@@ -66,8 +66,45 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
   const messages = await getMessages();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "KOVO-KUKY",
+    "image": "https://kovokuky.cz/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Veselská 59",
+      "addressLocality": "Dolní Bukovsko",
+      "postalCode": "373 65",
+      "addressCountry": "CZ"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.172,
+      "longitude": 14.583
+    },
+    "url": "https://kovokuky.cz",
+    "telephone": "+420725770820",
+    "description": locale === "cs"
+      ? "Specialista na CNC obrábění, soustružení a frézování v Jihočeském kraji."
+      : "CNC machining, turning, and milling specialist in South Bohemia, Czech Republic.",
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "16:00"
+    }
+  };
+
   return (
     <html lang={locale}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />

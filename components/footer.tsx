@@ -92,13 +92,14 @@ export function Footer() {
 
           <div className="mt-10 border-t border-border pt-8 text-center text-sm text-muted-foreground">
             <p>&copy; {new Date().getFullYear()} KOVO-KUKY. {t("rights")}</p>
-            <p className="mt-2">
+            <p className="mt-2 text-[0.8rem] text-muted-foreground/70">
               {t("madeBy")}{" "}
               <a
                 href="https://jpvision.cz"
                 target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-primary transition-colors hover:text-primary/80"
+                rel="noopener"
+                title={t("madeByTitle")}
+                className="transition-colors hover:text-primary"
               >
                 JP Vision
               </a>

@@ -3,14 +3,14 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.kovokuky.cz";
 
-  // Route pairs: [cs path, en path]
+  // Route pairs: [cs path, de path]
   const routes: [string, string][] = [
-    ["/cs", "/en"],
-    ["/cs/sluzby", "/en/services"],
-    ["/cs/o-nas", "/en/about"],
-    ["/cs/strojni-park", "/en/machinery"],
-    ["/cs/galerie", "/en/gallery"],
-    ["/cs/kontakt", "/en/contact"],
+    ["/cs", "/de"],
+    ["/cs/sluzby", "/de/dienstleistungen"],
+    ["/cs/o-nas", "/de/ueber-uns"],
+    ["/cs/strojni-park", "/de/maschinenpark"],
+    ["/cs/galerie", "/de/galerie"],
+    ["/cs/kontakt", "/de/kontakt"],
   ];
 
   const entries: MetadataRoute.Sitemap = [];
@@ -24,13 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: {
       languages: {
         cs: `${baseUrl}/cs`,
-        en: `${baseUrl}/en`,
+        de: `${baseUrl}/de`,
       },
     },
   });
 
   // All route pairs with alternates
-  routes.forEach(([csPath, enPath]) => {
+  routes.forEach(([csPath, dePath]) => {
     const isHome = csPath === "/cs";
 
     // CS version
@@ -42,21 +42,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: {
         languages: {
           cs: `${baseUrl}${csPath}`,
-          en: `${baseUrl}${enPath}`,
+          de: `${baseUrl}${dePath}`,
         },
       },
     });
 
-    // EN version
+    // DE version
     entries.push({
-      url: `${baseUrl}${enPath}`,
+      url: `${baseUrl}${dePath}`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: isHome ? 0.9 : 0.7,
       alternates: {
         languages: {
           cs: `${baseUrl}${csPath}`,
-          en: `${baseUrl}${enPath}`,
+          de: `${baseUrl}${dePath}`,
         },
       },
     });

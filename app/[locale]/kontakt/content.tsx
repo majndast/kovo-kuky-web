@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ContactForm } from "@/components/contact-form";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Building2, User } from "lucide-react";
 
 export function ContactPageContent() {
   const t = useTranslations("contact");
@@ -31,6 +31,24 @@ export function ContactPageContent() {
           >
             <h2 className="text-xl font-semibold">{t("info.title")}</h2>
             <div className="mt-6 space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <User className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="font-semibold text-lg">{t("info.company")}</p>
+                  <p className="text-muted-foreground">{t("info.owner")}</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <Building2 className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">{t("info.icoLabel")}: {t("info.ico")}</p>
+                  <p className="text-sm text-muted-foreground">{t("info.dicLabel")}: {t("info.dic")}</p>
+                </div>
+              </div>
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
                   <Mail className="h-5 w-5" />

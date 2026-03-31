@@ -175,7 +175,7 @@ export async function POST(request: NextRequest) {
         <hr style="margin-top: 30px; border: none; border-top: 1px solid #e5e7eb;">
         <p style="font-size: 12px; color: #9ca3af; margin-top: 15px;">
           KOVO-KUKY | CNC obrábění a zakázková výroba<br>
-          Veselská 59, Dolní Bukovsko 373 65<br>
+          Veselská 58, Dolní Bukovsko 373 65<br>
           Tel: +420 725 770 820<br>
           <a href="https://kovokuky.cz" style="color: #f97316;">www.kovokuky.cz</a>
         </p>

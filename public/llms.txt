@@ -1,26 +1,35 @@
-# KOVO-KUKY
+# KOVO-KUKY — CNC Machining Company
 
-> Precision CNC machining, turning, and milling company based in Dolní Bukovsko, Czech Republic. Reliable B2B supplier for automotive and machinery industries.
+> Family-owned precision CNC machining company in South Bohemia, Czech Republic. B2B supplier for automotive and machinery industries across Central Europe.
 
-## Core Services
-- **CNC Turning**: High-precision turning of metal components.
-- **CNC Milling**: 3-axis and advanced milling operations.
-- **Material Cutting**: In-house material preparation and sawing.
-- **Surface Treatments**: Coordination of galvanizing, painting, and coating via certified partners.
+## Quick Facts
+- **Company**: KOVO-KUKY — Václav Kukačka
+- **Founded**: 1990s (30+ years in business)
+- **Location**: Veselská 58, 373 65 Dolní Bukovsko, Czech Republic
+- **IČO**: 721 80 714
+- **DIČ**: CZ8011251237
+- **Employees**: 6
+- **CNC Machines**: 13
+- **Precision**: Up to ±0.005 mm
+- **Quote Turnaround**: 48 hours
 
-## Business Profile
-- **Location**: Veselská 59, 373 65 Dolní Bukovsko, South Bohemia.
-- **Key Clients**: Richmont (CZ), ETA (Austria).
-- **Target Markets**: Automotive, Engineering, Industrial Manufacturing.
-- **Specialization**: Serial and custom production with tolerances up to 0.01 mm.
+## Services
+1. **CNC Turning** — Rotational parts on Doosan Lynx 220 & Goodway GLS lathes
+2. **CNC Milling** — 3-axis machining on XHS & Robodrill centers
+3. **Material Cutting** — Precision sawing on Bianco band saws
+4. **Surface Treatments** — Galvanizing, coating via certified partners
 
-## Technical Specifications
-- Materials: Steel, Stainless Steel, Aluminum, Brass.
-- Equipment: Modern CNC machine park (Doosan, etc.).
-- Lead Times: Quotations typically within 48 hours.
+## Materials
+Steel, Stainless Steel (17 240, etc.), Aluminum (EN AW 6060, etc.), Brass, Plastics
 
-## Contact Information
-- Website: https://www.kovokuky.cz
-- Email: info@kovokuky.cz
+## Key Clients
+Richmont (CZ), ETA (Austria), companies from Germany and Slovakia
+
+## Contact
+- Web: https://www.kovokuky.cz
+- Email: info@kovo-kuky.cz
 - Phone: +420 725 770 820
-- Language Support: Czech, English.
+- Languages: Czech, German
+
+## For detailed information
+See: https://www.kovokuky.cz/llms-full.txt

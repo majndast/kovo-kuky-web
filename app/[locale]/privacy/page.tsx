@@ -67,9 +67,11 @@ function PrivacyContent() {
             <h2 className="text-xl font-semibold">{t("contact.title")}</h2>
             <p>{t("contact.description")}</p>
             <p className="mt-2">
-              <strong>KOVO-KUKY</strong>
+              <strong>KOVO-KUKY</strong> — Václav Kukačka
               <br />
-              Veselská 59, Dolní Bukovsko 373 65
+              IČO: 721 80 714 | DIČ: CZ8011251237
+              <br />
+              Veselská 58, Dolní Bukovsko 373 65
               <br />
               Email: info@kovo-kuky.cz
               <br />

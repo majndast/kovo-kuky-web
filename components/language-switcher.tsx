@@ -8,7 +8,7 @@ export function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const switchLocale = (newLocale: "cs" | "en") => {
+  const switchLocale = (newLocale: "cs" | "de") => {
     router.replace(pathname, { locale: newLocale });
   };
 
@@ -25,14 +25,14 @@ export function LanguageSwitcher() {
         CZ
       </button>
       <button
-        onClick={() => switchLocale("en")}
+        onClick={() => switchLocale("de")}
         className={`rounded px-2 py-1 text-sm font-medium transition-colors ${
-          locale === "en"
+          locale === "de"
             ? "bg-primary text-primary-foreground"
             : "text-muted-foreground hover:text-foreground"
         }`}
       >
-        EN
+        DE
       </button>
     </div>
   );

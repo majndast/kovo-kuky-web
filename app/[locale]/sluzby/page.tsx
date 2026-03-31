@@ -9,7 +9,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "services" });
-  const path = locale === "cs" ? "/cs/sluzby" : "/en/services";
+  const path = locale === "cs" ? "/cs/sluzby" : "/de/dienstleistungen";
   return {
     title: t("seo.title"),
     description: t("seo.description"),

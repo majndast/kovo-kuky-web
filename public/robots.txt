@@ -1,7 +1,46 @@
+# Standard crawlers
 User-agent: *
 Allow: /
 
 Sitemap: https://www.kovokuky.cz/sitemap.xml
 
-# AI Agents
-# LLMs.txt: https://www.kovokuky.cz/llms.txt
+# AI Search Engines & LLM Crawlers
+# Explicitly allow AI agents to index content
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# LLMs.txt specification
+# See: https://llmstxt.org/
+# Quick summary: https://www.kovokuky.cz/llms.txt
+# Full details: https://www.kovokuky.cz/llms-full.txt

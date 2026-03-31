@@ -1,0 +1,190 @@
+# KOVO-KUKY — Complete Company Profile
+
+> Family-owned precision CNC machining company based in Dolní Bukovsko, South Bohemia, Czech Republic. Established in the 1990s, now operating 13 CNC machines with 6 employees. Reliable B2B supplier for automotive and machinery industries across Czech Republic, Slovakia, Germany, and Austria.
+
+---
+
+## Company Information
+
+**Legal Name**: Václav Kukačka (KOVO-KUKY)
+**IČO (Company ID)**: 721 80 714
+**DIČ (VAT ID)**: CZ8011251237
+**Address**: Veselská 58, 373 65 Dolní Bukovsko, Czech Republic
+**Region**: South Bohemia (Jihočeský kraj)
+**GPS**: 49.172°N, 14.583°E
+
+**Contact**:
+- Website: https://www.kovokuky.cz
+- Email: info@kovo-kuky.cz
+- Phone: +420 725 770 820
+- Languages: Czech, German
+
+**Business Hours**: Monday–Friday, 07:00–16:00 CET
+
+---
+
+## Company History
+
+KOVO-KUKY was founded by Václav Kukačka Sr. in the early 1990s. Starting in a small garage making trailers, the company evolved through metalwork (gates, fences), sheet metal pressing for ETA Austria, and eventually CNC machining. Around 2000, the company was handed over to Václav Kukačka Jr., who expanded operations to the current 13-machine facility.
+
+**Milestones**:
+- 1990s: Founded, manual machining
+- 2000: Transition to second generation
+- 2010s: Expansion to CNC turning and milling
+- Today: 13 CNC machines, 6 employees, international clients
+
+---
+
+## Services
+
+### 1. CNC Turning
+Precision turning of rotational parts on modern CNC lathes.
+- **Machines**: Doosan Lynx 220 (2x), Goodway GLS-200, Goodway GLS-150
+- **Control System**: Fanuc
+- **Max Diameter**: 400 mm
+- **Max Length**: 600 mm
+- **Tolerance**: ±0.005 mm to ±0.01 mm
+
+### 2. CNC Milling
+3-axis milling for complex parts from drawings or 3D models.
+- **Machines**: XHS CNC Mill, Robodrill
+- **Control System**: Fanuc
+- **Travel**: Up to 800×500×500 mm
+- **Spindle Speed**: Up to 24,000 RPM
+- **Tolerance**: ±0.005 mm to ±0.01 mm
+
+### 3. Material Cutting
+Precision cutting of bar stock and profiles.
+- **Machines**: Bianco Band Saw (2x)
+- **Max Diameter**: 260 mm
+- **Features**: Automatic feed, angled cuts
+
+### 4. External Services
+Complete service coordination through verified partners:
+- Galvanizing (zinc plating)
+- Welding
+- Surface treatments and coatings
+
+---
+
+## Machine Park (13 Machines Total)
+
+| Machine | Type | Quantity | Control | Key Specs |
+|---------|------|----------|---------|-----------|
+| Doosan Lynx 220 | CNC Lathe | 2x | Fanuc | Ø300mm, L510mm, ±0.01mm |
+| Goodway GLS-200 | CNC Lathe | 1x | Fanuc | Ø400mm, L600mm, ±0.01mm |
+| Goodway GLS-150 | CNC Lathe | 1x | Fanuc | Ø200mm, L350mm, ±0.005mm |
+| XHS Mill | CNC Mill | 1x | Fanuc | 800×500×500mm, ±0.01mm |
+| Robodrill | CNC Mill | 1x | Fanuc | 700×400×330mm, 24k RPM, ±0.005mm |
+| Bianco Saw | Band Saw | 2x | — | Ø260mm, auto feed |
+
+---
+
+## Materials Processed
+
+- **Steel**: Construction steel (11 373, 11 523, etc.)
+- **Stainless Steel**: 17 240, 17 246, 1.4301, 1.4404
+- **Aluminum**: EN AW 6060, EN AW 6082, EN AW 2024
+- **Brass**: CuZn39Pb3, CuZn40Pb2
+- **Plastics**: POM, PA6, PTFE
+
+---
+
+## Production Capabilities
+
+- **Order Types**: Prototypes, small series, medium series, repeat orders
+- **Minimum Order**: 1 piece
+- **Quote Turnaround**: Within 48 hours
+- **File Formats Accepted**: PDF, DXF, DWG, STEP, IGES, 3D models
+- **Quality Control**: 100% inspection before shipping
+- **Delivery**: Agreed deadlines strictly met
+
+---
+
+## Target Industries
+
+- Automotive (Tier 2, Tier 3 suppliers)
+- Machinery and equipment manufacturing
+- Industrial automation
+- Precision engineering
+- Medical device components
+- Energy sector
+
+---
+
+## Key Clients & References
+
+- **Richmont** (Czech Republic) — Luxury watch components
+- **ETA** (Austria) — Precision parts
+- Various engineering companies from Germany and Slovakia
+
+---
+
+## Frequently Asked Questions (FAQ)
+
+### What is the minimum order quantity?
+We accept orders starting from 1 piece. We handle both prototypes and series production.
+
+### How fast can I get a quote?
+We provide quotes within 48 hours of receiving your inquiry with technical drawings.
+
+### What file formats do you accept?
+We accept PDF, DXF, DWG, STEP, IGES, and most 3D CAD formats.
+
+### What tolerances can you achieve?
+Standard tolerance is ±0.01 mm. For precision work, we achieve ±0.005 mm.
+
+### Do you work with foreign companies?
+Yes, we regularly work with companies from Germany, Austria, and Slovakia. We communicate in Czech and German.
+
+### What materials do you machine?
+Steel, stainless steel, aluminum, brass, and engineering plastics (POM, PA6, PTFE).
+
+### Do you offer surface treatments?
+Yes, we coordinate galvanizing, coating, and other surface treatments through our verified partners.
+
+### Where are you located?
+Dolní Bukovsko, South Bohemia, Czech Republic — approximately 100 km south of Prague.
+
+### How can I send an inquiry?
+Via our website contact form at https://www.kovokuky.cz/kontakt or email info@kovo-kuky.cz
+
+### What are your business hours?
+Monday to Friday, 07:00–16:00 CET.
+
+---
+
+## Why Choose KOVO-KUKY?
+
+1. **30+ Years Experience**: Family business with deep machining expertise
+2. **Modern Equipment**: 13 CNC machines with Fanuc control systems
+3. **High Precision**: Tolerances up to ±0.005 mm
+4. **Fast Response**: Quotes within 48 hours
+5. **Reliable Delivery**: We meet agreed deadlines
+6. **Personal Approach**: Direct communication with production team
+7. **Complete Service**: From material cutting to surface finishing
+8. **Central European Location**: Easy logistics to DE, AT, SK
+
+---
+
+## Structured Data Summary
+
+```
+Organization: KOVO-KUKY
+Type: LocalBusiness / ManufacturingBusiness
+Industry: CNC Machining, Metal Working
+Services: CNC Turning, CNC Milling, Material Cutting
+Location: Dolní Bukovsko, Czech Republic
+Coordinates: 49.172, 14.583
+Founded: 1990s
+Employees: 6
+Machines: 13
+Precision: 0.005mm - 0.01mm
+Languages: cs, de
+Markets: CZ, SK, DE, AT
+```
+
+---
+
+*Last updated: March 2026*
+*Source: https://www.kovokuky.cz*

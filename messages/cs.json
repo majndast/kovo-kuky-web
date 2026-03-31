@@ -242,15 +242,20 @@
     "title": "Kontakt & Poptávka",
     "subtitle": "Ozvěte se nám s vaším projektem — odpovíme do 48 hodin",
     "seo": {
-      "title": "Kontakt | KOVO-KUKY Dolní Bukovsko (Veselská 59)",
-      "description": "Poptáváte CNC výrobu? Kontaktujte nás na adrese Veselská 59, Dolní Bukovsko. Rychlé nacenění a profesionální přístup."
+      "title": "Kontakt | KOVO-KUKY Dolní Bukovsko (Veselská 58)",
+      "description": "Poptáváte CNC výrobu? Kontaktujte nás na adrese Veselská 58, Dolní Bukovsko. Rychlé nacenění a profesionální přístup."
     },
     "info": {
       "title": "Kontaktní údaje",
       "company": "KOVO-KUKY",
+      "owner": "Václav Kukačka",
+      "ico": "721 80 714",
+      "dic": "CZ8011251237",
+      "icoLabel": "IČO",
+      "dicLabel": "DIČ",
       "email": "info@kovo-kuky.cz",
       "phone": "+420 725 770 820",
-      "address": "Veselská 59, Dolní Bukovsko 373 65"
+      "address": "Veselská 58, Dolní Bukovsko 373 65"
     },
     "form": {
       "title": "Poptávkový formulář",
@@ -319,7 +324,7 @@
     "logoAlt": "Logo KOVO-KUKY - kovoobrábění a CNC výroba",
     "machineAlt": "CNC soustruh {model} - KOVO-KUKY Dolní Bukovsko",
     "partAlt": "Přesné CNC obrábění kovů - ukázka výroby KOVO-KUKY",
-    "workshopAlt": "Strojírenská výroba KOVO-KUKY, Veselská 59, Dolní Bukovsko"
+    "workshopAlt": "Strojírenská výroba KOVO-KUKY, Veselská 58, Dolní Bukovsko"
   },
   "cookies": {
     "title": "Tento web používá cookies",

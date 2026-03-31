@@ -14,7 +14,7 @@ const values = [
 export function AboutPageContent() {
   const t = useTranslations("about");
   const locale = useLocale();
-  const isEN = locale === "en";
+  const isDE = locale === "de";
 
   return (
     <section className="py-24">
@@ -34,8 +34,8 @@ export function AboutPageContent() {
           </p>
         </motion.div>
 
-        {/* Partnerships & Core Services - EN only */}
-        {isEN && (
+        {/* Partnerships & Core Services - DE only */}
+        {isDE && (
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

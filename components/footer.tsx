@@ -9,6 +9,7 @@ import Image from "next/image";
 export function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("nav");
+  const contact = useTranslations("contact");
 
   return (
     <footer className="relative border-t border-border">
@@ -74,6 +75,11 @@ export function Footer() {
                 {t("contactTitle")}
               </h3>
               <div className="flex flex-col gap-2.5 text-sm text-muted-foreground">
+                <p className="font-medium text-foreground">{contact("info.owner")}</p>
+                <p>{contact("info.address")}</p>
+                <p className="text-xs">
+                  {contact("info.icoLabel")}: {contact("info.ico")} | {contact("info.dicLabel")}: {contact("info.dic")}
+                </p>
                 <a
                   href="mailto:info@kovo-kuky.cz"
                   className="transition-colors hover:text-primary"

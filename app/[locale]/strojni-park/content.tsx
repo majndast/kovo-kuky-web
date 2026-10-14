@@ -1,8 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { MachineCard } from "@/components/machine-card";
+import { PageHeader } from "@/components/ui-kit";
 
 const machineKeys = [
   "bianco1",
@@ -17,22 +17,12 @@ export function MachineryPageContent() {
   const t = useTranslations("machinery");
 
   return (
-    <section className="py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center"
-        >
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-            {t("title")}
-          </h1>
-          <p className="mt-4 text-lg text-muted-foreground">{t("subtitle")}</p>
-        </motion.div>
+    <section className="px-4 pb-24 pt-36 md:pb-40 md:pt-48">
+      <div className="mx-auto max-w-6xl">
+        <PageHeader title={t("title")} subtitle={t("subtitle")} />
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-20 grid gap-4 sm:grid-cols-2 md:mt-28 lg:grid-cols-3">
           {machineKeys.map((key, i) => {
-            // Get specs array from translations
             const specsRaw = t.raw(`machines.${key}.specs`) as string[] | undefined;
 
             return (

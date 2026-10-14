@@ -21,6 +21,10 @@ export const routing = defineRouting({
       cs: "/galerie",
       de: "/galerie",
     },
+    "/privacy": {
+      cs: "/ochrana-udaju",
+      de: "/datenschutz",
+    },
     "/kontakt": {
       cs: "/kontakt",
       de: "/kontakt",

@@ -1,97 +1,52 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { Bezel, PageHeader, Reveal } from "@/components/ui-kit";
 import { ContactForm } from "@/components/contact-form";
-import { Mail, Phone, MapPin, Building2, User } from "lucide-react";
+import { RecaptchaProvider } from "@/components/recaptcha-provider";
 
 export function ContactPageContent() {
   const t = useTranslations("contact");
 
+  const rows: { label: string; value: React.ReactNode }[] = [
+    { label: t("info.emailLabel"), value: <a href="mailto:info@kovokuky.cz" className="transition-colors duration-500 hover:text-primary">{t("info.email")}</a> },
+    { label: t("info.phoneLabel"), value: <a href="tel:+420725770820" className="transition-colors duration-500 hover:text-primary">{t("info.phone")}</a> },
+    { label: t("info.addressLabel"), value: t("info.address") },
+    { label: `${t("info.icoLabel")} / ${t("info.dicLabel")}`, value: <span className="font-mono text-sm">{t("info.ico")} · {t("info.dic")}</span> },
+  ];
+
   return (
-    <section className="py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center"
-        >
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-            {t("title")}
-          </h1>
-          <p className="mt-4 text-lg text-muted-foreground">{t("subtitle")}</p>
-        </motion.div>
+    <section className="px-4 pb-24 pt-36 md:pb-40 md:pt-48">
+      <div className="mx-auto max-w-6xl">
+        <PageHeader title={t("title")} subtitle={t("subtitle")} />
 
-        <div className="mt-16 grid gap-12 lg:grid-cols-5">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="lg:col-span-2"
-          >
-            <h2 className="text-xl font-semibold">{t("info.title")}</h2>
-            <div className="mt-6 space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <User className="h-5 w-5" />
-                </div>
-                <div>
-                  <p className="font-semibold text-lg">{t("info.company")}</p>
-                  <p className="text-muted-foreground">{t("info.owner")}</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Building2 className="h-5 w-5" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">{t("info.icoLabel")}: {t("info.ico")}</p>
-                  <p className="text-sm text-muted-foreground">{t("info.dicLabel")}: {t("info.dic")}</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Mail className="h-5 w-5" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Email</p>
-                  <a
-                    href="mailto:info@kovo-kuky.cz"
-                    className="font-medium transition-colors hover:text-primary"
-                  >
-                    {t("info.email")}
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Phone className="h-5 w-5" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Telefon</p>
-                  <p className="font-medium">{t("info.phone")}</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <MapPin className="h-5 w-5" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Adresa</p>
-                  <p className="font-medium">{t("info.address")}</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+        <div className="mt-20 grid gap-12 md:mt-28 lg:grid-cols-5 lg:gap-16">
+          <Reveal className="lg:col-span-2">
+            <p className="text-3xl font-semibold tracking-[-0.035em]">
+              {t("info.company")}
+            </p>
+            <p className="mt-1 text-muted-foreground">{t("info.owner")}</p>
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="rounded-xl border border-border bg-card p-6 sm:p-8 lg:col-span-3"
-          >
-            <ContactForm />
-          </motion.div>
+            <dl className="mt-10 border-t border-white/[0.08]">
+              {rows.map((r) => (
+                <div
+                  key={r.label}
+                  className="grid gap-1 border-b border-white/[0.08] py-5 sm:grid-cols-[8rem_1fr] sm:gap-6"
+                >
+                  <dt className="text-sm text-muted-foreground">{r.label}</dt>
+                  <dd className="text-[15px]">{r.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </Reveal>
+
+          <Reveal delay={0.1} className="lg:col-span-3">
+            <Bezel innerClassName="p-6 sm:p-10">
+              <RecaptchaProvider>
+                <ContactForm />
+              </RecaptchaProvider>
+            </Bezel>
+          </Reveal>
         </div>
       </div>
     </section>

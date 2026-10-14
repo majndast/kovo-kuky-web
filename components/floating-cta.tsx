@@ -1,48 +1,41 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { motion, AnimatePresence } from "framer-motion";
-import { MessageSquare, X } from "lucide-react";
+import { EASE } from "./ui-kit";
 
 export function FloatingCta() {
   const t = useTranslations("floatingCta");
   const [visible, setVisible] = useState(false);
-  const [dismissed, setDismissed] = useState(false);
+  const { scrollY } = useScroll();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setVisible(window.scrollY > 600);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  if (dismissed) return null;
+  useMotionValueEvent(scrollY, "change", (y) => {
+    const next = y > 800;
+    setVisible((prev) => (prev === next ? prev : next));
+  });
 
   return (
     <AnimatePresence>
       {visible && (
         <motion.div
-          initial={{ opacity: 0, y: 20, scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: 20, scale: 0.9 }}
-          className="fixed bottom-6 right-6 z-50 flex items-center gap-2"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 24 }}
+          transition={{ duration: 0.6, ease: EASE }}
+          className="fixed bottom-5 right-5 z-20"
         >
           <Link
             href="/kontakt"
-            className="pulse-green flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-lg transition-transform hover:scale-105"
+            className="group flex items-center gap-3 rounded-full bg-black/60 py-1.5 pl-5 pr-1.5 text-sm font-medium ring-1 ring-white/10 backdrop-blur-2xl transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-[0.98]"
           >
-            <MessageSquare className="h-4 w-4" />
             {t("text")}
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-black transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:-translate-y-px group-hover:translate-x-0.5">
+              <ArrowUpRight className="h-4 w-4" strokeWidth={1.75} />
+            </span>
           </Link>
-          <button
-            onClick={() => setDismissed(true)}
-            className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <X className="h-3.5 w-3.5" />
-          </button>
         </motion.div>
       )}
     </AnimatePresence>

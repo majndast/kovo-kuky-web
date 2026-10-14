@@ -1,6 +1,15 @@
-import { setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
+import { Hero } from "@/components/hero";
+import { ServicesSection } from "@/components/services-section";
+import { WhyUsSection } from "@/components/why-us-section";
+import { ProcessSection } from "@/components/process-section";
+import { AboutTeaser } from "@/components/about-teaser";
+import { FaqSection } from "@/components/faq-section";
+import { CtaSection } from "@/components/cta-section";
+import { JsonLd } from "@/components/json-ld";
+import { faqSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -8,39 +17,9 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  return {
-    alternates: {
-      canonical: `https://www.kovokuky.cz/${locale}`,
-    },
-  };
+  const t = await getTranslations({ locale, namespace: "metadata" });
+  return pageMetadata({ locale, href: "/", title: t("title"), description: t("description") });
 }
-import { Hero } from "@/components/hero";
-
-// Lazy load sections below the fold - they use Framer Motion
-const ServicesSection = dynamic(
-  () => import("@/components/services-section").then((mod) => mod.ServicesSection),
-  { ssr: true }
-);
-const StatsSection = dynamic(
-  () => import("@/components/stats-section").then((mod) => mod.StatsSection),
-  { ssr: true }
-);
-const ProcessSection = dynamic(
-  () => import("@/components/process-section").then((mod) => mod.ProcessSection),
-  { ssr: true }
-);
-const WhyUsSection = dynamic(
-  () => import("@/components/why-us-section").then((mod) => mod.WhyUsSection),
-  { ssr: true }
-);
-const TestimonialsSection = dynamic(
-  () => import("@/components/testimonials-section").then((mod) => mod.TestimonialsSection),
-  { ssr: true }
-);
-const CtaSection = dynamic(
-  () => import("@/components/cta-section").then((mod) => mod.CtaSection),
-  { ssr: true }
-);
 
 export default async function HomePage({
   params,
@@ -49,15 +28,17 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const messages = (await getMessages()) as unknown as { faq: { items: { q: string; a: string }[] } };
 
   return (
     <>
+      <JsonLd data={faqSchema(messages.faq.items)} />
       <Hero />
       <ServicesSection />
-      <StatsSection />
-      <ProcessSection />
       <WhyUsSection />
-      <TestimonialsSection />
+      <ProcessSection />
+      <AboutTeaser />
+      <FaqSection />
       <CtaSection />
     </>
   );

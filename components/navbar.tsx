@@ -2,114 +2,132 @@
 
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { Link, usePathname } from "@/i18n/navigation";
 import { LanguageSwitcher } from "./language-switcher";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, ArrowRight } from "lucide-react";
-import Image from "next/image";
+import { EASE } from "./ui-kit";
 
 const navItems = [
-  { href: "/", key: "home" },
   { href: "/sluzby", key: "services" },
   { href: "/o-nas", key: "about" },
   { href: "/strojni-park", key: "machinery" },
   { href: "/galerie", key: "gallery" },
-  { href: "/kontakt", key: "contact" },
 ] as const;
+
+const allItems = [{ href: "/", key: "home" } as const, ...navItems, { href: "/kontakt", key: "contact" } as const];
 
 export function Navbar() {
   const nav = useTranslations("nav");
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   return (
-    <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "glass border-b border-white/5 shadow-lg shadow-black/20"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2.5">
-          <Image src="/logo.svg" alt="" width={36} height={36} aria-hidden="true" />
-          <span className="text-lg font-bold tracking-tight">
-            KOVO-<span className="text-primary">KUKY</span>
-          </span>
-        </Link>
+    <>
+      <header className="fixed inset-x-0 top-4 z-40 flex justify-center px-4">
+        <div className="flex w-full max-w-4xl items-center justify-between rounded-full bg-black/60 py-2 pl-5 pr-2 ring-1 ring-white/10 backdrop-blur-2xl">
+          <Link
+            href="/"
+            className="flex items-center gap-2.5"
+            onClick={() => setOpen(false)}
+          >
+            <Image src="/logo.svg" alt="" width={26} height={26} aria-hidden="true" />
+            <span className="text-[15px] font-semibold tracking-tight">
+              KOVO<span className="text-primary">KUKY</span>
+            </span>
+          </Link>
 
-        <nav className="hidden items-center gap-0.5 md:flex">
-          {navItems.map((item) => (
+          <nav className="hidden items-center md:flex">
+            {navItems.map((item) => {
+              const active = pathname === item.href;
+              return (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  className={`rounded-full px-4 py-2 text-[13px] transition-colors duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+                    active
+                      ? "bg-white/10 text-foreground"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {nav(item.key)}
+                </Link>
+              );
+            })}
+          </nav>
+
+          <div className="flex items-center gap-2">
+            <LanguageSwitcher />
             <Link
-              key={item.key}
-              href={item.href}
-              className={`relative rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                pathname === item.href
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
+              href="/kontakt"
+              className="hidden rounded-full bg-primary px-5 py-2.5 text-[13px] font-medium text-black transition-[transform,background-color] duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-[#2fd36b] active:scale-[0.97] md:inline-flex"
             >
-              {nav(item.key)}
-              {pathname === item.href && (
-                <span className="absolute bottom-0.5 left-1/2 h-0.5 w-4 -translate-x-1/2 rounded-full bg-primary" />
-              )}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="hidden items-center gap-3 md:flex">
-          <LanguageSwitcher />
-          <Button asChild size="sm" className="font-semibold">
-            <Link href="/kontakt">
               {nav("inquiry")}
-              <ArrowRight className="ml-1 h-3.5 w-3.5" />
             </Link>
-          </Button>
-        </div>
 
-        <div className="flex items-center gap-3 md:hidden">
-          <LanguageSwitcher />
-          <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-9 w-9" aria-label="Menu">
-                <Menu className="h-5 w-5" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-72 border-border bg-card">
-              <nav className="mt-8 flex flex-col gap-1">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.key}
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className={`rounded-lg px-4 py-3 text-base font-medium transition-colors ${
-                      pathname === item.href
-                        ? "bg-primary/10 text-primary"
-                        : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
-                    }`}
-                  >
-                    {nav(item.key)}
-                  </Link>
-                ))}
-                <Button asChild className="mt-6 font-semibold">
-                  <Link href="/kontakt" onClick={() => setOpen(false)}>
-                    {nav("inquiry")}
-                    <ArrowRight className="ml-1 h-3.5 w-3.5" />
-                  </Link>
-                </Button>
-              </nav>
-            </SheetContent>
-          </Sheet>
+            <button
+              type="button"
+              aria-label="Menu"
+              aria-expanded={open}
+              onClick={() => setOpen((v) => !v)}
+              className="relative flex h-10 w-10 items-center justify-center rounded-full bg-white/[0.06] md:hidden"
+            >
+              <span
+                className={`absolute h-px w-4 bg-foreground transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+                  open ? "rotate-45" : "-translate-y-[3px]"
+                }`}
+              />
+              <span
+                className={`absolute h-px w-4 bg-foreground transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+                  open ? "-rotate-45" : "translate-y-[3px]"
+                }`}
+              />
+            </button>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5, ease: EASE }}
+            className="fixed inset-0 z-30 flex flex-col justify-center bg-black/85 px-8 backdrop-blur-3xl md:hidden"
+          >
+            <nav className="flex flex-col gap-2">
+              {allItems.map((item, i) => (
+                <div key={item.key} className="overflow-hidden">
+                  <motion.div
+                    initial={{ y: "110%", opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: "110%", opacity: 0 }}
+                    transition={{ duration: 0.7, delay: 0.08 + i * 0.06, ease: EASE }}
+                  >
+                    <Link
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className={`block py-1 text-5xl font-semibold tracking-[-0.04em] ${
+                        pathname === item.href ? "text-primary" : "text-foreground"
+                      }`}
+                    >
+                      {nav(item.key)}
+                    </Link>
+                  </motion.div>
+                </div>
+              ))}
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }

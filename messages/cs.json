@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "CNC obrábění, soustružení a frézování | KOVO-KUKY Dolní Bukovsko",
-    "description": "Zakázkové CNC obrábění kovů v Dolním Bukovsku. Nabízíme přesné CNC soustružení, frézování a dělení materiálu. Reference: Richmont, ETA Rakousko. Nabídka do 48h."
+    "title": "CNC obrábění a soustružení na zakázku | KOVO-KUKY",
+    "description": "Zakázkové CNC soustružení, frézování a řezání kovů v Dolním Bukovsku. Přesnost na setiny milimetru, nabídka do 48 hodin. Od jednoho kusu po série."
   },
   "nav": {
     "home": "Úvod",
@@ -10,177 +10,62 @@
     "machinery": "Strojní park",
     "gallery": "Galerie",
     "contact": "Kontakt",
-    "inquiry": "Poptávka"
-  },
-  "hero": {
-    "badge": "Přijímáme nové zakázky",
-    "title": "Přesné CNC obrábění",
-    "titleAccent": "na míru",
-    "subtitle": "Vyrábíme díly přesně podle vašich výkresů. Na CNC soustruzích a frézách zpracujeme ocel, nerez, hliník i mosaz — rychle, spolehlivě a s přesností na setiny milimetru.",
-    "cta": "Nezávazná poptávka",
-    "secondary": "Prohlédnout služby",
-    "trust1": "Garance kvality",
-    "trust2": "Nabídka do 48h",
-    "trust3": "30+ let tradice",
-    "statMachines": "CNC strojů",
-    "statPrecision": "Přesnost",
-    "statQuality": "Spokojenost",
-    "statQuote": "Nabídka do",
-    "cardCta": "Pošlete výkres — nabídku máte do 48 hodin",
-    "socialProof": "Spolupracujeme s firmami z CZ, SK, DE a AT"
-  },
-  "services": {
-    "label": "Co děláme",
-    "title": "Kompletní CNC obrábění",
-    "subtitle": "Od kusové výroby po série — zvládneme vše pod jednou střechou",
-    "seo": {
-      "title": "CNC soustružení a frézování na zakázku",
-      "description": "Kompletní kovoobrábění od dělení materiálu po povrchové úpravy (zinkování). Pracujeme s ocelí, nerezem i hliníkem s přesností 0.01 mm."
-    },
-    "turning": {
-      "title": "CNC Soustružení",
-      "description": "Přesné soustružení na CNC soustruzích Doosan Lynx 220 a Goodway GLS s řízením Fanuc. Rotační díly z oceli, nerezu, hliníku i mosazi s tolerancí ±0.01 mm."
-    },
-    "milling": {
-      "title": "CNC Frézování",
-      "description": "3-osé frézování na centrech XHS a Robodrill s řízením Fanuc. Výroba přesných dílů dle výkresu nebo 3D modelu, od prototypu po sérii."
-    },
-    "cutting": {
-      "title": "Řezání materiálu",
-      "description": "Přesné dělení tyčového materiálu a profilů na pilách Bianco. Řezy dle vašich rozměrů s minimálním odpadem."
-    },
-    "external": {
-      "title": "Externí služby",
-      "description": "Kompletní servis včetně zinkování, svařování a dalších povrchových úprav přes naše ověřené partnery. Nemusíte řešit nic navíc."
-    },
-    "learnMore": "Zjistit více"
-  },
-  "process": {
-    "label": "Jak to funguje",
-    "title": "Od poptávky k hotovému dílu",
-    "subtitle": "Jednoduchý a transparentní proces — víte přesně, co se děje s vaší zakázkou",
-    "step1": {
-      "title": "Pošlete poptávku",
-      "description": "Vyplňte formulář a přiložte výkres. Stačí PDF, DXF nebo STEP."
-    },
-    "step2": {
-      "title": "Dostanete nabídku",
-      "description": "Do 48 hodin vám pošleme cenovou nabídku s termínem dodání."
-    },
-    "step3": {
-      "title": "Vyrobíme díly",
-      "description": "Po odsouhlasení spustíme výrobu na našich CNC strojích."
-    },
-    "step4": {
-      "title": "Dodáme zakázku",
-      "description": "Hotové díly zkontrolujeme a doručíme v dohodnutém termínu."
-    },
-    "cta": "Začít poptávkou"
-  },
-  "whyUs": {
-    "label": "Proč my",
-    "title": "Proč si vybrat KOVO-KUKY?",
-    "subtitle": "Desítky firem nám důvěřují. Tady je proč.",
-    "precision": {
-      "title": "Přesnost na setiny mm",
-      "description": "CNC stroje s řízením Fanuc garantují opakovatelnou přesnost ±0.01 mm na každém dílu."
-    },
-    "quality": {
-      "title": "100% kontrola kvality",
-      "description": "Každý díl prochází měřením a kontrolou před expedicí. Žádné kompromisy."
-    },
-    "delivery": {
-      "title": "Spolehlivé dodání",
-      "description": "Dodržujeme dohodnuté termíny. Pokud řekneme datum, platí."
-    },
-    "support": {
-      "title": "Osobní přístup",
-      "description": "Komunikujete přímo s výrobou, ne s call centrem. Řešíme rychle a bez zbytečné byrokracie."
-    },
-    "speed": {
-      "title": "Rychlá nabídka",
-      "description": "Cenovou nabídku dostanete do 48 hodin od odeslání poptávky s výkresem."
-    },
-    "certified": {
-      "title": "Ověřený partner",
-      "description": "Spolupracujeme s firmami z České republiky, Slovenska, Německa i Rakouska."
-    }
-  },
-  "stats": {
-    "years": "Let zkušeností",
-    "machines": "CNC strojů",
-    "projects": "Dokončených zakázek",
-    "satisfaction": "Spokojenost zákazníků"
-  },
-  "testimonials": {
-    "label": "Reference",
-    "title": "Co říkají naši zákazníci",
-    "t1": {
-      "text": "Spolupráce s KOVO-KUKY je bezproblémová. Díly jsou vždy přesné, termíny dodrženy a komunikace je výborná. Doporučuji.",
-      "name": "Martin Novák",
-      "company": "Strojírenská firma, CZ"
-    },
-    "t2": {
-      "text": "Potřebovali jsme rychle vyrobit prototypové díly. KOVO-KUKY reagovali okamžitě a dodali ve špičkové kvalitě. Budeme se vracet.",
-      "name": "Thomas Berger",
-      "company": "Automotive supplier, DE"
-    },
-    "t3": {
-      "text": "Výborný poměr cena/kvalita. Díly přesně dle výkresu, žádné reklamace. Spolupracujeme už třetím rokem.",
-      "name": "Peter Kováč",
-      "company": "Výrobní podnik, SK"
-    }
-  },
-  "cta": {
-    "title": "Potřebujete zakázkovou výrobu?",
-    "subtitle": "Pošlete nám výkres a do 48 hodin máte cenovou nabídku. Bez závazků, bez čekání.",
-    "button": "Odeslat poptávku zdarma",
-    "point1": "Bez závazků",
-    "point2": "Odpověď do 48h",
-    "note": "Nezávazná poptávka — odpovíme do 48 hodin"
+    "inquiry": "Poslat výkres"
   },
   "about": {
-    "title": "Náš příběh",
-    "subtitle": "Od garáže po 13 CNC strojů",
-    "intro": "KOVO-KUKY je rodinná firma s více než 30letou tradicí. Co začalo v malé garáži, je dnes moderní výroba s 13 stroji a týmem 6 lidí.",
+    "title": "Z garáže do CNC dílny",
+    "subtitle": "Příběh rodiny Kukačků z Dolního Bukovska",
+    "intro": "KOVO-KUKY je rodinná firma, která od roku 1990 vyrábí z kovu to, co zákazníci zrovna potřebují. Začínalo se přívěsnými vozíky v garáži. Dnes se u nás točí CNC soustruhy a frézy a zakázky putují do Česka, Německa, Rakouska i na Slovensko.",
     "story": {
       "title": "Jak to všechno začalo",
-      "part1": "Václav Kukačka starší jednoho dne odešel z práce. Ne proto, že by našel lepší nabídku — prostě ho tam naštvali. Místo hledání nového zaměstnání si řekl, že to zkusí sám. V malé garáži, kam se sotva vešlo jedno auto, začal vyrábět přívěsné vozíky.",
-      "part2": "Postupně se práce rozrůstala. Z vozíků se stala zámečnina — vrata, ploty, všechno, co šlo vyrobit ručně. Když zakázky přibývaly, pořídil si první ruční soustruh a frézku. Bral všechno, co přišlo.",
-      "part3": "Další krok byl lisování plechů. První lis, pak další. Lisoval pro firmu ETA a díky tomu mohl investovat do soustružnických automatů. Zakázek bylo čím dál víc.",
-      "part4": "Pak přišlo CNC. První stroj, žádný kurz, žádná škola. Učil se sám, pokus omyl. Ale naučil se."
+      "part1": "Jednoho dne dal Václav Kukačka starší v práci výpověď. Ne kvůli lepší nabídce, prostě mu došla trpělivost. Místo nového zaměstnání si v garáži, do které se sotva vešlo auto, začal stavět přívěsné vozíky.",
+      "part2": "Vozíky vystřídala zámečnická práce: vrata, ploty, cokoliv, co šlo svařit a smontovat. Když zakázek přibylo, koupil první ruční soustruh a frézku. Bral všechno, co přišlo, a z každé zakázky se něco naučil.",
+      "part3": "Pak přišly lisy. Nejdřív jeden, potom další. Lisování plechů pro firmu ETA vydělalo na soustružnické automaty a zakázek pořád přibývalo.",
+      "part4": "Nakonec přišlo CNC. První stroj, žádný kurz, žádná škola. Jen manuál, trpělivost a pokusy, dokud to nešlo. A šlo."
     },
     "transition": {
-      "title": "Předání další generaci",
-      "text": "Kolem roku 2000 začal Václav firmu předávat synovi — taky Václavovi. Ten se CNC naučil od táty, přidal nové zakázky a postupně firmu rozšířil do podoby, jakou má dnes."
+      "title": "Štafeta pro syna",
+      "text": "Kolem roku 2000 začal Václav předávat firmu synovi, také Václavovi. CNC se naučil přímo od táty, přivedl nové zákazníky a dílnu postupně vybudoval do dnešní podoby."
     },
     "today": {
-      "title": "KOVO-KUKY dnes",
-      "text": "13 strojů, 6 zaměstnanců, zákazníci z Česka i zahraničí. Pořád rodinná firma, pořád osobní přístup. Děláme to, co umíme nejlíp — přesné CNC obrábění."
+      "title": "Dnes",
+      "text": "Šest lidí, moderní CNC stroje a zákazníci ze čtyř zemí. Pořád rodinná firma, ve které se zakázky domlouvají přímo s lidmi, kteří je vyrábějí."
     },
     "values": {
-      "title": "Co nás definuje",
+      "title": "Na čem si zakládáme",
       "precision": {
         "title": "Řemeslo",
-        "description": "Začínali jsme ručně, dneska máme CNC. Ale přístup k práci zůstává stejný — poctivě a precizně."
+        "description": "Začínali jsme ručně, dnes pracujeme na CNC. Přístup se nezměnil: dělat to pořádně."
       },
       "reliability": {
         "title": "Slovo platí",
-        "description": "Když řekneme termín, tak platí. Bez výmluv."
+        "description": "Řekneme termín a držíme ho."
       },
       "flexibility": {
-        "title": "Všechno vyřešíme",
-        "description": "Kusovka, série, prototyp — zvládneme. A když něco nevíme, přiznáme to."
+        "title": "Řešení, ne výmluvy",
+        "description": "Kusovka, prototyp nebo série. A co nevíme, rovnou přiznáme."
       },
       "quality": {
-        "title": "Rodinná firma",
-        "description": "Nejsme korporát. Jednáte přímo s lidmi, kteří vaši zakázku vyrábí."
+        "title": "Žádný korporát",
+        "description": "S nikým prostředním. Jednáte s lidmi, kteří vaše díly vyrábějí."
       }
+    },
+    "seo": {
+      "title": "O nás: rodinná CNC dílna z Dolního Bukovska | KOVO-KUKY",
+      "description": "Od garáže po moderní CNC výrobu. Poznejte rodinu Kukačků, která od roku 1990 obrábí kovy pro české a zahraniční firmy včetně Richmont a ETA."
+    },
+    "partnerships": "Dlouhodobě dodáváme pro Richmont (CZ) a ETA (Rakousko). Výrobu máme nastavenou pro série i jednotlivé kusy, s přesností do 0,01 mm a důrazem na dodržení termínů.",
+    "coreServices": {
+      "title": "Čemu se věnujeme",
+      "s1": "Přesné CNC frézování a soustružení",
+      "s2": "Řezání a příprava materiálu",
+      "s3": "Zinkování a povrchové úpravy přes partnery",
+      "s4": "Zakázková výroba pro strojírenství a automotive"
     }
   },
   "machinery": {
     "title": "Strojní park",
-    "subtitle": "Moderní CNC stroje pro přesnou výrobu",
+    "subtitle": "Soustruhy, frézky a pily, na kterých vznikají vaše díly",
     "controlLabel": "Řízení",
     "specs": "Parametry",
     "machines": {
@@ -189,7 +74,11 @@
         "type": "Pásová pila",
         "description": "Přesné dělení tyčového materiálu a profilů.",
         "quantity": "2x",
-        "specs": ["Automatický posuv", "Řez do Ø 260 mm", "Úhlové řezy"]
+        "specs": [
+          "Automatický posuv",
+          "Řez do Ø 260 mm",
+          "Úhlové řezy"
+        ]
       },
       "doosan": {
         "name": "Doosan Lynx 220",
@@ -197,7 +86,11 @@
         "control": "Fanuc",
         "description": "Výkonný CNC soustruh pro přesné soustružení rotačních dílů.",
         "quantity": "2x",
-        "specs": ["Max. Ø 300 mm", "Délka 510 mm", "Přesnost ±0.01 mm"]
+        "specs": [
+          "Max. Ø 300 mm",
+          "Délka 510 mm",
+          "Přesnost ±0.01 mm"
+        ]
       },
       "goodway200": {
         "name": "Goodway GLS-200",
@@ -205,7 +98,11 @@
         "control": "Fanuc",
         "description": "Univerzální CNC soustruh pro střední a větší průměry.",
         "quantity": "1x",
-        "specs": ["Max. Ø 400 mm", "Délka 600 mm", "Přesnost ±0.01 mm"]
+        "specs": [
+          "Max. Ø 400 mm",
+          "Délka 600 mm",
+          "Přesnost ±0.01 mm"
+        ]
       },
       "goodway150": {
         "name": "Goodway GLS-150",
@@ -213,7 +110,11 @@
         "control": "Fanuc",
         "description": "Kompaktní CNC soustruh pro menší díly s vysokou přesností.",
         "quantity": "1x",
-        "specs": ["Max. Ø 200 mm", "Délka 350 mm", "Přesnost ±0.005 mm"]
+        "specs": [
+          "Max. Ø 200 mm",
+          "Délka 350 mm",
+          "Přesnost ±0.01 mm"
+        ]
       },
       "millingXHS": {
         "name": "CNC Frézka XHS",
@@ -221,7 +122,11 @@
         "control": "Fanuc",
         "description": "Tříosé frézovací centrum pro výrobu přesných dílů.",
         "quantity": "1x",
-        "specs": ["Pojezdy 800×500×500 mm", "3 osy", "Přesnost ±0.01 mm"]
+        "specs": [
+          "Pojezdy 800×500×500 mm",
+          "3 osy",
+          "Přesnost ±0.01 mm"
+        ]
       },
       "robodrill": {
         "name": "CNC Frézka Robodrill",
@@ -229,21 +134,32 @@
         "control": "Fanuc",
         "description": "Vysokorychlostní frézovací centrum pro sériovou výrobu.",
         "quantity": "1x",
-        "specs": ["Pojezdy 700×400×330 mm", "24 000 ot/min", "Přesnost ±0.005 mm"]
+        "specs": [
+          "Pojezdy 700×400×330 mm",
+          "Přesnost ±0.01 mm"
+        ]
       }
+    },
+    "seo": {
+      "title": "Strojní park: CNC soustruhy Doosan, Goodway a frézky | KOVO-KUKY",
+      "description": "Doosan Lynx 220, Goodway GLS-200 a GLS-150, frézky XHS a Robodrill, pily Bianco. Řízení Fanuc, přesnost ±0,01 mm."
     }
   },
   "gallery": {
     "title": "Galerie",
     "subtitle": "Ukázky naší práce",
-    "placeholder": "Fotky výrobků budou brzy doplněny."
+    "placeholder": "Fotky výrobků doplníme.",
+    "seo": {
+      "title": "Galerie: ukázky CNC obrábění | KOVO-KUKY",
+      "description": "Ukázky dílů vyrobených na našich CNC soustruzích a frézkách v Dolním Bukovsku."
+    }
   },
   "contact": {
-    "title": "Kontakt & Poptávka",
-    "subtitle": "Ozvěte se nám s vaším projektem — odpovíme do 48 hodin",
+    "title": "Pošlete nám výkres",
+    "subtitle": "Ozveme se do 48 hodin s cenou a termínem.",
     "seo": {
-      "title": "Kontakt | KOVO-KUKY Dolní Bukovsko (Veselská 58)",
-      "description": "Poptáváte CNC výrobu? Kontaktujte nás na adrese Veselská 58, Dolní Bukovsko. Rychlé nacenění a profesionální přístup."
+      "title": "Kontakt a poptávka CNC výroby | KOVO-KUKY Dolní Bukovsko",
+      "description": "Poptávka CNC obrábění: pošlete výkres a do 48 hodin dostanete cenu i termín. Veselská 58, Dolní Bukovsko, tel. +420 725 770 820."
     },
     "info": {
       "title": "Kontaktní údaje",
@@ -253,9 +169,12 @@
       "dic": "CZ8011251237",
       "icoLabel": "IČO",
       "dicLabel": "DIČ",
-      "email": "info@kovo-kuky.cz",
+      "email": "info@kovokuky.cz",
       "phone": "+420 725 770 820",
-      "address": "Veselská 58, Dolní Bukovsko 373 65"
+      "address": "Veselská 58, Dolní Bukovsko 373 65",
+      "emailLabel": "E-mail",
+      "phoneLabel": "Telefon",
+      "addressLabel": "Adresa"
     },
     "form": {
       "title": "Poptávkový formulář",
@@ -285,16 +204,16 @@
       "message": "Zpráva / popis",
       "attachment": "Příloha (výkres)",
       "attachmentHint": "PDF, DXF, STEP, JPG, PNG (max 10 MB)",
-      "submit": "Nezávazně poptat výrobu",
+      "submit": "Poslat poptávku",
       "sending": "Odesílání...",
       "success": "Poptávka byla úspěšně odeslána! Ozveme se vám do 48 hodin.",
       "error": "Při odesílání došlo k chybě. Zkuste to prosím znovu.",
-      "bottomNote": "Cenovou nabídku zpracujeme standardně do 48 hodin.",
-      "gdprConsent": "Souhlasím se zpracováním osobních údajů dle",
+      "bottomNote": "Odpovíme do 48 hodin.",
+      "gdprConsent": "Beru na vědomí, že údaje z formuláře použijete k vyřízení poptávky podle",
       "gdprLink": "Zásad ochrany osobních údajů",
-      "recaptchaNotice": "Tento web je chráněn službou reCAPTCHA a platí",
+      "recaptchaNotice": "Formulář chrání služba Google reCAPTCHA. Platí",
       "privacyPolicy": "Zásady ochrany soukromí",
-      "termsOfService": "Smluvní podmínky",
+      "termsOfService": "Smluvní podmínky společnosti Google",
       "and": "a"
     },
     "validation": {
@@ -305,20 +224,19 @@
       "serviceRequired": "Vyberte alespoň jednu službu",
       "materialRequired": "Vyberte alespoň jeden materiál",
       "messageRequired": "Zpráva je povinná",
-      "gdprRequired": "Pro odeslání musíte souhlasit se zpracováním osobních údajů"
+      "gdprRequired": "Potvrďte prosím, že jste se seznámili se zásadami ochrany osobních údajů"
     }
   },
-  "floatingCta": {
-    "text": "Poslat poptávku"
-  },
   "footer": {
-    "description": "Profesionální CNC obrábění kovů. Soustružení, frézování a řezání na moderních strojích s přesností na setiny milimetru.",
-    "navigation": "Navigace",
+    "description": "Zakázkové CNC obrábění kovů v Dolním Bukovsku. Soustružení, frézování a řezání na setiny milimetru.",
+    "navigation": "Stránky",
     "contactTitle": "Kontakt",
     "rights": "Všechna práva vyhrazena.",
     "ctaText": "Máte projekt? Pošlete nám poptávku a připravíme nabídku.",
     "madeBy": "Web vytvořil",
-    "madeByTitle": "Tvorba webových stránek JP Vision"
+    "madeByTitle": "Tvorba webových stránek JP Vision",
+    "legal": "Zásady ochrany osobních údajů",
+    "cookieSettings": "Nastavení cookies"
   },
   "images": {
     "logoAlt": "Logo KOVO-KUKY - kovoobrábění a CNC výroba",
@@ -327,40 +245,283 @@
     "workshopAlt": "Strojírenská výroba KOVO-KUKY, Veselská 58, Dolní Bukovsko"
   },
   "cookies": {
-    "title": "Tento web používá cookies",
-    "description": "Používáme cookies pro analýzu návštěvnosti (Google Analytics). Můžete je přijmout všechny, nebo pouze ty nezbytné pro fungování webu.",
-    "acceptAll": "Přijmout vše",
-    "necessary": "Pouze nezbytné"
+    "title": "Cookies na tomto webu",
+    "description": "Nezbytné cookies a reCAPTCHA chrání formulář a běží vždy. Měření návštěvnosti (Google Analytics) zapneme jen s vaším souhlasem.",
+    "acceptAll": "Povolit měření",
+    "necessary": "Jen nezbytné",
+    "settingsTitle": "Nastavení cookies",
+    "privacy": "Zásady ochrany osobních údajů"
   },
   "privacy": {
     "title": "Zásady ochrany osobních údajů",
-    "intro": "Ochrana vašich osobních údajů je pro nás důležitá. Tyto zásady popisují, jak shromažďujeme, používáme a chráníme vaše osobní údaje.",
-    "dataCollection": {
-      "title": "Jaké údaje sbíráme",
-      "description": "Prostřednictvím poptávkového formuláře sbíráme následující údaje:",
-      "items": ["Jméno a příjmení", "E-mailová adresa", "Telefonní číslo", "Informace o poptávce (typ služby, materiál, popis)"]
+    "intro": "V těchto zásadách vysvětlujeme, jaké osobní údaje zpracováváme, když navštívíte náš web nebo nám pošlete poptávku, proč to děláme a jaká máte práva.",
+    "updated": "Účinné od 14. 10. 2026",
+    "sections": [
+      {
+        "title": "Kdo vaše údaje zpracovává",
+        "text": [
+          "Správcem osobních údajů je Václav Kukačka, podnikající fyzická osoba pod obchodní značkou KOVO-KUKY, IČO 721 80 714, DIČ CZ8011251237, se sídlem Veselská 58, 373 65 Dolní Bukovsko.",
+          "S dotazy k ochraně osobních údajů se obracejte na info@kovokuky.cz nebo +420 725 770 820. Pověřence pro ochranu osobních údajů jmenovat nemusíme."
+        ]
+      },
+      {
+        "title": "Jaké údaje zpracováváme",
+        "items": [
+          "Kontaktní údaje z formuláře: jméno a příjmení, e-mail, telefon.",
+          "Obsah poptávky: požadovaná služba, materiál, počet kusů, termín, zpráva a přiložené soubory, například výkresy.",
+          "Údaje z další komunikace, pokud nám napíšete nebo zavoláte.",
+          "Technické údaje pro ochranu formuláře (IP adresa, údaje o prohlížeči a o chování na stránce), které vyhodnocuje služba Google reCAPTCHA.",
+          "Údaje o návštěvnosti webu ze služby Google Analytics, pouze pokud k tomu dáte souhlas."
+        ]
+      },
+      {
+        "title": "Proč údaje zpracováváme a na jakém základě",
+        "items": [
+          "Vyřízení poptávky, příprava cenové nabídky a navazující komunikace: jednání o uzavření smlouvy a její plnění (čl. 6 odst. 1 písm. b) GDPR).",
+          "Ochrana formuláře před spamem a zneužitím: náš oprávněný zájem (čl. 6 odst. 1 písm. f) GDPR).",
+          "Plnění zákonných povinností, například účetních a daňových, pokud dojde k zakázce (čl. 6 odst. 1 písm. c) GDPR).",
+          "Měření návštěvnosti webu: váš souhlas (čl. 6 odst. 1 písm. a) GDPR), který můžete kdykoli odvolat."
+        ],
+        "after": [
+          "Kontaktní údaje ve formuláři potřebujeme, abychom vám mohli odpovědět. Bez nich poptávku vyřídit nedokážeme."
+        ]
+      },
+      {
+        "title": "Komu údaje předáváme",
+        "text": [
+          "Vaše údaje neprodáváme a nepředáváme je k marketingovým účelům. Pracujeme jen s těmito zpracovateli, kteří pro nás zajišťují technický provoz:"
+        ],
+        "items": [
+          "Resend, Inc. (USA): doručení e-mailu s vaší poptávkou a potvrzení, které vám po odeslání formuláře přijde.",
+          "Google Ireland Limited: služba reCAPTCHA na stránce Kontakt a Google Analytics (jen s vaším souhlasem).",
+          "Vercel Inc. (USA): hosting webu. Při návštěvě stránek zpracovává technické údaje, jako je IP adresa.",
+          "Seznam.cz, a.s. (Česká republika): e-mailová schránka, do které poptávky a e-maily přijímáme."
+        ],
+        "after": [
+          "Pokud nám to ukládá zákon, předáme údaje také příslušným orgánům veřejné moci."
+        ]
+      },
+      {
+        "title": "Předávání mimo Evropskou unii",
+        "text": [
+          "Společnosti Resend, Vercel a Google mohou údaje zpracovávat i ve Spojených státech. Předání probíhá na základě rámce EU-US Data Privacy Framework, nebo na základě standardních smluvních doložek schválených Evropskou komisí."
+        ]
+      },
+      {
+        "title": "Jak dlouho údaje uchováváme",
+        "items": [
+          "Poptávky, ze kterých nevznikne zakázka: nejdéle 3 roky od posledního kontaktu.",
+          "Údaje související se zakázkou: po dobu plnění smlouvy a poté po dobu, kterou stanoví účetní a daňové předpisy (zpravidla 10 let).",
+          "Údaje služby reCAPTCHA neukládáme. Zpracovává je Google podle svých pravidel.",
+          "Analytické údaje: podle nastavení služby Google Analytics, nejdéle 14 měsíců."
+        ]
+      },
+      {
+        "title": "Cookies",
+        "text": [
+          "Nezbytné cookies a služba reCAPTCHA na stránce Kontakt zajišťují fungování a bezpečnost webu, proto běží i bez souhlasu.",
+          "Analytické cookies Google Analytics (_ga, _ga_*) ukládáme až po vašem souhlasu. Vaši volbu si pamatujeme v prohlížeči po dobu 12 měsíců. Změnit ji můžete kdykoli odkazem Nastavení cookies v patičce webu. Po odvolání souhlasu analytické cookies smažeme."
+        ]
+      },
+      {
+        "title": "Vaše práva",
+        "items": [
+          "Získat přístup ke svým osobním údajům.",
+          "Požadovat opravu nepřesných údajů.",
+          "Požadovat výmaz údajů, pokud už je nepotřebujeme.",
+          "Požadovat omezení zpracování.",
+          "Získat údaje ve strojově čitelném formátu (přenositelnost).",
+          "Vznést námitku proti zpracování založenému na oprávněném zájmu.",
+          "Kdykoli odvolat souhlas. Odvolání nemá vliv na zpracování, které proběhlo před ním."
+        ],
+        "after": [
+          "Žádost pošlete na info@kovokuky.cz. Vyřídíme ji bez zbytečného odkladu, nejpozději do jednoho měsíce."
+        ]
+      },
+      {
+        "title": "Stížnost u dozorového úřadu",
+        "text": [
+          "Pokud máte za to, že s vašimi údaji nakládáme v rozporu s předpisy, můžete podat stížnost u Úřadu pro ochranu osobních údajů, Pplk. Sochora 27, 170 00 Praha 7, www.uoou.gov.cz."
+        ]
+      },
+      {
+        "title": "Automatizované rozhodování",
+        "text": [
+          "Neprovádíme automatizované rozhodování ani profilování s právními účinky. Služba reCAPTCHA pouze vyhodnocuje, zda formulář neodesílá robot."
+        ]
+      }
+    ]
+  },
+  "hero": {
+    "title": "CNC obrábění kovů přesné",
+    "titleAccent": "na setiny milimetru",
+    "subtitle": "Soustružíme a frézujeme ocel, nerez, hliník, mosaz i plasty. Od jednoho kusu po série. Pošlete výkres a do 48 hodin máte cenu i termín.",
+    "cta": "Poslat výkres",
+    "secondary": "Co umíme"
+  },
+  "services": {
+    "title": "Co pro vás vyrobíme",
+    "subtitle": "Soustruh, fréza, pila a prověření partneři na povrchovky. Vám stačí poslat výkres.",
+    "seo": {
+      "title": "CNC soustružení, frézování a řezání | KOVO-KUKY",
+      "description": "CNC soustružení do Ø 400 mm, 3osé frézování, řezání materiálu a zinkování přes partnery. Ocel, nerez, hliník, mosaz, plasty. Nabídka do 48 hodin."
     },
-    "purpose": {
-      "title": "Účel zpracování",
-      "description": "Vaše údaje používáme výhradně za účelem:",
-      "items": ["Zpracování vaší poptávky a přípravy cenové nabídky", "Komunikace ohledně vaší zakázky", "Plnění smluvních závazků"]
+    "turning": {
+      "title": "CNC soustružení",
+      "description": "Hřídele, čepy, pouzdra a další rotační díly do průměru 400 mm. Soustruhy Doosan a Goodway s řízením Fanuc drží toleranci ±0,01 mm."
     },
-    "retention": {
-      "title": "Doba uchování",
-      "description": "Vaše údaje uchováváme po dobu nezbytnou pro vyřízení poptávky a případnou následnou spolupráci, maximálně však 3 roky od posledního kontaktu."
+    "milling": {
+      "title": "CNC frézování",
+      "description": "Tříosé frézování podle výkresu nebo 3D modelu. Na centrech XHS a Robodrill vyrobíme prototyp i sérii."
     },
-    "rights": {
-      "title": "Vaše práva",
-      "description": "Máte právo na:",
-      "items": ["Přístup k vašim osobním údajům", "Opravu nepřesných údajů", "Výmaz údajů (právo být zapomenut)", "Omezení zpracování", "Přenositelnost údajů", "Vznesení námitky proti zpracování"]
+    "cutting": {
+      "title": "Řezání materiálu",
+      "description": "Pásové pily Bianco dělí tyče a profily do průměru 260 mm, i pod úhlem. Přířezy dostanete přesně na míru a s minimem odpadu."
     },
-    "cookies": {
-      "title": "Cookies",
-      "description": "Tento web používá cookies pro analýzu návštěvnosti prostřednictvím služby Google Analytics. Analytické cookies jsou aktivovány pouze s vaším souhlasem."
+    "external": {
+      "title": "Zinkování a povrchové úpravy",
+      "description": "Zinkování, svařování a další úpravy zajistíme přes prověřené partnery. Díl od nás dostanete hotový, bez dalšího obvolávání."
     },
-    "contact": {
-      "title": "Kontakt",
-      "description": "Pro uplatnění vašich práv nebo dotazy ohledně zpracování osobních údajů nás kontaktujte na:"
+    "learnMore": "Více o službě",
+    "detailsTitle": "Na čem to děláme",
+    "details": {
+      "turning": [
+        "Doosan Lynx 220 (2×)",
+        "Goodway GLS-200",
+        "Goodway GLS-150",
+        "Řízení Fanuc"
+      ],
+      "milling": [
+        "CNC frézka XHS",
+        "CNC frézka Robodrill",
+        "Řízení Fanuc",
+        "3osé frézování"
+      ],
+      "cutting": [
+        "Pila Bianco (2×)",
+        "Tyče a profily",
+        "Řez do Ø 260 mm",
+        "Úhlové řezy"
+      ],
+      "external": [
+        "Zinkování",
+        "Svařování",
+        "Povrchové úpravy",
+        "Prověření partneři"
+      ]
     }
+  },
+  "process": {
+    "title": "Od výkresu k hotovému dílu",
+    "subtitle": "Čtyři kroky a žádná zbytečná byrokracie.",
+    "step1": {
+      "title": "Pošlete výkres",
+      "description": "Stačí PDF, DXF nebo STEP. K tomu materiál a počet kusů."
+    },
+    "step2": {
+      "title": "Do 48 hodin máte nabídku",
+      "description": "Cena i termín dodání, napsané srozumitelně a bez drobného písma."
+    },
+    "step3": {
+      "title": "Vyrobíme",
+      "description": "Začneme, jakmile nabídku odsouhlasíte. Každý kus před odesláním změříme."
+    },
+    "step4": {
+      "title": "Dodáme",
+      "description": "Díly pošleme nebo předáme v domluvený den."
+    },
+    "cta": "Poslat výkres"
+  },
+  "whyUs": {
+    "title": "Proč KOVO-KUKY",
+    "precision": {
+      "title": "Přesnost na setiny milimetru",
+      "description": "Stroje s řízením Fanuc drží rozměr opakovaně, od prvního kusu po poslední."
+    },
+    "quality": {
+      "title": "Každý díl se měří",
+      "description": "Před expedicí projde kontrolou. Co nesedí, neodjede."
+    },
+    "delivery": {
+      "title": "Termín platí",
+      "description": "Datum, které vám napíšeme, je datum, kdy díly dostanete."
+    },
+    "support": {
+      "title": "Mluvíte s těmi, kdo vyrábí",
+      "description": "Žádné call centrum. Zavoláte nebo napíšete přímo do dílny."
+    },
+    "speed": {
+      "title": "Nabídka do 48 hodin",
+      "description": "Pošlete výkres a dostanete cenu i termín. Jsme tu v pracovní dny od 7:00 do 16:00."
+    },
+    "series": {
+      "title": "Od kusu po sérii",
+      "description": "Zakázky přijímáme od jednoho kusu. Prototypy, přípravky i opakované série."
+    }
+  },
+  "teaser": {
+    "title": "Rodinná dílna, ze které se stala CNC výroba",
+    "text": "Od roku 1990 vyrábíme z kovu to, co zákazníci zrovna potřebují. Začínalo se přívěsnými vozíky v garáži, dnes se u nás točí CNC soustruhy.",
+    "cta": "Náš příběh",
+    "machinery": "Strojní park"
+  },
+  "faq": {
+    "title": "Časté otázky",
+    "subtitle": "Odpovědi na to, na co se zákazníci ptají nejčastěji.",
+    "items": [
+      {
+        "q": "Jaká je minimální objednávka?",
+        "a": "Zakázky přijímáme od jednoho kusu. Vyrábíme prototypy, kusovou výrobu i opakované série."
+      },
+      {
+        "q": "Jak rychle dostanu cenovou nabídku?",
+        "a": "Do 48 hodin od chvíle, kdy nám pošlete výkres. Stačí PDF, DXF nebo STEP, k tomu materiál a počet kusů."
+      },
+      {
+        "q": "Jaké materiály obrábíte?",
+        "a": "Ocel, nerez (například 17 240), hliník (například EN AW 6060), mosaz a technické plasty jako POM, PA6 a PTFE."
+      },
+      {
+        "q": "Jaké přesnosti dosáhnete?",
+        "a": "Běžně držíme toleranci ±0,01 mm. U náročnějších dílů se domluvíme podle výkresu."
+      },
+      {
+        "q": "Jak velké díly zvládnete?",
+        "a": "Soustružíme do průměru 400 mm a délky 600 mm. Frézujeme v pojezdech až 800 × 500 × 500 mm. Tyče a profily řežeme do průměru 260 mm."
+      },
+      {
+        "q": "Zajistíte zinkování nebo jiné povrchové úpravy?",
+        "a": "Ano. Zinkování, svařování i další úpravy zajistíme přes prověřené partnery, takže od nás dostanete hotový díl."
+      },
+      {
+        "q": "Dodáváte i do zahraničí?",
+        "a": "Ano, pravidelně vyrábíme pro firmy z Německa, Rakouska a Slovenska. Komunikujeme česky a německy."
+      },
+      {
+        "q": "Jaký podklad potřebujete k nabídce?",
+        "a": "Nejlépe PDF výkres s kótami a tolerancemi, případně 3D model ve formátu STEP. Výkres nemáte? Zavolejte, poradíme."
+      },
+      {
+        "q": "Kde vás najdu a kdy máte otevřeno?",
+        "a": "Sídlíme na adrese Veselská 58, Dolní Bukovsko, v Jihočeském kraji. Pracujeme v pracovní dny od 7:00 do 16:00."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Máte výkres? Pošlete ho.",
+    "subtitle": "Cenu a termín dostanete do 48 hodin. Nezávazně.",
+    "button": "Poslat výkres"
+  },
+  "floatingCta": {
+    "text": "Poslat výkres"
+  },
+  "notFound": {
+    "title": "Tenhle díl ve výkresech nemáme.",
+    "text": "Stránka, kterou hledáte, se přesunula, nebo nikdy neexistovala. Stroj zastavil program a čeká na další pokyn.",
+    "home": "Zpět na úvod",
+    "contact": "Poslat výkres",
+    "alarm": "ALARM 404 · STRÁNKA NENALEZENA",
+    "running": "PROGRAM BĚŽÍ",
+    "reset": "Reset"
   }
 }

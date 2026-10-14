@@ -13,27 +13,20 @@ export function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex items-center gap-1 rounded-md border border-border p-0.5">
-      <button
-        onClick={() => switchLocale("cs")}
-        className={`rounded px-2 py-1 text-sm font-medium transition-colors ${
-          locale === "cs"
-            ? "bg-primary text-primary-foreground"
-            : "text-muted-foreground hover:text-foreground"
-        }`}
-      >
-        CZ
-      </button>
-      <button
-        onClick={() => switchLocale("de")}
-        className={`rounded px-2 py-1 text-sm font-medium transition-colors ${
-          locale === "de"
-            ? "bg-primary text-primary-foreground"
-            : "text-muted-foreground hover:text-foreground"
-        }`}
-      >
-        DE
-      </button>
+    <div className="flex items-center rounded-full bg-white/[0.06] p-0.5">
+      {(["cs", "de"] as const).map((l) => (
+        <button
+          key={l}
+          onClick={() => switchLocale(l)}
+          className={`rounded-full px-2.5 py-1.5 text-[11px] font-medium uppercase tracking-wider transition-colors duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+            locale === l
+              ? "bg-white/15 text-foreground"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
+        >
+          {l}
+        </button>
+      ))}
     </div>
   );
 }

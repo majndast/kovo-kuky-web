@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Präzisions-CNC-Bearbeitung & Drehen | KOVO-KUKY Tschechien",
-    "description": "Individuelle CNC-Bearbeitung, Fräsen und Drehen für die europäische Maschinenbauindustrie. Zuverlässiger Lieferant für Richmont und ETA Österreich. Hochpräzise Metallteile aus Tschechien."
+    "title": "CNC-Lohnfertigung: Drehen & Fräsen aus Tschechien | KOVO-KUKY",
+    "description": "CNC-Lohnfertigung in Südböhmen: Drehen, Fräsen und Zuschnitt von Stahl, Edelstahl, Aluminium und Messing. Genauigkeit im Hundertstelbereich, Angebot in 48 Stunden."
   },
   "nav": {
     "home": "Startseite",
@@ -10,185 +10,62 @@
     "machinery": "Maschinenpark",
     "gallery": "Galerie",
     "contact": "Kontakt",
-    "inquiry": "Angebot anfordern"
-  },
-  "hero": {
-    "badge": "Neue Aufträge willkommen",
-    "title": "Präzisions-CNC-Bearbeitung",
-    "titleAccent": "nach Maß",
-    "subtitle": "Wir fertigen Teile exakt nach Ihren Zeichnungen. Auf CNC-Drehmaschinen und Fräsen bearbeiten wir Stahl, Edelstahl, Aluminium und Messing — schnell, zuverlässig und mit hundertstel Millimeter Präzision.",
-    "cta": "Angebot anfordern",
-    "secondary": "Dienstleistungen ansehen",
-    "trust1": "Qualität garantiert",
-    "trust2": "Angebot innerhalb 48h",
-    "trust3": "30+ Jahre Tradition",
-    "statMachines": "CNC-Maschinen",
-    "statPrecision": "Präzision",
-    "statQuality": "Zufriedenheit",
-    "statQuote": "Angebot innerhalb",
-    "cardCta": "Senden Sie eine Zeichnung — erhalten Sie ein Angebot innerhalb von 48 Stunden",
-    "socialProof": "Wir arbeiten mit Unternehmen aus CZ, SK, DE und AT"
-  },
-  "services": {
-    "label": "Was wir tun",
-    "title": "Komplette CNC-Bearbeitung",
-    "subtitle": "Von Einzelstücken bis zur Serie — alles aus einer Hand",
-    "seo": {
-      "title": "CNC-Lohnfertigung & Metallbearbeitungsdienstleistungen",
-      "description": "Komplette Metallbearbeitung vom Materialzuschnitt bis zur Oberflächenbehandlung (Verzinkung). Wir arbeiten mit Stahl, Edelstahl und Aluminium mit 0,01 mm Präzision."
-    },
-    "turning": {
-      "title": "CNC-Drehen",
-      "description": "Präzisionsdrehen auf Doosan Lynx 220 und Goodway GLS CNC-Drehmaschinen mit Fanuc-Steuerung. Rotationsteile aus Stahl, Edelstahl, Aluminium und Messing mit ±0,01 mm Toleranz."
-    },
-    "milling": {
-      "title": "CNC-Fräsen",
-      "description": "3-Achsen-Fräsen auf XHS und Robodrill Zentren mit Fanuc-Steuerung. Fertigung von Präzisionsteilen nach Zeichnungen oder 3D-Modellen, von Prototypen bis zur Serie."
-    },
-    "cutting": {
-      "title": "Materialzuschnitt",
-      "description": "Präzisionszuschnitt von Rundmaterial und Profilen auf Bianco-Sägen. Zuschnitte nach Ihren Maßen mit minimalem Verschnitt."
-    },
-    "external": {
-      "title": "Externe Dienstleistungen",
-      "description": "Komplettservice inklusive Verzinkung, Schweißen und anderen Oberflächenbehandlungen durch geprüfte Partner. Ohne zusätzlichen Aufwand."
-    },
-    "learnMore": "Mehr erfahren"
-  },
-  "process": {
-    "label": "So funktioniert es",
-    "title": "Von der Anfrage zum fertigen Teil",
-    "subtitle": "Einfacher und transparenter Prozess — Sie wissen genau, was mit Ihrer Bestellung passiert",
-    "step1": {
-      "title": "Anfrage senden",
-      "description": "Füllen Sie das Formular aus und fügen Sie eine Zeichnung bei. PDF, DXF oder STEP genügt."
-    },
-    "step2": {
-      "title": "Angebot erhalten",
-      "description": "Innerhalb von 48 Stunden senden wir Ihnen ein Preisangebot mit Liefertermin."
-    },
-    "step3": {
-      "title": "Wir fertigen",
-      "description": "Nach Freigabe beginnen wir mit der Produktion auf unseren CNC-Maschinen."
-    },
-    "step4": {
-      "title": "Wir liefern",
-      "description": "Fertige Teile werden geprüft und zum vereinbarten Termin geliefert."
-    },
-    "cta": "Mit einer Anfrage beginnen"
-  },
-  "whyUs": {
-    "label": "Warum wir",
-    "title": "Warum KOVO-KUKY wählen?",
-    "subtitle": "Dutzende Unternehmen vertrauen uns. Hier ist warum.",
-    "precision": {
-      "title": "Hundertstel mm Präzision",
-      "description": "CNC-Maschinen mit Fanuc-Steuerung garantieren wiederholbare Präzision von ±0,01 mm bei jedem Teil."
-    },
-    "quality": {
-      "title": "100% Qualitätskontrolle",
-      "description": "Jedes Teil wird vor dem Versand gemessen und geprüft. Keine Kompromisse."
-    },
-    "delivery": {
-      "title": "Zuverlässige Lieferung",
-      "description": "Wir halten vereinbarte Termine ein. Wenn wir ein Datum nennen, gilt es."
-    },
-    "support": {
-      "title": "Persönlicher Ansatz",
-      "description": "Sie kommunizieren direkt mit der Produktion, nicht mit einem Callcenter. Wir lösen Dinge schnell, ohne Bürokratie."
-    },
-    "speed": {
-      "title": "Schnelle Angebote",
-      "description": "Sie erhalten ein Preisangebot innerhalb von 48 Stunden nach Zusendung Ihrer Anfrage mit Zeichnung."
-    },
-    "certified": {
-      "title": "Geprüfter Partner",
-      "description": "Wir arbeiten mit Unternehmen aus Tschechien, der Slowakei, Deutschland und Österreich."
-    }
-  },
-  "stats": {
-    "years": "Jahre Erfahrung",
-    "machines": "CNC-Maschinen",
-    "projects": "Abgeschlossene Aufträge",
-    "satisfaction": "Kundenzufriedenheit"
-  },
-  "testimonials": {
-    "label": "Referenzen",
-    "title": "Was unsere Kunden sagen",
-    "t1": {
-      "text": "Die Zusammenarbeit mit KOVO-KUKY ist reibungslos. Teile sind immer präzise, Termine werden eingehalten, und die Kommunikation ist ausgezeichnet. Sehr empfehlenswert.",
-      "name": "Martin Novák",
-      "company": "Maschinenbauunternehmen, CZ"
-    },
-    "t2": {
-      "text": "Wir brauchten schnell Prototypenteile. KOVO-KUKY reagierte sofort und lieferte Top-Qualität. Wir kommen wieder.",
-      "name": "Thomas Berger",
-      "company": "Automobilzulieferer, DE"
-    },
-    "t3": {
-      "text": "Ausgezeichnetes Preis-Leistungs-Verhältnis. Teile exakt nach Zeichnung, keine Beanstandungen. Wir arbeiten seit drei Jahren zusammen.",
-      "name": "Peter Kováč",
-      "company": "Fertigungsunternehmen, SK"
-    }
-  },
-  "cta": {
-    "title": "Benötigen Sie Lohnfertigung?",
-    "subtitle": "Senden Sie uns eine Zeichnung und erhalten Sie ein Preisangebot innerhalb von 48 Stunden. Unverbindlich, ohne Wartezeit.",
-    "button": "Kostenlose Anfrage senden",
-    "point1": "Unverbindlich",
-    "point2": "Antwort innerhalb 48h",
-    "note": "Unverbindliche Anfrage — wir antworten innerhalb von 48 Stunden"
+    "inquiry": "Zeichnung senden"
   },
   "about": {
-    "title": "Präzisions-CNC-Bearbeitung & Industrielle Zulieferung",
-    "subtitle": "Vertrauenswürdiger tschechischer Partner für die europäische Industrie",
-    "intro": "Wir sind ein spezialisiertes tschechisches Maschinenbauunternehmen mit Sitz in Dolní Bukovsko und bieten hochwertige CNC-Dreh- und Fräsdienstleistungen. Als zuverlässiger Lieferant für die Metallbearbeitungsindustrie bieten wir umfassende Lösungen — vom Rohmaterialzuschnitt bis zu Oberflächenbehandlungen (z.B. Verzinkung) durch unsere zertifizierten Partner.",
-    "partnerships": "Wir sind stolz auf unsere langjährigen Partnerschaften mit internationalen Branchenführern wie Richmont (CZ) und ETA (Österreich). Unsere Produktion ist sowohl für Serien- als auch für Einzelaufträge optimiert und gewährleistet hohe Präzision (bis 0,01 mm) und strikte Einhaltung von Lieferterminen.",
+    "title": "Von der Garage zur CNC-Werkstatt",
+    "subtitle": "Die Geschichte der Familie Kukačka aus Dolní Bukovsko",
+    "intro": "KOVO-KUKY ist ein Familienbetrieb, der seit 1990 aus Metall fertigt, was Kunden gerade brauchen. Angefangen hat es mit Anhängern in einer Garage. Heute laufen bei uns CNC-Drehmaschinen und Fräsen, und die Aufträge gehen nach Tschechien, Deutschland, Österreich und in die Slowakei.",
+    "partnerships": "Wir liefern langjährig für Richmont (CZ) und ETA (Österreich). Unsere Fertigung ist für Serien und Einzelteile ausgelegt, mit Genauigkeit bis 0,01 mm und konsequent eingehaltenen Terminen.",
     "coreServices": {
-      "title": "Unsere Kerndienstleistungen",
-      "s1": "Präzisions-CNC-Fräsen & Drehen",
-      "s2": "Materialzuschnitt & Vorbereitung",
-      "s3": "Lieferkettenmanagement für Oberflächenveredelung",
-      "s4": "Lohnfertigung für Automobil- und Maschinenbauindustrie"
+      "title": "Wofür wir stehen",
+      "s1": "Präzises CNC-Fräsen und -Drehen",
+      "s2": "Zuschnitt und Materialvorbereitung",
+      "s3": "Verzinken und Oberflächen über Partner",
+      "s4": "Lohnfertigung für Maschinenbau und Automotive"
     },
     "story": {
       "title": "Wie alles begann",
-      "part1": "Václav Kukačka Sr. kündigte eines Tages seinen Job. Nicht weil er ein besseres Angebot gefunden hatte — er hatte einfach genug. Anstatt eine neue Anstellung zu suchen, beschloss er, sich selbstständig zu machen. In einer winzigen Garage, die kaum für ein Auto reichte, begann er mit der Herstellung von Anhängern.",
-      "part2": "Die Arbeit wuchs stetig. Aus Anhängern wurde Metallarbeit — Tore, Zäune, alles was von Hand gefertigt werden konnte. Als die Aufträge zunahmen, kaufte er seine erste manuelle Drehmaschine und Fräsmaschine. Er nahm alles an, was kam.",
-      "part3": "Dann kam Blechumformung. Erst eine Presse, dann mehr. Er machte Umformarbeiten für ETA, und das ermöglichte ihm die Investition in automatische Drehmaschinen. Die Aufträge kamen weiter.",
-      "part4": "Dann kam CNC. Erste Maschine, keine Kurse, keine Schulung. Er lernte selbst, durch Versuch und Irrtum. Aber er lernte."
+      "part1": "Eines Tages kündigte Václav Kukačka senior seinen Job. Nicht wegen eines besseren Angebots, ihm war schlicht der Geduldsfaden gerissen. Statt eine neue Stelle zu suchen, baute er in einer Garage, in die kaum ein Auto passte, Anhänger.",
+      "part2": "Auf die Anhänger folgte Schlosserarbeit: Tore, Zäune, alles, was sich schweißen und montieren ließ. Als die Aufträge mehr wurden, kaufte er die erste konventionelle Drehmaschine und Fräse. Er nahm alles an, was kam, und lernte aus jedem Auftrag etwas.",
+      "part3": "Dann kamen die Pressen. Erst eine, dann weitere. Das Umformen von Blechen für ETA finanzierte Dreh-Automaten, und die Aufträge nahmen weiter zu.",
+      "part4": "Schließlich kam CNC. Erste Maschine, kein Kurs, keine Schule. Nur Handbuch, Geduld und Ausprobieren, bis es lief. Und es lief."
     },
     "transition": {
-      "title": "Staffelübergabe",
-      "text": "Um 2000 begann Václav, das Unternehmen an seinen Sohn zu übergeben — auch Václav genannt. Er lernte CNC von seinem Vater, brachte neue Aufträge und baute das Unternehmen schrittweise zu dem aus, was es heute ist."
+      "title": "Staffelstab an den Sohn",
+      "text": "Um 2000 begann Václav, den Betrieb an seinen Sohn zu übergeben, ebenfalls Václav. Der lernte CNC direkt vom Vater, brachte neue Kunden mit und baute die Werkstatt Schritt für Schritt zu dem aus, was sie heute ist."
     },
     "today": {
-      "title": "KOVO-KUKY heute",
-      "text": "13 Maschinen, 6 Mitarbeiter, Kunden aus Tschechien und dem Ausland. Immer noch ein Familienbetrieb, immer noch persönlicher Ansatz. Wir tun, was wir am besten können — präzise CNC-Bearbeitung."
+      "title": "Heute",
+      "text": "Sechs Leute, moderne CNC-Maschinen und Kunden aus vier Ländern. Nach wie vor ein Familienbetrieb, in dem Aufträge direkt mit den Leuten besprochen werden, die sie fertigen."
     },
     "values": {
-      "title": "Was uns ausmacht",
+      "title": "Wofür wir geradestehen",
       "precision": {
-        "title": "Handwerkskunst",
-        "description": "Wir haben von Hand angefangen, jetzt haben wir CNC. Aber der Ansatz bleibt gleich — ehrliche und präzise Arbeit."
+        "title": "Handwerk",
+        "description": "Wir haben von Hand angefangen, heute arbeiten wir mit CNC. Die Haltung ist geblieben: ordentlich arbeiten."
       },
       "reliability": {
-        "title": "Unser Wort zählt",
-        "description": "Wenn wir einen Termin nennen, meinen wir ihn. Keine Ausreden."
+        "title": "Wort gilt",
+        "description": "Wir nennen einen Termin und halten ihn."
       },
       "flexibility": {
-        "title": "Wir finden eine Lösung",
-        "description": "Einzelstück, Serie, Prototyp — wir schaffen es. Und wenn wir etwas nicht wissen, sagen wir es."
+        "title": "Lösungen statt Ausreden",
+        "description": "Einzelstück, Prototyp oder Serie. Und was wir nicht wissen, sagen wir offen."
       },
       "quality": {
-        "title": "Familienbetrieb",
-        "description": "Wir sind kein Konzern. Sie sprechen direkt mit den Leuten, die Ihre Teile fertigen."
+        "title": "Kein Konzern",
+        "description": "Keine Zwischenebene. Sie sprechen mit den Leuten, die Ihre Teile fertigen."
       }
+    },
+    "seo": {
+      "title": "Über uns: Familienbetrieb für CNC-Bearbeitung | KOVO-KUKY",
+      "description": "Von der Garage zur modernen CNC-Fertigung. Die Familie Kukačka bearbeitet seit 1990 Metall für Firmen in Tschechien und im Ausland, darunter Richmont und ETA."
     }
   },
   "machinery": {
     "title": "Maschinenpark",
-    "subtitle": "Moderne CNC-Maschinen für Präzisionsfertigung",
+    "subtitle": "Drehmaschinen, Fräsen und Sägen, auf denen Ihre Teile entstehen",
     "controlLabel": "Steuerung",
     "specs": "Spezifikationen",
     "machines": {
@@ -197,7 +74,11 @@
         "type": "Bandsäge",
         "description": "Präzisionszuschnitt von Rundmaterial und Profilen.",
         "quantity": "2x",
-        "specs": ["Automatischer Vorschub", "Schnitt bis Ø 260 mm", "Winkelschnitte"]
+        "specs": [
+          "Automatischer Vorschub",
+          "Schnitt bis Ø 260 mm",
+          "Winkelschnitte"
+        ]
       },
       "doosan": {
         "name": "Doosan Lynx 220",
@@ -205,7 +86,11 @@
         "control": "Fanuc",
         "description": "Leistungsstarke CNC-Drehmaschine für Präzisionsdrehteile.",
         "quantity": "2x",
-        "specs": ["Max. Ø 300 mm", "Länge 510 mm", "Präzision ±0,01 mm"]
+        "specs": [
+          "Max. Ø 300 mm",
+          "Länge 510 mm",
+          "Präzision ±0,01 mm"
+        ]
       },
       "goodway200": {
         "name": "Goodway GLS-200",
@@ -213,7 +98,11 @@
         "control": "Fanuc",
         "description": "Universelle CNC-Drehmaschine für mittlere und größere Durchmesser.",
         "quantity": "1x",
-        "specs": ["Max. Ø 400 mm", "Länge 600 mm", "Präzision ±0,01 mm"]
+        "specs": [
+          "Max. Ø 400 mm",
+          "Länge 600 mm",
+          "Präzision ±0,01 mm"
+        ]
       },
       "goodway150": {
         "name": "Goodway GLS-150",
@@ -221,7 +110,11 @@
         "control": "Fanuc",
         "description": "Kompakte CNC-Drehmaschine für kleinere Teile mit hoher Präzision.",
         "quantity": "1x",
-        "specs": ["Max. Ø 200 mm", "Länge 350 mm", "Präzision ±0,005 mm"]
+        "specs": [
+          "Max. Ø 200 mm",
+          "Länge 350 mm",
+          "Präzision ±0,01 mm"
+        ]
       },
       "millingXHS": {
         "name": "XHS CNC-Fräse",
@@ -229,7 +122,11 @@
         "control": "Fanuc",
         "description": "3-Achsen-Fräszentrum für die Fertigung von Präzisionsteilen.",
         "quantity": "1x",
-        "specs": ["Verfahrwege 800×500×500 mm", "3-Achsen", "Präzision ±0,01 mm"]
+        "specs": [
+          "Verfahrwege 800×500×500 mm",
+          "3-Achsen",
+          "Präzision ±0,01 mm"
+        ]
       },
       "robodrill": {
         "name": "Robodrill CNC-Fräse",
@@ -237,21 +134,32 @@
         "control": "Fanuc",
         "description": "Hochgeschwindigkeits-Fräszentrum für Serienfertigung.",
         "quantity": "1x",
-        "specs": ["Verfahrwege 700×400×330 mm", "24.000 U/min", "Präzision ±0,005 mm"]
+        "specs": [
+          "Verfahrwege 700×400×330 mm",
+          "Präzision ±0,01 mm"
+        ]
       }
+    },
+    "seo": {
+      "title": "Maschinenpark: CNC-Drehmaschinen Doosan, Goodway und Fräsen | KOVO-KUKY",
+      "description": "Doosan Lynx 220, Goodway GLS-200 und GLS-150, Fräsen XHS und Robodrill, Bianco-Sägen. Fanuc-Steuerung, Genauigkeit ±0,01 mm."
     }
   },
   "gallery": {
     "title": "Galerie",
     "subtitle": "Beispiele unserer Arbeit",
-    "placeholder": "Produktfotos werden in Kürze hinzugefügt."
+    "placeholder": "Fotos der Produkte folgen.",
+    "seo": {
+      "title": "Galerie: Beispiele für CNC-Bearbeitung | KOVO-KUKY",
+      "description": "Beispiele für Teile, die auf unseren CNC-Drehmaschinen und Fräsen in Dolní Bukovsko entstehen."
+    }
   },
   "contact": {
-    "title": "Kontakt & Anfrage",
-    "subtitle": "Kontaktieren Sie uns mit Ihrem Projekt — wir antworten innerhalb von 48 Stunden",
+    "title": "Schicken Sie uns Ihre Zeichnung",
+    "subtitle": "Wir melden uns innerhalb von 48 Stunden mit Preis und Termin.",
     "seo": {
-      "title": "Kontakt | KOVO-KUKY Tschechien (Veselská 58)",
-      "description": "Sie suchen CNC-Fertigung? Kontaktieren Sie uns unter Veselská 58, Dolní Bukovsko, Tschechien. Schnelle Angebote und professioneller Service."
+      "title": "Kontakt und Anfrage für CNC-Fertigung | KOVO-KUKY Tschechien",
+      "description": "CNC-Anfrage: Zeichnung senden und innerhalb von 48 Stunden Preis und Termin erhalten. Veselská 58, Dolní Bukovsko, Tel. +420 725 770 820."
     },
     "info": {
       "title": "Kontaktinformationen",
@@ -259,11 +167,14 @@
       "owner": "Václav Kukačka",
       "ico": "721 80 714",
       "dic": "CZ8011251237",
-      "icoLabel": "Handelsregister-Nr.",
+      "icoLabel": "IČO",
       "dicLabel": "USt-IdNr.",
-      "email": "info@kovo-kuky.cz",
+      "email": "info@kovokuky.cz",
       "phone": "+420 725 770 820",
-      "address": "Veselská 58, Dolní Bukovsko 373 65, Tschechien"
+      "address": "Veselská 58, Dolní Bukovsko 373 65, Tschechien",
+      "emailLabel": "E-Mail",
+      "phoneLabel": "Telefon",
+      "addressLabel": "Adresse"
     },
     "form": {
       "title": "Anfrageformular",
@@ -293,16 +204,16 @@
       "message": "Nachricht / Beschreibung",
       "attachment": "Anhang (Zeichnung)",
       "attachmentHint": "PDF, DXF, STEP, JPG, PNG (max. 10 MB)",
-      "submit": "Angebot anfordern (unverbindlich)",
+      "submit": "Anfrage senden",
       "sending": "Wird gesendet...",
       "success": "Ihre Anfrage wurde erfolgreich gesendet! Wir melden uns innerhalb von 48 Stunden.",
       "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
-      "bottomNote": "Wir bearbeiten Anfragen in der Regel innerhalb von 48 Stunden.",
-      "gdprConsent": "Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der",
+      "bottomNote": "Wir antworten innerhalb von 48 Stunden.",
+      "gdprConsent": "Ich habe die Hinweise zur Verarbeitung meiner Angaben gelesen:",
       "gdprLink": "Datenschutzerklärung",
-      "recaptchaNotice": "Diese Website wird durch reCAPTCHA geschützt und es gelten die",
-      "privacyPolicy": "Datenschutzrichtlinie",
-      "termsOfService": "Nutzungsbedingungen",
+      "recaptchaNotice": "Das Formular ist durch Google reCAPTCHA geschützt. Es gelten die",
+      "privacyPolicy": "Datenschutzerklärung",
+      "termsOfService": "Nutzungsbedingungen von Google",
       "and": "und"
     },
     "validation": {
@@ -313,20 +224,19 @@
       "serviceRequired": "Bitte wählen Sie mindestens eine Dienstleistung",
       "materialRequired": "Bitte wählen Sie mindestens ein Material",
       "messageRequired": "Nachricht ist erforderlich",
-      "gdprRequired": "Sie müssen der Verarbeitung personenbezogener Daten zustimmen"
+      "gdprRequired": "Bitte bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben"
     }
   },
-  "floatingCta": {
-    "text": "Angebot anfordern"
-  },
   "footer": {
-    "description": "Professionelle CNC-Metallbearbeitung. Drehen, Fräsen und Zuschnitt auf modernen Maschinen mit hundertstel Millimeter Präzision.",
-    "navigation": "Navigation",
+    "description": "CNC-Lohnfertigung in Dolní Bukovsko. Drehen, Fräsen und Zuschnitt auf hundertstel Millimeter genau.",
+    "navigation": "Seiten",
     "contactTitle": "Kontakt",
     "rights": "Alle Rechte vorbehalten.",
     "ctaText": "Haben Sie ein Projekt? Senden Sie uns eine Anfrage und wir erstellen ein Angebot.",
     "madeBy": "Entwickelt von",
-    "madeByTitle": "Webentwicklung von JP Vision"
+    "madeByTitle": "Webentwicklung von JP Vision",
+    "legal": "Datenschutzerklärung",
+    "cookieSettings": "Cookie-Einstellungen"
   },
   "images": {
     "logoAlt": "KOVO-KUKY Logo - CNC-Bearbeitung und Metallbearbeitung Tschechien",
@@ -335,40 +245,283 @@
     "workshopAlt": "Metallbearbeitungswerkstatt KOVO-KUKY, Veselská 58, Dolní Bukovsko, Tschechien"
   },
   "cookies": {
-    "title": "Diese Website verwendet Cookies",
-    "description": "Wir verwenden Cookies für die Verkehrsanalyse (Google Analytics). Sie können alle oder nur die für die Website notwendigen akzeptieren.",
-    "acceptAll": "Alle akzeptieren",
-    "necessary": "Nur notwendige"
+    "title": "Cookies auf dieser Website",
+    "description": "Notwendige Cookies und reCAPTCHA schützen das Formular und laufen immer. Die Reichweitenmessung (Google Analytics) schalten wir nur mit Ihrer Einwilligung ein.",
+    "acceptAll": "Messung erlauben",
+    "necessary": "Nur notwendige",
+    "settingsTitle": "Cookie-Einstellungen",
+    "privacy": "Datenschutzerklärung"
   },
   "privacy": {
     "title": "Datenschutzerklärung",
-    "intro": "Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Diese Richtlinie beschreibt, wie wir Ihre persönlichen Informationen erfassen, verwenden und schützen.",
-    "dataCollection": {
-      "title": "Welche Daten wir erfassen",
-      "description": "Über das Anfrageformular erfassen wir folgende Informationen:",
-      "items": ["Vollständiger Name", "E-Mail-Adresse", "Telefonnummer", "Anfragedetails (Dienstleistungsart, Material, Beschreibung)"]
+    "intro": "In dieser Erklärung beschreiben wir, welche personenbezogenen Daten wir verarbeiten, wenn Sie unsere Website besuchen oder uns eine Anfrage senden, warum wir das tun und welche Rechte Sie haben.",
+    "updated": "Gültig ab 14.10.2026",
+    "sections": [
+      {
+        "title": "Verantwortlicher",
+        "text": [
+          "Verantwortlich für die Datenverarbeitung ist Václav Kukačka, Einzelunternehmer unter der Marke KOVO-KUKY, IČO 721 80 714, USt-IdNr. CZ8011251237, Veselská 58, 373 65 Dolní Bukovsko, Tschechien.",
+          "Bei Fragen zum Datenschutz erreichen Sie uns unter info@kovokuky.cz oder +420 725 770 820. Ein Datenschutzbeauftragter ist für uns nicht vorgeschrieben."
+        ]
+      },
+      {
+        "title": "Welche Daten wir verarbeiten",
+        "items": [
+          "Kontaktdaten aus dem Formular: Name, E-Mail-Adresse, Telefonnummer.",
+          "Inhalt der Anfrage: gewünschte Leistung, Material, Stückzahl, Termin, Nachricht und angehängte Dateien, zum Beispiel Zeichnungen.",
+          "Daten aus der weiteren Kommunikation, wenn Sie uns schreiben oder anrufen.",
+          "Technische Daten zum Schutz des Formulars (IP-Adresse, Browserdaten und Nutzungsverhalten auf der Seite), die Google reCAPTCHA auswertet.",
+          "Daten zur Nutzung der Website aus Google Analytics, nur mit Ihrer Einwilligung."
+        ]
+      },
+      {
+        "title": "Zwecke und Rechtsgrundlagen",
+        "items": [
+          "Bearbeitung der Anfrage, Erstellung eines Angebots und weitere Kommunikation: Vertragsanbahnung und Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).",
+          "Schutz des Formulars vor Spam und Missbrauch: unser berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO).",
+          "Erfüllung gesetzlicher Pflichten, etwa aus Buchhaltung und Steuerrecht, wenn ein Auftrag zustande kommt (Art. 6 Abs. 1 lit. c DSGVO).",
+          "Reichweitenmessung: Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die Sie jederzeit widerrufen können."
+        ],
+        "after": [
+          "Die Kontaktdaten im Formular benötigen wir, um Ihnen antworten zu können. Ohne sie können wir die Anfrage nicht bearbeiten."
+        ]
+      },
+      {
+        "title": "Empfänger",
+        "text": [
+          "Wir verkaufen Ihre Daten nicht und geben sie nicht zu Werbezwecken weiter. Wir arbeiten nur mit diesen Auftragsverarbeitern, die den technischen Betrieb sicherstellen:"
+        ],
+        "items": [
+          "Resend, Inc. (USA): Zustellung der E-Mail mit Ihrer Anfrage und der Bestätigung, die Sie nach dem Absenden erhalten.",
+          "Google Ireland Limited: reCAPTCHA auf der Kontaktseite und Google Analytics (nur mit Ihrer Einwilligung).",
+          "Vercel Inc. (USA): Hosting der Website. Beim Seitenaufruf werden technische Daten wie die IP-Adresse verarbeitet.",
+          "Seznam.cz, a.s. (Tschechien): E-Mail-Postfach, in dem Anfragen und E-Mails eingehen."
+        ],
+        "after": [
+          "Soweit wir gesetzlich dazu verpflichtet sind, übermitteln wir Daten auch an zuständige Behörden."
+        ]
+      },
+      {
+        "title": "Übermittlung außerhalb der EU",
+        "text": [
+          "Resend, Vercel und Google können Daten auch in den USA verarbeiten. Die Übermittlung erfolgt auf Grundlage des EU-US Data Privacy Framework oder auf Grundlage der von der Europäischen Kommission genehmigten Standardvertragsklauseln."
+        ]
+      },
+      {
+        "title": "Speicherdauer",
+        "items": [
+          "Anfragen, aus denen kein Auftrag entsteht: höchstens 3 Jahre ab dem letzten Kontakt.",
+          "Daten zu einem Auftrag: für die Dauer des Vertrags und danach so lange, wie es buchhalterische und steuerliche Vorschriften verlangen (in der Regel 10 Jahre).",
+          "Daten von reCAPTCHA speichern wir nicht. Sie werden von Google nach dessen Regeln verarbeitet.",
+          "Analysedaten: gemäß der Einstellung von Google Analytics, höchstens 14 Monate."
+        ]
+      },
+      {
+        "title": "Cookies",
+        "text": [
+          "Notwendige Cookies und reCAPTCHA auf der Kontaktseite sichern Funktion und Sicherheit der Website und laufen deshalb auch ohne Einwilligung.",
+          "Analyse-Cookies von Google Analytics (_ga, _ga_*) setzen wir erst nach Ihrer Einwilligung. Ihre Wahl speichern wir 12 Monate in Ihrem Browser. Sie können sie jederzeit über den Link Cookie-Einstellungen im Footer ändern. Nach einem Widerruf löschen wir die Analyse-Cookies."
+        ]
+      },
+      {
+        "title": "Ihre Rechte",
+        "items": [
+          "Auskunft über Ihre personenbezogenen Daten.",
+          "Berichtigung unrichtiger Daten.",
+          "Löschung, wenn wir die Daten nicht mehr benötigen.",
+          "Einschränkung der Verarbeitung.",
+          "Datenübertragbarkeit in einem maschinenlesbaren Format.",
+          "Widerspruch gegen Verarbeitungen, die auf berechtigtem Interesse beruhen.",
+          "Jederzeitiger Widerruf einer Einwilligung. Der Widerruf berührt nicht die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung."
+        ],
+        "after": [
+          "Senden Sie Ihren Antrag an info@kovokuky.cz. Wir bearbeiten ihn unverzüglich, spätestens innerhalb eines Monats."
+        ]
+      },
+      {
+        "title": "Beschwerde bei einer Aufsichtsbehörde",
+        "text": [
+          "Wenn Sie der Meinung sind, dass wir Ihre Daten rechtswidrig verarbeiten, können Sie sich bei der tschechischen Datenschutzbehörde (Úřad pro ochranu osobních údajů, Pplk. Sochora 27, 170 00 Praha 7, www.uoou.gov.cz) oder bei der Aufsichtsbehörde an Ihrem Wohnort oder Arbeitsplatz beschweren."
+        ]
+      },
+      {
+        "title": "Automatisierte Entscheidungen",
+        "text": [
+          "Wir treffen keine automatisierten Entscheidungen und betreiben kein Profiling mit rechtlicher Wirkung. reCAPTCHA prüft lediglich, ob das Formular von einem Bot abgeschickt wird."
+        ]
+      }
+    ]
+  },
+  "hero": {
+    "title": "CNC-Bearbeitung von Metall, genau",
+    "titleAccent": "auf den Hundertstel",
+    "subtitle": "Wir drehen und fräsen Stahl, Edelstahl, Aluminium, Messing und Kunststoffe. Vom Einzelstück bis zur Serie. Zeichnung schicken, in 48 Stunden haben Sie Preis und Termin.",
+    "cta": "Zeichnung senden",
+    "secondary": "Was wir können"
+  },
+  "services": {
+    "title": "Was wir für Sie fertigen",
+    "subtitle": "Drehmaschine, Fräse, Säge und geprüfte Partner für die Oberfläche. Sie schicken nur die Zeichnung.",
+    "seo": {
+      "title": "CNC-Drehen, Fräsen und Zuschnitt | KOVO-KUKY",
+      "description": "CNC-Drehen bis Ø 400 mm, 3-Achs-Fräsen, Materialzuschnitt und Verzinken über Partner. Stahl, Edelstahl, Aluminium, Messing, Kunststoff. Angebot in 48 Stunden."
     },
-    "purpose": {
-      "title": "Zweck der Verarbeitung",
-      "description": "Wir verwenden Ihre Daten ausschließlich für:",
-      "items": ["Bearbeitung Ihrer Anfrage und Angebotserstellung", "Kommunikation bezüglich Ihrer Bestellung", "Erfüllung vertraglicher Verpflichtungen"]
+    "turning": {
+      "title": "CNC-Drehen",
+      "description": "Wellen, Bolzen, Buchsen und andere Drehteile bis 400 mm Durchmesser. Doosan- und Goodway-Maschinen mit Fanuc-Steuerung halten Toleranzen von ±0,01 mm."
     },
-    "retention": {
-      "title": "Datenspeicherung",
-      "description": "Wir speichern Ihre Daten für die zur Bearbeitung der Anfrage und etwaigen Zusammenarbeit erforderliche Zeit, jedoch nicht länger als 3 Jahre seit dem letzten Kontakt."
+    "milling": {
+      "title": "CNC-Fräsen",
+      "description": "3-Achs-Fräsen nach Zeichnung oder 3D-Modell. Auf den Zentren XHS und Robodrill fertigen wir Prototypen und Serien."
     },
-    "rights": {
-      "title": "Ihre Rechte",
-      "description": "Sie haben das Recht auf:",
-      "items": ["Zugang zu Ihren personenbezogenen Daten", "Berichtigung unrichtiger Daten", "Löschung der Daten (Recht auf Vergessenwerden)", "Einschränkung der Verarbeitung", "Datenübertragbarkeit", "Widerspruch gegen die Verarbeitung"]
+    "cutting": {
+      "title": "Materialzuschnitt",
+      "description": "Bianco-Bandsägen schneiden Stangen und Profile bis 260 mm Durchmesser, auch im Winkel. Zuschnitte kommen maßgenau und mit wenig Verschnitt."
     },
-    "cookies": {
-      "title": "Cookies",
-      "description": "Diese Website verwendet Cookies für die Verkehrsanalyse über Google Analytics. Analytische Cookies werden nur mit Ihrer Zustimmung aktiviert."
+    "external": {
+      "title": "Verzinken und Oberflächen",
+      "description": "Verzinken, Schweißen und weitere Oberflächenbehandlungen organisieren wir über geprüfte Partner. Sie erhalten das fertige Teil, ohne zusätzlichen Aufwand."
     },
-    "contact": {
-      "title": "Kontakt",
-      "description": "Um Ihre Rechte auszuüben oder bei Fragen zur Datenverarbeitung kontaktieren Sie uns unter:"
+    "learnMore": "Mehr zur Leistung",
+    "detailsTitle": "Dafür setzen wir ein",
+    "details": {
+      "turning": [
+        "Doosan Lynx 220 (2×)",
+        "Goodway GLS-200",
+        "Goodway GLS-150",
+        "Fanuc-Steuerung"
+      ],
+      "milling": [
+        "CNC-Fräse XHS",
+        "CNC-Fräse Robodrill",
+        "Fanuc-Steuerung",
+        "3-Achs-Fräsen"
+      ],
+      "cutting": [
+        "Bianco-Säge (2×)",
+        "Stangen und Profile",
+        "Schnitt bis Ø 260 mm",
+        "Winkelschnitte"
+      ],
+      "external": [
+        "Verzinken",
+        "Schweißen",
+        "Oberflächenbehandlung",
+        "Geprüfte Partner"
+      ]
     }
+  },
+  "process": {
+    "title": "Von der Zeichnung zum fertigen Teil",
+    "subtitle": "Vier Schritte, keine unnötige Bürokratie.",
+    "step1": {
+      "title": "Zeichnung senden",
+      "description": "PDF, DXF oder STEP genügt. Dazu Material und Stückzahl."
+    },
+    "step2": {
+      "title": "Angebot in 48 Stunden",
+      "description": "Preis und Liefertermin, verständlich und ohne Kleingedrucktes."
+    },
+    "step3": {
+      "title": "Wir fertigen",
+      "description": "Wir starten, sobald Sie das Angebot freigeben. Jedes Teil wird vor dem Versand gemessen."
+    },
+    "step4": {
+      "title": "Wir liefern",
+      "description": "Die Teile gehen zum vereinbarten Tag raus oder werden abgeholt."
+    },
+    "cta": "Zeichnung senden"
+  },
+  "whyUs": {
+    "title": "Warum KOVO-KUKY",
+    "precision": {
+      "title": "Genauigkeit im Hundertstelbereich",
+      "description": "Maschinen mit Fanuc-Steuerung halten das Maß wiederholbar, vom ersten bis zum letzten Teil."
+    },
+    "quality": {
+      "title": "Jedes Teil wird gemessen",
+      "description": "Vor dem Versand wird geprüft. Was nicht passt, geht nicht raus."
+    },
+    "delivery": {
+      "title": "Termin gilt",
+      "description": "Das Datum, das wir nennen, ist das Datum, an dem Sie die Teile bekommen."
+    },
+    "support": {
+      "title": "Sie sprechen mit der Fertigung",
+      "description": "Kein Callcenter. Sie rufen an oder schreiben direkt in die Werkstatt."
+    },
+    "speed": {
+      "title": "Angebot in 48 Stunden",
+      "description": "Zeichnung schicken, Preis und Termin erhalten. Wir sind werktags von 7:00 bis 16:00 Uhr erreichbar."
+    },
+    "series": {
+      "title": "Vom Einzelstück zur Serie",
+      "description": "Aufträge ab einem Stück. Prototypen, Vorrichtungen und Wiederholserien."
+    }
+  },
+  "teaser": {
+    "title": "Eine Familienwerkstatt, die zur CNC-Fertigung wurde",
+    "text": "Seit 1990 fertigen wir aus Metall, was Kunden gerade brauchen. Angefangen hat es mit Anhängern in der Garage, heute laufen bei uns CNC-Drehmaschinen.",
+    "cta": "Unsere Geschichte",
+    "machinery": "Maschinenpark"
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "subtitle": "Antworten auf das, was Kunden am häufigsten fragen.",
+    "items": [
+      {
+        "q": "Gibt es eine Mindestbestellmenge?",
+        "a": "Wir nehmen Aufträge ab einem Stück an. Wir fertigen Prototypen, Einzelteile und Wiederholserien."
+      },
+      {
+        "q": "Wie schnell erhalte ich ein Angebot?",
+        "a": "Innerhalb von 48 Stunden, nachdem Sie uns die Zeichnung geschickt haben. PDF, DXF oder STEP genügt, dazu Material und Stückzahl."
+      },
+      {
+        "q": "Welche Materialien bearbeiten Sie?",
+        "a": "Stahl, Edelstahl (zum Beispiel 1.4301 bzw. 17 240), Aluminium (zum Beispiel EN AW 6060), Messing und technische Kunststoffe wie POM, PA6 und PTFE."
+      },
+      {
+        "q": "Welche Toleranzen erreichen Sie?",
+        "a": "Üblich sind ±0,01 mm. Bei anspruchsvolleren Teilen stimmen wir uns anhand der Zeichnung ab."
+      },
+      {
+        "q": "Wie groß dürfen die Teile sein?",
+        "a": "Wir drehen bis 400 mm Durchmesser und 600 mm Länge. Gefräst wird in Verfahrwegen bis 800 × 500 × 500 mm. Stangen und Profile sägen wir bis 260 mm Durchmesser."
+      },
+      {
+        "q": "Organisieren Sie Verzinken oder andere Oberflächenbehandlungen?",
+        "a": "Ja. Verzinken, Schweißen und weitere Behandlungen organisieren wir über geprüfte Partner, Sie erhalten das fertige Teil."
+      },
+      {
+        "q": "Liefern Sie ins Ausland?",
+        "a": "Ja, wir fertigen regelmäßig für Firmen aus Deutschland, Österreich und der Slowakei. Wir kommunizieren auf Deutsch und Tschechisch."
+      },
+      {
+        "q": "Welche Unterlagen brauchen Sie für ein Angebot?",
+        "a": "Am besten eine PDF-Zeichnung mit Bemaßung und Toleranzen, alternativ ein 3D-Modell im STEP-Format. Keine Zeichnung? Rufen Sie an, wir beraten Sie."
+      },
+      {
+        "q": "Wo finde ich Sie und wann sind Sie erreichbar?",
+        "a": "Wir sitzen in der Veselská 58 in Dolní Bukovsko in Südböhmen. Wir arbeiten werktags von 7:00 bis 16:00 Uhr."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Zeichnung da? Schicken Sie sie.",
+    "subtitle": "Preis und Termin erhalten Sie innerhalb von 48 Stunden. Unverbindlich.",
+    "button": "Zeichnung senden"
+  },
+  "floatingCta": {
+    "text": "Zeichnung senden"
+  },
+  "notFound": {
+    "title": "Dieses Teil steht in keiner Zeichnung.",
+    "text": "Die gesuchte Seite wurde verschoben oder hat nie existiert. Die Maschine hat das Programm angehalten und wartet auf Ihre Anweisung.",
+    "home": "Zur Startseite",
+    "contact": "Zeichnung senden",
+    "alarm": "ALARM 404 · SEITE NICHT GEFUNDEN",
+    "running": "PROGRAMM LÄUFT",
+    "reset": "Reset"
   }
 }

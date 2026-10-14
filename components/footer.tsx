@@ -1,115 +1,97 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { Link } from "@/i18n/navigation";
+import { openCookieSettings } from "@/lib/consent";
+
+const links = [
+  { href: "/sluzby", key: "services" },
+  { href: "/o-nas", key: "about" },
+  { href: "/strojni-park", key: "machinery" },
+  { href: "/galerie", key: "gallery" },
+  { href: "/kontakt", key: "contact" },
+] as const;
 
 export function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("nav");
   const contact = useTranslations("contact");
 
+  const heading = "text-sm font-medium text-foreground";
+  const link =
+    "text-[15px] text-muted-foreground transition-colors duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-primary";
+
   return (
-    <footer className="relative border-t border-border">
-      {/* Mini CTA bar */}
-      <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 py-6">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:px-6 lg:px-8">
-          <p className="text-sm font-medium">{t("ctaText")}</p>
-          <Button asChild size="sm" className="font-semibold">
-            <Link href="/kontakt">
-              {nav("inquiry")}
-              <ArrowRight className="ml-1 h-3.5 w-3.5" />
+    <footer className="border-t border-white/[0.08] px-4 pb-10 pt-20">
+      <div className="mx-auto max-w-6xl">
+        <div className="grid gap-14 md:grid-cols-[1.4fr_1fr_1.2fr]">
+          <div>
+            <Link href="/" className="flex items-center gap-3">
+              <Image src="/logo.svg" alt="KOVO-KUKY" width={32} height={32} />
+              <span className="text-xl font-semibold tracking-tight">
+                KOVO<span className="text-primary">KUKY</span>
+              </span>
             </Link>
-          </Button>
-        </div>
-      </div>
-
-      <div className="bg-card">
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-          <div className="grid gap-8 md:grid-cols-3">
-            <div>
-              <Link href="/" className="flex items-center gap-2">
-                <Image
-                  src="/logo.svg"
-                  alt=""
-                  width={32}
-                  height={32}
-                  aria-hidden="true"
-                />
-                <span className="text-lg font-bold tracking-tight">
-                  KOVO-<span className="text-primary">KUKY</span>
-                </span>
-              </Link>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                {t("description")}
-              </p>
-            </div>
-
-            <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                {t("navigation")}
-              </h3>
-              <nav className="flex flex-col gap-2.5">
-                {([
-                  { href: "/sluzby" as const, key: "services" },
-                  { href: "/o-nas" as const, key: "about" },
-                  { href: "/strojni-park" as const, key: "machinery" },
-                  { href: "/galerie" as const, key: "gallery" },
-                  { href: "/kontakt" as const, key: "contact" },
-                ]).map((item) => (
-                  <Link
-                    key={item.key}
-                    href={item.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-primary"
-                  >
-                    {nav(item.key)}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-
-            <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                {t("contactTitle")}
-              </h3>
-              <div className="flex flex-col gap-2.5 text-sm text-muted-foreground">
-                <p className="font-medium text-foreground">{contact("info.owner")}</p>
-                <p>{contact("info.address")}</p>
-                <p className="text-xs">
-                  {contact("info.icoLabel")}: {contact("info.ico")} | {contact("info.dicLabel")}: {contact("info.dic")}
-                </p>
-                <a
-                  href="mailto:info@kovo-kuky.cz"
-                  className="transition-colors hover:text-primary"
-                >
-                  info@kovo-kuky.cz
-                </a>
-                <a
-                  href="tel:+420725770820"
-                  className="transition-colors hover:text-primary"
-                >
-                  +420 725 770 820
-                </a>
-              </div>
-            </div>
+            <p className="mt-6 max-w-xs text-[15px] leading-relaxed text-muted-foreground">
+              {t("description")}
+            </p>
           </div>
 
-          <div className="mt-10 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} KOVO-KUKY. {t("rights")}</p>
-            <p className="mt-2 text-[0.8rem] text-muted-foreground/70">
+          <nav aria-label={t("navigation")}>
+            <h2 className={heading}>{t("navigation")}</h2>
+            <ul className="mt-5 flex flex-col gap-3">
+              {links.map((item) => (
+                <li key={item.key}>
+                  <Link href={item.href} className={link}>
+                    {nav(item.key)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <address className="not-italic">
+            <h2 className={heading}>{t("contactTitle")}</h2>
+            <div className="mt-5 flex flex-col gap-3 text-[15px] text-muted-foreground">
+              <p className="text-foreground">{contact("info.owner")}</p>
+              <p>{contact("info.address")}</p>
+              <a href="mailto:info@kovokuky.cz" className={link}>
+                info@kovokuky.cz
+              </a>
+              <a href="tel:+420725770820" className={link}>
+                +420 725 770 820
+              </a>
+              <p className="font-mono text-xs">
+                {contact("info.icoLabel")} {contact("info.ico")} · {contact("info.dicLabel")} {contact("info.dic")}
+              </p>
+            </div>
+          </address>
+        </div>
+
+        <div className="mt-16 flex flex-col gap-4 border-t border-white/[0.08] pt-8 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between">
+          <p>
+            &copy; {new Date().getFullYear()} KOVO-KUKY. {t("rights")}
+          </p>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <Link href="/privacy" className={link}>
+              {t("legal")}
+            </Link>
+            <button type="button" onClick={openCookieSettings} className={link}>
+              {t("cookieSettings")}
+            </button>
+            <span>
               {t("madeBy")}{" "}
               <a
                 href="https://jpvision.cz"
                 target="_blank"
                 rel="noopener"
                 title={t("madeByTitle")}
-                className="transition-colors hover:text-primary"
+                className="transition-colors duration-500 hover:text-primary"
               >
                 JP Vision
               </a>
-            </p>
+            </span>
           </div>
         </div>
       </div>

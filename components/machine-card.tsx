@@ -1,8 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Badge } from "@/components/ui/badge";
-import { Cog, Wrench, Scissors, Check } from "lucide-react";
+import { Bezel, Reveal } from "@/components/ui-kit";
 
 type MachineCardProps = {
   name: string;
@@ -15,14 +13,6 @@ type MachineCardProps = {
   index: number;
 };
 
-function getMachineIcon(type: string) {
-  if (type.toLowerCase().includes("soustruh") || type.toLowerCase().includes("lathe"))
-    return Cog;
-  if (type.toLowerCase().includes("fréz") || type.toLowerCase().includes("mill"))
-    return Wrench;
-  return Scissors;
-}
-
 export function MachineCard({
   name,
   type,
@@ -33,43 +23,34 @@ export function MachineCard({
   specs,
   index,
 }: MachineCardProps) {
-  const Icon = getMachineIcon(type);
-
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
-      className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/50"
-    >
-      <div className="flex items-start justify-between">
-        <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
-          <Icon className="h-6 w-6" />
+    <Reveal delay={(index % 3) * 0.08} className="h-full">
+      <Bezel
+        className="h-full hover:bg-white/[0.06] hover:ring-primary/30"
+        innerClassName="flex h-full flex-col p-7 md:p-8"
+      >
+        <div className="flex items-start justify-between gap-4">
+          <h3 className="text-2xl font-semibold tracking-[-0.03em]">{name}</h3>
+          <span className="shrink-0 rounded-full bg-white/[0.07] px-3 py-1 text-sm text-foreground/80 ring-1 ring-white/10">
+            {quantity}
+          </span>
         </div>
-        <Badge variant="secondary" className="text-xs">
-          {quantity}
-        </Badge>
-      </div>
-      <h3 className="mt-4 text-lg font-semibold">{name}</h3>
-      <p className="mt-1 text-sm text-primary">{type}</p>
-      {control && (
-        <p className="mt-1 text-xs text-muted-foreground">
-          {controlLabel}: {control}
+        <p className="mt-1.5 text-sm text-primary">
+          {type}
+          {control ? ` · ${controlLabel} ${control}` : ""}
         </p>
-      )}
-      <p className="mt-3 text-sm text-muted-foreground">{description}</p>
+        <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">{description}</p>
 
-      {specs && specs.length > 0 && (
-        <ul className="mt-4 space-y-1.5 border-t border-border pt-4">
-          {specs.map((spec, i) => (
-            <li key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
-              <Check className="h-3 w-3 text-primary shrink-0" />
-              {spec}
-            </li>
-          ))}
-        </ul>
-      )}
-    </motion.div>
+        {specs && specs.length > 0 && (
+          <ul className="mt-auto pt-8 text-sm">
+            {specs.map((spec, i) => (
+              <li key={i} className="border-t border-white/[0.1] py-3 text-foreground/80">
+                {spec}
+              </li>
+            ))}
+          </ul>
+        )}
+      </Bezel>
+    </Reveal>
   );
 }

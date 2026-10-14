@@ -1,66 +1,35 @@
 import type { MetadataRoute } from "next";
+import { routing } from "@/i18n/routing";
+import { urlFor, type Href } from "@/lib/seo";
+
+const priority: Record<string, number> = {
+  "/": 1,
+  "/sluzby": 0.9,
+  "/kontakt": 0.9,
+  "/strojni-park": 0.8,
+  "/o-nas": 0.7,
+  "/galerie": 0.5,
+  "/privacy": 0.2,
+};
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.kovokuky.cz";
+  const lastModified = new Date();
+  // /galerie stays out until it has real photos (it is noindex)
+  const hrefs = (Object.keys(routing.pathnames) as Href[]).filter((h) => h !== "/galerie");
 
-  // Route pairs: [cs path, de path]
-  const routes: [string, string][] = [
-    ["/cs", "/de"],
-    ["/cs/sluzby", "/de/dienstleistungen"],
-    ["/cs/o-nas", "/de/ueber-uns"],
-    ["/cs/strojni-park", "/de/maschinenpark"],
-    ["/cs/galerie", "/de/galerie"],
-    ["/cs/kontakt", "/de/kontakt"],
-  ];
-
-  const entries: MetadataRoute.Sitemap = [];
-
-  // Root URL
-  entries.push({
-    url: baseUrl,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 1.0,
-    alternates: {
-      languages: {
-        cs: `${baseUrl}/cs`,
-        de: `${baseUrl}/de`,
-      },
-    },
-  });
-
-  // All route pairs with alternates
-  routes.forEach(([csPath, dePath]) => {
-    const isHome = csPath === "/cs";
-
-    // CS version
-    entries.push({
-      url: `${baseUrl}${csPath}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: isHome ? 1.0 : 0.8,
+  return hrefs.flatMap((href) =>
+    routing.locales.map((locale) => ({
+      url: urlFor(href, locale),
+      lastModified,
+      changeFrequency: href === "/" ? ("weekly" as const) : ("monthly" as const),
+      priority: priority[href] ?? 0.5,
       alternates: {
         languages: {
-          cs: `${baseUrl}${csPath}`,
-          de: `${baseUrl}${dePath}`,
+          cs: urlFor(href, "cs"),
+          de: urlFor(href, "de"),
+          "x-default": urlFor(href, "cs"),
         },
       },
-    });
-
-    // DE version
-    entries.push({
-      url: `${baseUrl}${dePath}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: isHome ? 0.9 : 0.7,
-      alternates: {
-        languages: {
-          cs: `${baseUrl}${csPath}`,
-          de: `${baseUrl}${dePath}`,
-        },
-      },
-    });
-  });
-
-  return entries;
+    }))
+  );
 }

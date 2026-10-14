@@ -1,91 +1,92 @@
 "use client";
 
+import { useRef } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-import { FileText, MessageSquare, Cog, Package, ArrowRight } from "lucide-react";
+import { motion, useScroll, useSpring, useTransform, type MotionValue } from "framer-motion";
+import { PillLink, SectionHeading } from "@/components/ui-kit";
 
-const steps = [
-  { key: "step1", icon: FileText },
-  { key: "step2", icon: MessageSquare },
-  { key: "step3", icon: Cog },
-  { key: "step4", icon: Package },
-] as const;
+const steps = ["step1", "step2", "step3", "step4"] as const;
 
-export function ProcessSection() {
-  const t = useTranslations("process");
+/** One step on the line; lights up once the green fill reaches its node. */
+function Step({
+  fill,
+  at,
+  title,
+  description,
+}: {
+  fill: MotionValue<number>;
+  at: number;
+  title: string;
+  description: string;
+}) {
+  const on = useTransform(fill, [at - 0.06, at], [0, 1]);
+  const textOpacity = useTransform(on, [0, 1], [0.3, 1]);
+  const dotScale = useTransform(on, [0, 1], [0.6, 1]);
 
   return (
-    <section className="relative py-24 overflow-hidden">
-      <div className="absolute inset-0 bg-dots" />
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <span className="text-sm font-semibold uppercase tracking-widest text-primary">
-            {t("label")}
-          </span>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            {t("title")}
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            {t("subtitle")}
-          </p>
-        </motion.div>
+    <li className="relative pb-8 pl-9 last:pb-0 md:pb-14 md:pl-14">
+      <span
+        aria-hidden
+        className="absolute -left-[6px] top-2.5 h-3 w-3 rounded-full bg-white/20 ring-4 ring-black md:top-3"
+      />
+      <motion.span
+        aria-hidden
+        style={{ opacity: on, scale: dotScale }}
+        className="absolute -left-[6px] top-2.5 h-3 w-3 rounded-full bg-primary shadow-[0_0_0_6px_rgba(34,197,94,0.15)] ring-4 ring-black md:top-3"
+      />
+      <motion.div style={{ opacity: textOpacity }}>
+        <h3 className="text-xl font-semibold tracking-[-0.03em] sm:text-2xl md:text-4xl">{title}</h3>
+        <p className="mt-2 max-w-md text-[15px] leading-relaxed text-muted-foreground md:mt-3 md:text-base">
+          {description}
+        </p>
+      </motion.div>
+    </li>
+  );
+}
 
-        <div className="relative mt-20">
-          {/* Connection line */}
-          <div className="absolute left-0 right-0 top-16 hidden h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent lg:block" />
+/**
+ * Pinned scroll scene: the section is taller than the screen, its content
+ * sticks to the viewport while the scroll fills the line step by step, then
+ * the page moves on. Kept on phones too.
+ */
+export function ProcessSection() {
+  const t = useTranslations("process");
+  const sceneRef = useRef<HTMLElement>(null);
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {steps.map((step, i) => {
-              const Icon = step.icon;
-              return (
-                <motion.div
-                  key={step.key}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.15 }}
-                  className="group relative text-center"
-                >
-                  {/* Step number */}
-                  <div className="relative mx-auto mb-6">
-                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-primary/20 bg-primary/5 transition-all group-hover:border-primary/40 group-hover:bg-primary/10 group-hover:glow-green-sm">
-                      <Icon className="h-7 w-7 text-primary" />
-                    </div>
-                    <div className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
-                      {i + 1}
-                    </div>
-                  </div>
+  const { scrollYProgress } = useScroll({ target: sceneRef, offset: ["start start", "end end"] });
+  // a short pause at both ends of the pinned stretch
+  const raw = useTransform(scrollYProgress, [0.08, 0.9], [0, 1], { clamp: true });
+  const fill = useSpring(raw, { stiffness: 160, damping: 32, mass: 0.4 });
 
-                  <h3 className="text-lg font-semibold">{t(`${step.key}.title`)}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {t(`${step.key}.description`)}
-                  </p>
-                </motion.div>
-              );
-            })}
+  return (
+    <section ref={sceneRef} className="relative h-[280vh]">
+      <div className="sticky top-0 flex min-h-[100dvh] items-center px-4 py-24 md:py-16">
+        <div className="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[5fr_7fr] lg:gap-24">
+          <div className="lg:self-center">
+            <SectionHeading title={t("title")} subtitle={t("subtitle")} />
+            <div className="mt-8 hidden md:mt-10 md:block">
+              <PillLink href="/kontakt">{t("cta")}</PillLink>
+            </div>
           </div>
-        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
-          <Button asChild size="lg" className="text-base font-semibold">
-            <Link href="/kontakt">
-              {t("cta")}
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-        </motion.div>
+          <ol className="relative ml-2">
+            <span aria-hidden className="absolute bottom-3 left-0 top-3 w-px bg-white/[0.12]" />
+            <motion.span
+              aria-hidden
+              style={{ scaleY: fill }}
+              className="absolute bottom-3 -left-px top-3 w-[3px] origin-top rounded-full bg-primary"
+            />
+            {steps.map((key, i) => (
+              <Step
+                key={key}
+                fill={fill}
+                at={i / (steps.length - 1)}
+                title={t(`${key}.title`)}
+                description={t(`${key}.description`)}
+              />
+            ))}
+          </ol>
+        </div>
       </div>
     </section>
   );

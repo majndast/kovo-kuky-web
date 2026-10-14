@@ -1,35 +1,30 @@
-# KOVO-KUKY — CNC Machining Company
+# KOVO-KUKY: CNC machining in South Bohemia
 
-> Family-owned precision CNC machining company in South Bohemia, Czech Republic. B2B supplier for automotive and machinery industries across Central Europe.
+> Family-owned contract CNC machining shop in Dolní Bukovsko, Czech Republic. CNC turning, 3-axis milling and bar cutting of steel, stainless steel, aluminium, brass and technical plastics. Tolerances of ±0.01 mm, quotation within 48 hours, orders from one piece. Customers in the Czech Republic, Germany, Austria and Slovakia. Czech and German spoken.
 
-## Quick Facts
-- **Company**: KOVO-KUKY — Václav Kukačka
-- **Founded**: 1990s (30+ years in business)
-- **Location**: Veselská 58, 373 65 Dolní Bukovsko, Czech Republic
-- **IČO**: 721 80 714
-- **DIČ**: CZ8011251237
-- **Employees**: 6
-- **CNC Machines**: 13
-- **Precision**: Up to ±0.005 mm
-- **Quote Turnaround**: 48 hours
-
-## Services
-1. **CNC Turning** — Rotational parts on Doosan Lynx 220 & Goodway GLS lathes
-2. **CNC Milling** — 3-axis machining on XHS & Robodrill centers
-3. **Material Cutting** — Precision sawing on Bianco band saws
-4. **Surface Treatments** — Galvanizing, coating via certified partners
-
-## Materials
-Steel, Stainless Steel (17 240, etc.), Aluminum (EN AW 6060, etc.), Brass, Plastics
-
-## Key Clients
-Richmont (CZ), ETA (Austria), companies from Germany and Slovakia
-
-## Contact
-- Web: https://www.kovokuky.cz
-- Email: info@kovo-kuky.cz
-- Phone: +420 725 770 820
+## Facts
+- Company: KOVO-KUKY, Václav Kukačka (sole proprietor)
+- In business since: 1990 (family business, second generation runs it)
+- Address: Veselská 58, 373 65 Dolní Bukovsko, Czech Republic
+- Company ID (IČO): 721 80 714, VAT ID: CZ8011251237
+- Team: 6 people
+- Opening hours: Monday to Friday, 07:00 to 16:00
+- Phone: +420 725 770 820, Email: info@kovokuky.cz
 - Languages: Czech, German
 
-## For detailed information
-See: https://www.kovokuky.cz/llms-full.txt
+## Services
+- CNC turning: parts up to Ø 400 mm and 600 mm long on Doosan Lynx 220 (2x), Goodway GLS-200 and GLS-150 with Fanuc control
+- CNC milling: 3-axis centres XHS (travel 800×500×500 mm) and Robodrill (700×400×330 mm)
+- Material cutting: Bianco band saws, bars and profiles up to Ø 260 mm, angled cuts
+- Zinc plating, welding and surface treatments through vetted partners
+
+## Pages
+- [Home, Czech](https://www.kovokuky.cz/cs): overview, services, process, FAQ
+- [Home, German](https://www.kovokuky.cz/de)
+- [Services, Czech](https://www.kovokuky.cz/cs/sluzby) and [German](https://www.kovokuky.cz/de/dienstleistungen)
+- [Machine park, Czech](https://www.kovokuky.cz/cs/strojni-park) and [German](https://www.kovokuky.cz/de/maschinenpark)
+- [About, Czech](https://www.kovokuky.cz/cs/o-nas) and [German](https://www.kovokuky.cz/de/ueber-uns)
+- [Contact and quote request, Czech](https://www.kovokuky.cz/cs/kontakt) and [German](https://www.kovokuky.cz/de/kontakt)
+
+## Full details
+- [Complete profile](https://www.kovokuky.cz/llms-full.txt)

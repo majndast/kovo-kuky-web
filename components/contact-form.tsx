@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -154,7 +155,7 @@ export function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="flex flex-col items-center justify-center rounded-xl border border-primary/30 bg-primary/5 p-12 text-center">
+      <div className="flex flex-col items-center justify-center rounded-3xl bg-primary/[0.06] p-12 ring-1 ring-primary/30 text-center">
         <CheckCircle className="mb-4 h-12 w-12 text-primary" />
         <p className="text-lg font-medium">{t("form.success")}</p>
       </div>
@@ -204,7 +205,7 @@ export function ContactForm() {
           {SERVICE_OPTIONS.map((service) => (
             <label
               key={service}
-              className="flex cursor-pointer items-center gap-2 rounded-lg border border-border p-3 transition-colors hover:border-primary/50 has-[:checked]:border-primary has-[:checked]:bg-primary/5"
+              className="flex cursor-pointer items-center gap-2 rounded-2xl bg-white/[0.03] p-3.5 ring-1 ring-white/10 transition-[background-color,box-shadow] duration-500 hover:bg-white/[0.06] has-[:checked]:bg-primary/[0.08] has-[:checked]:ring-primary/60"
             >
               <Checkbox
                 checked={selectedServices.includes(service)}
@@ -226,7 +227,7 @@ export function ContactForm() {
           {MATERIAL_OPTIONS.map((material) => (
             <label
               key={material}
-              className="flex cursor-pointer items-center gap-2 rounded-lg border border-border p-3 transition-colors hover:border-primary/50 has-[:checked]:border-primary has-[:checked]:bg-primary/5"
+              className="flex cursor-pointer items-center gap-2 rounded-2xl bg-white/[0.03] p-3.5 ring-1 ring-white/10 transition-[background-color,box-shadow] duration-500 hover:bg-white/[0.06] has-[:checked]:bg-primary/[0.08] has-[:checked]:ring-primary/60"
             >
               <Checkbox
                 checked={selectedMaterials.includes(material)}
@@ -263,7 +264,7 @@ export function ContactForm() {
               ref={dateInputRef}
               id="deadline"
               type="date"
-              className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 pr-10 [&::-webkit-calendar-picker-indicator]:opacity-0"
+              className="flex h-11 w-full rounded-xl border-0 bg-white/[0.04] px-4 py-1 text-sm ring-1 ring-white/10 transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 pr-10 [&::-webkit-calendar-picker-indicator]:opacity-0"
             />
             <button
               type="button"
@@ -288,7 +289,7 @@ export function ContactForm() {
         <Label>{t("form.attachment")}</Label>
         <div
           onClick={() => fileInputRef.current?.click()}
-          className="flex cursor-pointer items-center gap-3 rounded-lg border border-dashed border-border p-4 transition-colors hover:border-primary/50"
+          className="flex cursor-pointer items-center gap-3 rounded-2xl border border-dashed border-white/15 p-4 transition-colors duration-500 hover:border-primary/50"
         >
           <Upload className="h-5 w-5 text-muted-foreground" />
           <div>
@@ -322,13 +323,13 @@ export function ContactForm() {
           />
           <span className="text-sm text-muted-foreground">
             {t("form.gdprConsent")}{" "}
-            <a
+            <Link
               href="/privacy"
               target="_blank"
               className="text-primary underline hover:no-underline"
             >
               {t("form.gdprLink")}
-            </a>
+            </Link>
           </span>
         </label>
         {gdprError && (
